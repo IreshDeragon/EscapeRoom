@@ -4,7 +4,11 @@ using UnityEngine;
 
 public class HeartBehaviour : MonoBehaviour
 {
-    public int nbCoup = 3;
+    public float speed = 5.0f;
+    public float intensity = 0.1f; //0.1
+    public GameObject point;
+    float proximite;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -14,17 +18,29 @@ public class HeartBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        /*transform.localPosition = intensity * new Vector3(
+                Mathf.PerlinNoise(speed * Time.time, 1),
+                Mathf.PerlinNoise(speed * Time.time, 2),
+                Mathf.PerlinNoise(speed * Time.time, 3));*/
+
         
+
     }
     void OnCollisionEnter(Collision col)
     {
         if(col.gameObject.tag == "hammer")
         {
-            nbCoup--;
-            if (nbCoup <= 0)
+            proximite = 1 - Vector3.Distance(point.transform.position, col.gameObject.transform.position);
+            if (proximite < 0 )
             {
-                Destroy(gameObject);
+                proximite = 0;
             }
+            if(proximite > 1)
+            {
+                proximite = 1;
+            }
+            Debug.Log(proximite);
+
         }
     }
 }
