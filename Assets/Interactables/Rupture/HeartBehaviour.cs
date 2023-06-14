@@ -33,14 +33,19 @@ public class HeartBehaviour : MonoBehaviour
             proximite = 1 - Vector3.Distance(point.transform.position, col.gameObject.transform.position);
             if (proximite < 0 )
             {
-                proximite = 0;
+                proximite = 0.0f;
             }
             if(proximite > 1)
             {
-                proximite = 1;
+                proximite = 1.0f;
             }
             Debug.Log(proximite);
 
+            //Générer l'event fmod
+
+            //Générer une animation?
+             
+            //Après avoir eu le marteau définir les zone max et min pour le son en fonction de la distance
         }
     }
 }
