@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class HammerBehaviour : MonoBehaviour
 {
+    public GameObject StrikePoint;
     // Start is called before the first frame update
     void Start()
     {
