@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class HeartBehaviour : MonoBehaviour
 {
-    public float speed = 5.0f;
-    public float intensity = 0.1f; //0.1
+    public float velocityTreshold = 1.0f;
+    public float distanceTreshold = 0.94f;
     public GameObject point;
     float proximite;
 
@@ -22,10 +22,6 @@ public class HeartBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*transform.localPosition = intensity * new Vector3(
-                Mathf.PerlinNoise(speed * Time.time, 1),
-                Mathf.PerlinNoise(speed * Time.time, 2),
-                Mathf.PerlinNoise(speed * Time.time, 3));*/
 
         if (leftHand.childCount > 0 && rightHand.childCount > 0 && !areObjectsGrabbed)
         {
@@ -54,7 +50,7 @@ public class HeartBehaviour : MonoBehaviour
 
     private bool CheckCollision(GameObject obj1, GameObject obj2)
     {
-        // Vérifie s'il y a une collision entre les deux objets
+        // Vérifie s'il y a une collision entre les deux objets 
         Collider obj1Collider = obj1.GetComponent<Collider>();
         Collider obj2Collider = obj2.GetComponent<Collider>();
 
@@ -86,12 +82,13 @@ public class HeartBehaviour : MonoBehaviour
             {
                 proximite = 1.0f;
             }
-            Debug.Log(proximite);
+            Debug.Log("Proximité : " + proximite);
+            Debug.Log("Vélocité : " + col.rigidbody.velocity);
 
             //Générer l'event fmod
 
             //Générer une animation si détruit
-             
+
         }
     }
 }

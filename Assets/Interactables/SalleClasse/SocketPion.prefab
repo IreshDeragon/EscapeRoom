@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 3125580725219352049}
   - component: {fileID: 2120752609018397381}
   - component: {fileID: 3357425399194224284}
+  - component: {fileID: 2813350331086006676}
   m_Layer: 0
   m_Name: SocketPion
   m_TagString: Untagged
@@ -209,6 +210,19 @@ MonoBehaviour:
   _requireTags:
   - Pion
   _excludeTags: []
+--- !u!114 &2813350331086006676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7200778178312068527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ffe480ae601c7a4096681d4cc530a63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Couleur: 0
 --- !u!1 &7955288922808561479
 GameObject:
   m_ObjectHideFlags: 0
