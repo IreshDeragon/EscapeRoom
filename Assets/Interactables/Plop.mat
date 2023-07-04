@@ -109,7 +109,7 @@ Material:
     - _Opacity: 3.58
     - _Outline: 0.002
     - _OutlineZ: -0.06
-    - _Outline_Thickness: 0.01
+    - _Outline_Thickness: 0.005
     - _Parallax: 0.005
     - _QueueControl: 0
     - _QueueOffset: 0
