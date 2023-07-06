@@ -7,39 +7,48 @@ public class SocketPionBehaviour : MonoBehaviour
 
     public PionBehaviour.pions Couleur;
 
-    bool BonPion =false;
+    public bool BonPion =false;
 
-    Collider pionIn;
+    public GameObject pionIn;
+
+    public bool grabbed;
 
 
     private void OnTriggerStay(Collider other)
     {
-        if(other.GetComponent<PionBehaviour>()!= null)
+        //GameObject parent = other.GetComponentInParent<Transform>().GetComponentInParent<Transform>().GetComponentInParent<Transform>().gameObject;
+        GameObject parent = other.gameObject.transform.parent.transform.parent.transform.parent.gameObject;
+        if (parent.GetComponent<PionBehaviour>()!= null)
         {
-            if (!other.GetComponent<PionBehaviour>().grabbed)
-            {
-                if (other.GetComponent<PionBehaviour>().Couleur == Couleur)
+            //if (!grabbed)
+            //{
+                if (parent.GetComponent<PionBehaviour>().Couleur == Couleur)
                 {
                     BonPion = true;
                 }
-                pionIn = other;
-            }
+                pionIn = parent;
+            //}
         }
     }
     private void OnTriggerExit(Collider other)
     {
-        if(other == pionIn)
+        GameObject parent = other.gameObject.transform.parent.transform.parent.transform.parent.gameObject;
+        if (parent == pionIn)
         {
             BonPion = false;
         }
     }
 
-    public Collider getPionPlaced()
+    public GameObject getPionPlaced()
     {
         return pionIn;
     }
     public bool goodAnswer()
     {
         return BonPion;
+    }
+    public void setgrabbed(bool grab)
+    {
+        grabbed = grab;
     }
 }

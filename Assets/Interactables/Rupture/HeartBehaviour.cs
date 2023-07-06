@@ -9,9 +9,10 @@ public class HeartBehaviour : MonoBehaviour
     public GameObject point;
     float proximite;
 
-    public Transform leftHand;
-    public Transform rightHand;
-    private bool areObjectsGrabbed = false;
+    public GameObject Hammer;
+    public GameObject Heart;
+    public Collider heartCollider;
+    public bool grabbed = false;
 
     // Start is called before the first frame update
     void Start()
@@ -22,8 +23,14 @@ public class HeartBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        if (leftHand.childCount > 0 && rightHand.childCount > 0 && !areObjectsGrabbed)
+        if(grabbed && Hammer.GetComponent<HammerBehaviour>().grabbed)
+        {
+            if(CheckCollision(Heart, Hammer.GetComponent<HammerBehaviour>().colider))
+            {
+                OnCollisionEnterInteraction(Hammer);
+            }
+        }
+        /*if (leftHand.childCount > 0 && rightHand.childCount > 0 && !areObjectsGrabbed)
         {
             // Vérifie si les deux objets sont tenus par les mains du joueur
             GameObject leftGrabbedObject = leftHand.GetChild(0).gameObject;
@@ -44,25 +51,29 @@ public class HeartBehaviour : MonoBehaviour
         else if ((leftHand.childCount == 0 || rightHand.childCount == 0) && areObjectsGrabbed)
         {
             areObjectsGrabbed = false;
-        }
+        }*/
 
     }
 
-    private bool CheckCollision(GameObject obj1, GameObject obj2)
+    public void setGrabbed(bool grab)
+    {
+        grabbed = grab;
+    }
+    private bool CheckCollision(GameObject obj1, Collider obj2Collider)
     {
         // Vérifie s'il y a une collision entre les deux objets 
-        Collider obj1Collider = obj1.GetComponent<Collider>();
-        Collider obj2Collider = obj2.GetComponent<Collider>();
+        //Collider obj1Collider = obj1.GetComponent<Collider>();
+        //Collider obj2Collider = obj2.GetComponent<Collider>();
 
         // Utilisez la méthode appropriée pour vérifier la collision entre les colliders
-        bool collisionDetected = obj1Collider.bounds.Intersects(obj2Collider.bounds);
+        bool collisionDetected = heartCollider.bounds.Intersects(obj2Collider.bounds);
 
         return collisionDetected;
     }
-    private void OnCollisionEnterInteraction(GameObject leftObject, GameObject rightObject)
+    private void OnCollisionEnterInteraction(GameObject leftObject)
     {
         // Faites quelque chose lorsque la collision se produit entre les deux objets
-        Debug.Log("Collision detected between the grabbed objects: " + leftObject.name + " and " + rightObject.name);
+        Debug.Log("Collision detected between the grabbed objects: " + leftObject.name);
     }
 
 

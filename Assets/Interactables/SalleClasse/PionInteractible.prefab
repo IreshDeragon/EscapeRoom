@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 493681581}
   - component: {fileID: 493681582}
+  - component: {fileID: 6421636138446420479}
   m_Layer: 0
   m_Name: HandGrabInteractable
   m_TagString: Untagged
@@ -72,6 +73,20 @@ MonoBehaviour:
   _movementProvider: {fileID: 0}
   _handAligment: 0
   _handGrabPoses: []
+--- !u!114 &6421636138446420479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 493681580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a3cb88a83e23a742b9de42771985170, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Couleur: 0
+  grabbed: 0
 --- !u!1 &47957625437475666
 GameObject:
   m_ObjectHideFlags: 0
@@ -116,6 +131,7 @@ GameObject:
   - component: {fileID: 9021651585416427490}
   - component: {fileID: 2911686043797460040}
   - component: {fileID: 8187999114995408076}
+  - component: {fileID: 1280365646851798809}
   m_Layer: 0
   m_Name: simpleGrabUIObjectMesh
   m_TagString: Untagged
@@ -199,9 +215,23 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -150120879314253014, guid: a0f03c3a820ba0041ab03bc457564a3e, type: 3}
+--- !u!114 &1280365646851798809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 614133831629110752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a3cb88a83e23a742b9de42771985170, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Couleur: 0
+  grabbed: 0
 --- !u!1 &3651270618540804775
 GameObject:
   m_ObjectHideFlags: 0

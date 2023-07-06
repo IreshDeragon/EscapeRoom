@@ -6,7 +6,7 @@ using UnityEngine;
 public class SchoolManager : MonoBehaviour
 {
     public GameObject[] sockets;
-    bool completed = false;
+    public bool completed = false;
     public GameObject locket;
 
     // Start is called before the first frame update
@@ -38,14 +38,17 @@ public class SchoolManager : MonoBehaviour
                 res = false;
             }
         }
+        
         return res;
     }
     void resolution()
     {
         foreach (GameObject socket in sockets)
         {
-            socket.GetComponent<SocketPionBehaviour>().getPionPlaced().GetComponent<Oculus.Interaction.Grabbable>().enabled = false;
-            socket.SetActive(false);//a tester, ça ne m'a pas l'air terrible
+            GameObject pion = socket.GetComponent<SocketPionBehaviour>().getPionPlaced();
+            pion.GetComponent<Oculus.Interaction.Grabbable>().enabled = false;
+            pion.transform.GetChild(2).gameObject.GetComponent<Oculus.Interaction.HandGrab.HandGrabInteractable>().enabled = false;
+            //socket.SetActive(false);//a tester, ça ne m'a pas l'air terrible
         }
 
         //Ouvrir le tiroir
