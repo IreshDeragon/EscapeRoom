@@ -46,9 +46,7 @@ public class SchoolManager : MonoBehaviour
         foreach (GameObject socket in sockets)
         {
             GameObject pion = socket.GetComponent<SocketPionBehaviour>().getPionPlaced();
-            pion.GetComponent<Oculus.Interaction.Grabbable>().enabled = false;
             pion.transform.GetChild(2).gameObject.GetComponent<Oculus.Interaction.HandGrab.HandGrabInteractable>().enabled = false;
-            //socket.SetActive(false);//a tester, ça ne m'a pas l'air terrible
         }
 
         //Ouvrir le tiroir

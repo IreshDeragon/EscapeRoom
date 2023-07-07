@@ -20,14 +20,14 @@ public class SocketPionBehaviour : MonoBehaviour
         GameObject parent = other.gameObject.transform.parent.transform.parent.transform.parent.gameObject;
         if (parent.GetComponent<PionBehaviour>()!= null)
         {
-            //if (!grabbed)
-            //{
-                if (parent.GetComponent<PionBehaviour>().Couleur == Couleur)
+            if (!parent.GetComponent<PionBehaviour>().grabbed)
+            {
+            if (parent.GetComponent<PionBehaviour>().Couleur == Couleur)
                 {
                     BonPion = true;
                 }
                 pionIn = parent;
-            //}
+            }
         }
     }
     private void OnTriggerExit(Collider other)
