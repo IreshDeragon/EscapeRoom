@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 493681581}
   - component: {fileID: 493681582}
-  - component: {fileID: 6421636138446420479}
+  - component: {fileID: 8295649895437592607}
   m_Layer: 0
   m_Name: HandGrabInteractable
   m_TagString: Untagged
@@ -73,7 +73,7 @@ MonoBehaviour:
   _movementProvider: {fileID: 0}
   _handAligment: 0
   _handGrabPoses: []
---- !u!114 &6421636138446420479
+--- !u!114 &8295649895437592607
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -82,11 +82,55 @@ MonoBehaviour:
   m_GameObject: {fileID: 493681580}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a3cb88a83e23a742b9de42771985170, type: 3}
+  m_Script: {fileID: 11500000, guid: e2f8f6e9e6f3e114b9bf9a57c2160615, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Couleur: 0
-  grabbed: 0
+  _pointable: {fileID: 493681582}
+  _whenRelease:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenHover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenUnhover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelect:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: -2553604952906162645}
+        m_TargetAssemblyTypeName: PionBehaviour, Assembly-CSharp
+        m_MethodName: setgrabbed
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  _whenUnselect:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: -2553604952906162645}
+        m_TargetAssemblyTypeName: PionBehaviour, Assembly-CSharp
+        m_MethodName: setgrabbed
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenMove:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenCancel:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &47957625437475666
 GameObject:
   m_ObjectHideFlags: 0
@@ -131,7 +175,6 @@ GameObject:
   - component: {fileID: 9021651585416427490}
   - component: {fileID: 2911686043797460040}
   - component: {fileID: 8187999114995408076}
-  - component: {fileID: 1280365646851798809}
   m_Layer: 0
   m_Name: simpleGrabUIObjectMesh
   m_TagString: Untagged
@@ -218,20 +261,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -150120879314253014, guid: a0f03c3a820ba0041ab03bc457564a3e, type: 3}
---- !u!114 &1280365646851798809
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 614133831629110752}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a3cb88a83e23a742b9de42771985170, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Couleur: 0
-  grabbed: 0
 --- !u!1 &3651270618540804775
 GameObject:
   m_ObjectHideFlags: 0
@@ -351,34 +380,10 @@ MonoBehaviour:
       m_Calls: []
   _whenSelect:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: RotatePlanet, Assembly-CSharp
-        m_MethodName: ChangeRotation
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
+      m_Calls: []
   _whenUnselect:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: RotatePlanet, Assembly-CSharp
-        m_MethodName: ChangeRotation
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: -450
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &5718582175141178606
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -558,18 +563,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: -2553604952906162645}
-        m_TargetAssemblyTypeName: PionBehaviour, Assembly-CSharp
-        m_MethodName: setgrabbed
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
   _whenUnselect:
     m_PersistentCalls:
       m_Calls:
@@ -588,18 +581,6 @@ MonoBehaviour:
       - m_Target: {fileID: 4289706931025778868}
         m_TargetAssemblyTypeName: UnityEngine.Rigidbody, UnityEngine
         m_MethodName: set_isKinematic
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: -2553604952906162645}
-        m_TargetAssemblyTypeName: PionBehaviour, Assembly-CSharp
-        m_MethodName: setgrabbed
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
