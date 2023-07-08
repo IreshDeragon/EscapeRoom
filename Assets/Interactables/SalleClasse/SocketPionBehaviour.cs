@@ -11,8 +11,6 @@ public class SocketPionBehaviour : MonoBehaviour
 
     public GameObject pionIn;
 
-    public bool grabbed;
-
 
     private void OnTriggerStay(Collider other)
     {
@@ -47,8 +45,5 @@ public class SocketPionBehaviour : MonoBehaviour
     {
         return BonPion;
     }
-    public void setgrabbed(bool grab)
-    {
-        grabbed = grab;
-    }
+
 }
