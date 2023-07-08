@@ -14,6 +14,9 @@ public class HeartBehaviour : MonoBehaviour
     public Collider heartCollider;
     public bool grabbed = false;
 
+
+    bool hasbeen = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,32 +30,21 @@ public class HeartBehaviour : MonoBehaviour
         {
             if(CheckCollision(Heart, Hammer.GetComponent<HammerBehaviour>().colider))
             {
-                OnCollisionEnterInteraction(Hammer);
-            }
-        }
-        /*if (leftHand.childCount > 0 && rightHand.childCount > 0 && !areObjectsGrabbed)
-        {
-            // Vérifie si les deux objets sont tenus par les mains du joueur
-            GameObject leftGrabbedObject = leftHand.GetChild(0).gameObject;
-            GameObject rightGrabbedObject = rightHand.GetChild(0).gameObject;
-
-            if (leftGrabbedObject != null && rightGrabbedObject != null)
-            {
-                areObjectsGrabbed = true;
-
-                // Vérifie s'il y a une collision entre les objets
-                if (CheckCollision(leftGrabbedObject, rightGrabbedObject))
+                if (!hasbeen)
                 {
-                    // Déclenche l'événement de collision ou effectue l'interaction souhaitée
-                    OnCollisionEnterInteraction(leftGrabbedObject, rightGrabbedObject);
+                    OnCollisionEnterInteraction(Hammer);
+                    hasbeen = true;
                 }
             }
+            else
+            {
+                hasbeen = false;
+            }
         }
-        else if ((leftHand.childCount == 0 || rightHand.childCount == 0) && areObjectsGrabbed)
+        else
         {
-            areObjectsGrabbed = false;
-        }*/
-
+            hasbeen = false;
+        }
     }
 
     public void setGrabbed(bool grab)
@@ -72,8 +64,20 @@ public class HeartBehaviour : MonoBehaviour
     }
     private void OnCollisionEnterInteraction(GameObject leftObject)
     {
-        // Faites quelque chose lorsque la collision se produit entre les deux objets
-        Debug.Log("Collision detected between the grabbed objects: " + leftObject.name);
+        GameObject strikeZone = leftObject.gameObject.GetComponent<HammerBehaviour>().StrikePoint;
+        proximite = 1 - Vector3.Distance(point.transform.position, strikeZone.transform.position); //calcul de la distance entre le bout du marteau et le point
+
+        //Je clamp la valeur entre 0 et 1 pour ne pas avoir d'erreurs dans fmod
+        if (proximite < 0)
+        {
+            proximite = 0.0f;
+        }
+        if (proximite > 1)
+        {
+            proximite = 1.0f;
+        }
+        Debug.Log("Proximité : " + proximite);
+        Debug.Log("Vélocité : " + leftObject.GetComponent<Rigidbody>().velocity);
     }
 
 
