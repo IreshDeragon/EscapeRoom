@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Playables;
 
 
 public class SchoolManager : MonoBehaviour
@@ -9,10 +10,12 @@ public class SchoolManager : MonoBehaviour
     public bool completed = false;
     public GameObject locket;
 
+    public PlayableDirector director;
+
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
@@ -43,15 +46,14 @@ public class SchoolManager : MonoBehaviour
     }
     void resolution()
     {
-        foreach (GameObject socket in sockets)
+        foreach (GameObject socket in sockets) //on désactive l'utilisation des pions
         {
             GameObject pion = socket.GetComponent<SocketPionBehaviour>().getPionPlaced();
             pion.transform.GetChild(2).gameObject.GetComponent<Oculus.Interaction.HandGrab.HandGrabInteractable>().enabled = false;
         }
 
         //Ouvrir le tiroir
-        Quaternion target = locket.transform.rotation;
-        target.x += 90;
-        Quaternion.Lerp(locket.transform.rotation, target, 1f);
+        director.Play();
     }
+
 }
