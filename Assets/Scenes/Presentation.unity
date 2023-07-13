@@ -14118,6 +14118,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2987702921017432933, guid: 192e936877115bd49bba489c765b14dc,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8996005226612171522, guid: 192e936877115bd49bba489c765b14dc,
         type: 3}
       propertyPath: m_RootOrder
@@ -14447,6 +14452,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 173382151, guid: 13c9d78b8326cf847bfc9f6e8fc70eb9, type: 3}
+      propertyPath: Solution.Array.data[0]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 173382151, guid: 13c9d78b8326cf847bfc9f6e8fc70eb9, type: 3}
+      propertyPath: Solution.Array.data[1]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 173382151, guid: 13c9d78b8326cf847bfc9f6e8fc70eb9, type: 3}
+      propertyPath: Solution.Array.data[2]
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8327634174712363745, guid: 13c9d78b8326cf847bfc9f6e8fc70eb9,
         type: 3}
       propertyPath: m_Name
