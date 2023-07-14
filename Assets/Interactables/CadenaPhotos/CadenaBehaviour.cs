@@ -24,21 +24,21 @@ public class CadenaBehaviour : MonoBehaviour
         if(premierChiffre == Solution[0] && secondChiffre == Solution[1] && troisiemeChiffre == Solution[2])
         {
             porte.transform.GetComponent<Oculus.Interaction.Grabbable>().enabled = true;
-            handGrab.SetActive(true);
-            handGrabMirror.SetActive(true);
+            handGrab.GetComponent<Oculus.Interaction.HandGrab.HandGrabInteractable>().enabled = true;
+            handGrabMirror.GetComponent<Oculus.Interaction.HandGrab.HandGrabInteractable>().enabled = true;
         }
     }
     public void setCliqued(int clic)
     {
         switch (clic)
         {
-            case 1:
+            case 0:
                 premierChiffre = (premierChiffre + 1) % 9;
                 break;
-            case 2:
+            case 1:
                 secondChiffre = (secondChiffre + 1) % 9;
                 break;
-            case 3:
+            case 2:
                 troisiemeChiffre = (troisiemeChiffre + 1) % 9;
                 break;
         }
