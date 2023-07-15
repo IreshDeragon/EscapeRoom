@@ -12,7 +12,7 @@ public class CoqueBehaviour : MonoBehaviour
 
     public void showVoile()
     {
-        voile.SetActive(true);
+        //voile.SetActive(true);
         isGood = true;
     }
     public void setgrabbed(bool grab)

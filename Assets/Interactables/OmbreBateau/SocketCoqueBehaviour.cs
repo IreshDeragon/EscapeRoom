@@ -10,6 +10,7 @@ public class SocketCoqueBehaviour : MonoBehaviour
     public float rotationMin;
     public float rotationMax;
     public Transform parentTransform;
+    public GameObject voile;
 
     public GameObject CoqueIn;
     // Start is called before the first frame update
@@ -26,6 +27,9 @@ public class SocketCoqueBehaviour : MonoBehaviour
             if(parentTransform.rotation.eulerAngles.y >= rotationMin && parentTransform.rotation.eulerAngles.y <= rotationMax)
             {
                 CoqueIn.GetComponent<CoqueBehaviour>().showVoile();
+                voile.GetComponent<Rigidbody>().isKinematic = false;
+                voile.GetComponent<Rigidbody>().useGravity = true;
+                voile.transform.GetChild(0).gameObject.SetActive(true);
             }
         }
     }
