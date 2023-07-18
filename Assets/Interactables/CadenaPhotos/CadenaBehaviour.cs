@@ -11,6 +11,8 @@ public class CadenaBehaviour : MonoBehaviour
     public GameObject porte;
     public GameObject handGrab;
     public GameObject handGrabMirror;
+    public GameObject[] objetsDeverouille;
+    bool completed = false;
 
     // Start is called before the first frame update
     void Start()
@@ -21,11 +23,24 @@ public class CadenaBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(premierChiffre == Solution[0] && secondChiffre == Solution[1] && troisiemeChiffre == Solution[2])
+        if (!completed)
         {
-            porte.transform.GetComponent<Oculus.Interaction.Grabbable>().enabled = true;
-            handGrab.GetComponent<Oculus.Interaction.HandGrab.HandGrabInteractable>().enabled = true;
-            handGrabMirror.GetComponent<Oculus.Interaction.HandGrab.HandGrabInteractable>().enabled = true;
+            if (premierChiffre == Solution[0] && secondChiffre == Solution[1] && troisiemeChiffre == Solution[2])
+            {
+                porte.transform.GetComponent<Oculus.Interaction.Grabbable>().enabled = true;
+                handGrab.GetComponent<Oculus.Interaction.HandGrab.HandGrabInteractable>().enabled = true;
+                handGrabMirror.GetComponent<Oculus.Interaction.HandGrab.HandGrabInteractable>().enabled = true;
+                completed = true;
+                foreach(GameObject obj in objetsDeverouille)
+                {
+                    obj.GetComponent<Rigidbody>().isKinematic = false;
+                    Oculus.Interaction.HandGrab.HandGrabInteractable[] components = obj.GetComponentsInChildren<Oculus.Interaction.HandGrab.HandGrabInteractable>();
+                    foreach(Oculus.Interaction.HandGrab.HandGrabInteractable comp in components)
+                    {
+                        comp.enabled = true;
+                    }
+                }
+            }
         }
     }
     public void setCliqued(int clic)

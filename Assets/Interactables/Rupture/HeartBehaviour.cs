@@ -29,8 +29,6 @@ public class HeartBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GameObject strikeZone = Hammer.gameObject.GetComponent<HammerBehaviour>().StrikePoint;
-        Debug.Log(Vector3.Distance(point.transform.position, strikeZone.transform.position));
         if (cptCoup > 0)
         {
             timer += Time.deltaTime;
