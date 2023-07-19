@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class HeartBehaviour : MonoBehaviour
 {
-    public float velocityTreshold = 1.0f;
     public float distanceTreshold = 0.94f;
+    public int nbcoup;
+    public float timerCoups;
     public GameObject point;
     float proximite;
 
@@ -13,19 +14,31 @@ public class HeartBehaviour : MonoBehaviour
     public GameObject Heart;
     public Collider heartCollider;
     public bool grabbed = false;
+    public GameObject keyPrefab;
 
-
+    int cptCoup = 0;
+    float timer;
     bool hasbeen = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        timer = timerCoups;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (cptCoup > 0)
+        {
+            timer += Time.deltaTime;
+            if(timer> timerCoups)
+            {
+                nbcoup = 0;
+                timer = 0;
+            }
+        }
+
         if(grabbed && Hammer.GetComponent<HammerBehaviour>().grabbed)
         {
             if(CheckCollision(Heart, Hammer.GetComponent<HammerBehaviour>().colider))
@@ -77,7 +90,7 @@ public class HeartBehaviour : MonoBehaviour
             proximite = 1.0f;
         }
         Debug.Log("Proximité : " + proximite);
-        Debug.Log("Vélocité : " + leftObject.GetComponent<Rigidbody>().velocity);
+        strike();
     }
 
 
@@ -98,12 +111,25 @@ public class HeartBehaviour : MonoBehaviour
                 proximite = 1.0f;
             }
             Debug.Log("Proximité : " + proximite);
-            Debug.Log("Vélocité : " + col.rigidbody.velocity);
-
-            //Générer l'event fmod
-
-            //Générer une animation si détruit
-
+            strike();
         }
+    }
+
+    void strike()
+    {
+        if(proximite>= distanceTreshold)
+        {
+            ++cptCoup;
+            timer = 0;
+        }
+        if(cptCoup >= nbcoup)
+        {
+            breakHeart();
+        }
+    }
+    void breakHeart()
+    {
+        Instantiate(keyPrefab, transform.position, transform.rotation);
+        Destroy(gameObject);
     }
 }
