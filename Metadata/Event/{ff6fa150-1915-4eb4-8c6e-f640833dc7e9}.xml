@@ -118,8 +118,9 @@
 	</object>
 	<object class="MixerBusEffectChain" id="{45f52eab-cf13-466a-8e1a-064f6645ecce}">
 		<relationship name="effects">
-			<destination>{afa13967-6439-499f-9dbe-016b8eeae87d}</destination>
 			<destination>{00c7b963-be9e-4781-85b2-27fa3b601fad}</destination>
+			<destination>{23a2c294-dbe9-41e0-9078-f83c53fca4be}</destination>
+			<destination>{afa13967-6439-499f-9dbe-016b8eeae87d}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{eb173f69-f7a3-41b9-a80d-22823e599693}" />
@@ -150,12 +151,17 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{077e921a-53c2-45ca-a7d8-f501bd10c9a2}" />
-	<object class="MixerBusFader" id="{afa13967-6439-499f-9dbe-016b8eeae87d}" />
 	<object class="PluginEffect" id="{00c7b963-be9e-4781-85b2-27fa3b601fad}">
 		<relationship name="plugin">
 			<destination>{3b270e86-8461-47ac-aab9-31ecdbca2fe6}</destination>
 		</relationship>
 	</object>
+	<object class="PluginEffect" id="{23a2c294-dbe9-41e0-9078-f83c53fca4be}">
+		<relationship name="plugin">
+			<destination>{0fda4346-7164-40ea-ba33-0a45e4c5966c}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusFader" id="{afa13967-6439-499f-9dbe-016b8eeae87d}" />
 	<object class="MixerBusFader" id="{a7ded67a-98f4-4418-a5f0-938bffc6be9f}" />
 	<object class="Plugin" id="{3b270e86-8461-47ac-aab9-31ecdbca2fe6}">
 		<property name="identifier">
@@ -174,6 +180,15 @@
 			<destination>{957e4900-f76b-4511-a1ff-b777a3b8ca06}</destination>
 			<destination>{85133153-a087-4efa-8a97-5eb624b78486}</destination>
 			<destination>{13f32851-1e5a-408b-a8ad-36f163efe45b}</destination>
+		</relationship>
+	</object>
+	<object class="Plugin" id="{0fda4346-7164-40ea-ba33-0a45e4c5966c}">
+		<property name="identifier">
+			<value>Resonance Audio Listener</value>
+		</property>
+		<relationship name="pluginParameters">
+			<destination>{d2d59582-4e2b-4ce2-bfb7-0fa057769943}</destination>
+			<destination>{d4c262c8-b8c7-4ba7-aeff-b5d247b73cfa}</destination>
 		</relationship>
 	</object>
 	<object class="FloatPluginParameter" id="{b91fd9e9-2767-42a1-b888-d2f3367d9f17}">
@@ -294,6 +309,26 @@
 		</property>
 		<property name="dataType">
 			<value>-1</value>
+		</property>
+	</object>
+	<object class="FloatPluginParameter" id="{d2d59582-4e2b-4ce2-bfb7-0fa057769943}">
+		<property name="name">
+			<value>Gain</value>
+		</property>
+		<property name="value">
+			<value>-9.99999975e-06</value>
+		</property>
+		<property name="curve">
+			<value>{(0.000000,-80.000000)(1.000000,0.000000)}</value>
+		</property>
+	</object>
+	<object class="DataPluginParameter" id="{d4c262c8-b8c7-4ba7-aeff-b5d247b73cfa}">
+		<property name="name">
+			<value>Room Properties</value>
+		</property>
+		<property name="value" />
+		<property name="dataType">
+			<value>0</value>
 		</property>
 	</object>
 </objects>
