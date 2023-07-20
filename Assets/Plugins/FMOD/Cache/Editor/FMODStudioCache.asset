@@ -26,7 +26,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 389
 --- !u!114 &-6637268539143103170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54,7 +54,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &-6486796232128319631
+--- !u!114 &-6493277904040019567
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -64,14 +64,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/InGame/Common/IG_ring_phone
+  m_Name: event:/InGame/Common/IG_C_close_drawer
   m_EditorClassIdentifier: 
-  Path: event:/InGame/Common/IG_ring_phone
+  Path: event:/InGame/Common/IG_C_close_drawer
   Guid:
-    Data1: 838869253
-    Data2: 1082477264
-    Data3: -336321656
-    Data4: 1289121303
+    Data1: -1867514493
+    Data2: 1277792790
+    Data3: -500697214
+    Data4: 95963945
   Banks:
   - {fileID: 8367525404460693426}
   IsStream: 0
@@ -108,6 +108,60 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-5568789644200664627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/InGame/PuzzleBridgeReconstruction/IG_PBR_fallen_bridge_piece
+  m_EditorClassIdentifier: 
+  Path: event:/InGame/PuzzleBridgeReconstruction/IG_PBR_fallen_bridge_piece
+  Guid:
+    Data1: -113541077
+    Data2: 1206652042
+    Data3: 781650611
+    Data4: -810041362
+  Banks:
+  - {fileID: 8367525404460693426}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-5114318323405181089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Animations/PuzzleBoat/A_PB_sentence_friend_Jeff
+  m_EditorClassIdentifier: 
+  Path: event:/Animations/PuzzleBoat/A_PB_sentence_friend_Jeff
+  Guid:
+    Data1: -2064166095
+    Data2: 1321149761
+    Data3: -1562975832
+    Data4: -20977619
+  Banks:
+  - {fileID: 8367525404460693426}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-4983035136581238026
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -126,33 +180,6 @@ MonoBehaviour:
     Data2: 1313449158
     Data3: 768769455
     Data4: -799453844
-  Banks:
-  - {fileID: 8367525404460693426}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-4416229714954604887
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/InGame/Common/IG_listen_voice_message
-  m_EditorClassIdentifier: 
-  Path: event:/InGame/Common/IG_listen_voice_message
-  Guid:
-    Data1: -792887822
-    Data2: 1263277618
-    Data3: 132451244
-    Data4: -1628053200
   Banks:
   - {fileID: 8367525404460693426}
   IsStream: 0
@@ -243,6 +270,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-3602831758691948285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/InGame/PuzzleFinalModel/IG_PFM_accident
+  m_EditorClassIdentifier: 
+  Path: event:/InGame/PuzzleFinalModel/IG_PFM_accident
+  Guid:
+    Data1: 873234183
+    Data2: 1209739279
+    Data3: -557591386
+    Data4: 737537977
+  Banks:
+  - {fileID: 8367525404460693426}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-3514820285875171789
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -261,33 +315,6 @@ MonoBehaviour:
     Data2: 1171771740
     Data3: -1312601960
     Data4: -1529302093
-  Banks:
-  - {fileID: 8367525404460693426}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-3403704281310414508
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/InGame/PuzzleStoneHeart/IG_PSH_striking_hardly_stone_heart_in_right_place
-  m_EditorClassIdentifier: 
-  Path: event:/InGame/PuzzleStoneHeart/IG_PSH_striking_hardly_stone_heart_in_right_place
-  Guid:
-    Data1: 178579618
-    Data2: 1277920789
-    Data3: -1504059468
-    Data4: 540851249
   Banks:
   - {fileID: 8367525404460693426}
   IsStream: 0
@@ -396,87 +423,6 @@ MonoBehaviour:
     Data2: 1178549837
     Data3: 465895312
     Data4: -1107757400
-  Banks:
-  - {fileID: 8367525404460693426}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-2068027131144592474
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/InGame/PuzzleStoneHeart/IG_PSH_striking_slowly_stone_heart_in_right_place
-  m_EditorClassIdentifier: 
-  Path: event:/InGame/PuzzleStoneHeart/IG_PSH_striking_slowly_stone_heart_in_right_place
-  Guid:
-    Data1: 667749886
-    Data2: 1188458852
-    Data3: -1639064174
-    Data4: 1617841395
-  Banks:
-  - {fileID: 8367525404460693426}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-1958063188030023370
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/InGame/PuzzleStoneHeart/IG_PSH_striking_slowly_stone_heart_with_hammer
-  m_EditorClassIdentifier: 
-  Path: event:/InGame/PuzzleStoneHeart/IG_PSH_striking_slowly_stone_heart_with_hammer
-  Guid:
-    Data1: -1237728999
-    Data2: 1239375613
-    Data3: 1741996674
-    Data4: -1566666691
-  Banks:
-  - {fileID: 8367525404460693426}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-1942890416573327857
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/InGame/PuzzleStoneHeart/IG_PSH_striking_hardly_stone_heart_with_hammer
-  m_EditorClassIdentifier: 
-  Path: event:/InGame/PuzzleStoneHeart/IG_PSH_striking_hardly_stone_heart_with_hammer
-  Guid:
-    Data1: 1294862836
-    Data2: 1307021371
-    Data3: -981435725
-    Data4: -614582594
   Banks:
   - {fileID: 8367525404460693426}
   IsStream: 0
@@ -640,13 +586,9 @@ MonoBehaviour:
   - {fileID: 5170076339535344625}
   - {fileID: -4983035136581238026}
   - {fileID: -1114773047333606567}
-  - {fileID: -6486796232128319631}
-  - {fileID: 5967718930074971073}
   - {fileID: -3895159847650795358}
   - {fileID: -411651856949226500}
-  - {fileID: -1958063188030023370}
   - {fileID: -6637268539143103170}
-  - {fileID: 1496853725447610091}
   - {fileID: -1760691426790093810}
   - {fileID: 1090381158614384010}
   - {fileID: -3764884895058450219}
@@ -655,12 +597,10 @@ MonoBehaviour:
   - {fileID: 2316612473301564957}
   - {fileID: 8172438776059312442}
   - {fileID: 8942404396031798750}
-  - {fileID: 1117138031862382577}
   - {fileID: -6089818682845523619}
   - {fileID: 5610971947986714922}
   - {fileID: 9194454540199401967}
   - {fileID: 6860625344097295748}
-  - {fileID: 8718459739245021482}
   - {fileID: 5590867431723180924}
   - {fileID: 6286625914749036512}
   - {fileID: 4090021497276464136}
@@ -668,9 +608,7 @@ MonoBehaviour:
   - {fileID: 7209389559923852523}
   - {fileID: -2592494067987100394}
   - {fileID: 6060242538470224886}
-  - {fileID: -3403704281310414508}
   - {fileID: 4489079083068914878}
-  - {fileID: 3754653570106648416}
   - {fileID: 4807807016157207940}
   - {fileID: -3117989272800273623}
   - {fileID: -1175404692142040159}
@@ -678,10 +616,8 @@ MonoBehaviour:
   - {fileID: 4634831573736203007}
   - {fileID: -584844336781261710}
   - {fileID: -4313831721988674877}
-  - {fileID: 2961387049293670272}
   - {fileID: 862820555759932417}
   - {fileID: 4818814869649514883}
-  - {fileID: 317387118229828581}
   - {fileID: 5629351184457004318}
   - {fileID: -2296345038199823556}
   - {fileID: 8498821100157858629}
@@ -689,17 +625,39 @@ MonoBehaviour:
   - {fileID: -3514820285875171789}
   - {fileID: -6676436667116734100}
   - {fileID: 7176647408178889024}
-  - {fileID: -4416229714954604887}
-  - {fileID: -1942890416573327857}
-  - {fileID: 7038866530389807142}
   - {fileID: 2881085983089102882}
-  - {fileID: -2068027131144592474}
+  - {fileID: 3566907005274271556}
+  - {fileID: -3602831758691948285}
+  - {fileID: 4361358485320881109}
+  - {fileID: -5568789644200664627}
+  - {fileID: -5114318323405181089}
+  - {fileID: 1432716461048621404}
+  - {fileID: 4395989368194519456}
+  - {fileID: 8190673214818797003}
+  - {fileID: 7028049874379172786}
+  - {fileID: 6455083493639100145}
+  - {fileID: 5920306943420444440}
+  - {fileID: 6677880129634253964}
+  - {fileID: 8400760228112834058}
+  - {fileID: -6493277904040019567}
+  - {fileID: 732081034896180556}
+  - {fileID: 934141364379954808}
+  - {fileID: 86546429693925864}
+  - {fileID: 1173182434352456210}
+  - {fileID: 4071600621456670224}
+  - {fileID: 9190862969863541627}
+  - {fileID: 7056148158987162181}
+  - {fileID: 5718402479310130074}
+  - {fileID: 3989926192349521130}
+  - {fileID: 803582503574020838}
+  - {fileID: 2094118356976686038}
+  - {fileID: 9199557305855820412}
   EditorParameters: []
   MasterBanks:
   - {fileID: 8367525404460693426}
   StringsBanks:
   - {fileID: 3165346965030307097}
-  cacheTime: 638241471637594192
+  cacheTime: 638253872780000000
   cacheVersion: 131605
 --- !u!114 &23154791801637274
 MonoBehaviour:
@@ -728,7 +686,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &317387118229828581
+--- !u!114 &86546429693925864
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -738,14 +696,41 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/InGame/Common/IG_use_phone
+  m_Name: event:/InGame/PuzzleStoneHeart/IG_PSH_striking_stone_heart
   m_EditorClassIdentifier: 
-  Path: event:/InGame/Common/IG_use_phone
+  Path: event:/InGame/PuzzleStoneHeart/IG_PSH_striking_stone_heart
   Guid:
-    Data1: 636099803
-    Data2: 1173142405
-    Data3: -651820130
-    Data4: 135407605
+    Data1: 178579618
+    Data2: 1277920789
+    Data3: -1504059468
+    Data4: 540851249
+  Banks:
+  - {fileID: 8367525404460693426}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 847
+--- !u!114 &732081034896180556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Animations/PuzzleStoneHeart/A_PSH_heartbeat
+  m_EditorClassIdentifier: 
+  Path: event:/Animations/PuzzleStoneHeart/A_PSH_heartbeat
+  Guid:
+    Data1: 2098180254
+    Data2: 1221772771
+    Data3: -1791790711
+    Data4: 1874358514
   Banks:
   - {fileID: 8367525404460693426}
   IsStream: 0
@@ -755,6 +740,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &803582503574020838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/InGame/PuzzleStoneHeart/IG_PSH_pose_hammer
+  m_EditorClassIdentifier: 
+  Path: event:/InGame/PuzzleStoneHeart/IG_PSH_pose_hammer
+  Guid:
+    Data1: 458354682
+    Data2: 1121914383
+    Data3: 1934268592
+    Data4: -66211226
+  Banks:
+  - {fileID: 8367525404460693426}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 269
 --- !u!114 &862820555759932417
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -777,6 +789,33 @@ MonoBehaviour:
   - {fileID: 8367525404460693426}
   IsStream: 0
   Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &934141364379954808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Animations/PuzzleBoat/A_PB_laught_friends_Jeff
+  m_EditorClassIdentifier: 
+  Path: event:/Animations/PuzzleBoat/A_PB_laught_friends_Jeff
+  Guid:
+    Data1: 1173804448
+    Data2: 1327465379
+    Data3: -2106232188
+    Data4: 1904369860
+  Banks:
+  - {fileID: 8367525404460693426}
+  IsStream: 0
+  Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
@@ -809,7 +848,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &1117138031862382577
+--- !u!114 &1173182434352456210
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -819,14 +858,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/InGame/PuzzleFinalModel/IG_PFN_crying_girl
+  m_Name: event:/InGame/Common/IG_C_footstep
   m_EditorClassIdentifier: 
-  Path: event:/InGame/PuzzleFinalModel/IG_PFN_crying_girl
+  Path: event:/InGame/Common/IG_C_footstep
   Guid:
-    Data1: 758548069
-    Data2: 1108387228
-    Data3: -223340383
-    Data4: -496238131
+    Data1: -2009803351
+    Data2: 1182064294
+    Data3: -1351408497
+    Data4: 749426957
   Banks:
   - {fileID: 8367525404460693426}
   IsStream: 0
@@ -836,7 +875,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &1496853725447610091
+--- !u!114 &1432716461048621404
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -846,18 +885,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/InGame/PuzzleBridgeReconstruction/IG_PSH_fallen_bridge_piece
+  m_Name: event:/Animations/PuzzleFinalModel/A_PFM_Scream_girl
   m_EditorClassIdentifier: 
-  Path: event:/InGame/PuzzleBridgeReconstruction/IG_PSH_fallen_bridge_piece
+  Path: event:/Animations/PuzzleFinalModel/A_PFM_Scream_girl
   Guid:
-    Data1: -113541077
-    Data2: 1206652042
-    Data3: 781650611
-    Data4: -810041362
+    Data1: -441888201
+    Data2: 1327496724
+    Data3: 1911917221
+    Data4: 1816196341
   Banks:
   - {fileID: 8367525404460693426}
   IsStream: 0
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
@@ -885,6 +924,33 @@ MonoBehaviour:
   - {fileID: 8367525404460693426}
   IsStream: 0
   Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &2094118356976686038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Animations/PuzzleStoneHeart/A_PSH_sentence_Jeff
+  m_EditorClassIdentifier: 
+  Path: event:/Animations/PuzzleStoneHeart/A_PSH_sentence_Jeff
+  Guid:
+    Data1: -1043762181
+    Data2: 1290723880
+    Data3: -1623889730
+    Data4: -1591763404
+  Banks:
+  - {fileID: 8367525404460693426}
+  IsStream: 0
+  Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
@@ -944,33 +1010,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &2961387049293670272
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/InGame/Common/IG_open_drawer
-  m_EditorClassIdentifier: 
-  Path: event:/InGame/Common/IG_open_drawer
-  Guid:
-    Data1: 944363215
-    Data2: 1199504344
-    Data3: -700594254
-    Data4: -202241904
-  Banks:
-  - {fileID: 8367525404460693426}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
 --- !u!114 &3165346965030307097
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -986,10 +1025,10 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638241471637594192
+  lastModified: 638253872780000000
   FileSizes:
   - Name: 
-    Value: 3856
+    Value: 4856
   Exists: 1
 --- !u!114 &3487115701500396353
 MonoBehaviour:
@@ -1017,8 +1056,8 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
---- !u!114 &3754653570106648416
+  Length: 307
+--- !u!114 &3566907005274271556
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1028,14 +1067,68 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/InGame/Common/IG_footstep
+  m_Name: event:/InGame/Common/IG_C_ring_phone
   m_EditorClassIdentifier: 
-  Path: event:/InGame/Common/IG_footstep
+  Path: event:/InGame/Common/IG_C_ring_phone
   Guid:
-    Data1: -2009803351
-    Data2: 1182064294
-    Data3: -1351408497
-    Data4: 749426957
+    Data1: 838869253
+    Data2: 1082477264
+    Data3: -336321656
+    Data4: 1289121303
+  Banks:
+  - {fileID: 8367525404460693426}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &3989926192349521130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Animations/PuzzleBridgeReconstruction/A_PBR_sentence_Jeff
+  m_EditorClassIdentifier: 
+  Path: event:/Animations/PuzzleBridgeReconstruction/A_PBR_sentence_Jeff
+  Guid:
+    Data1: 276437238
+    Data2: 1173054996
+    Data3: -1501826668
+    Data4: 2077685585
+  Banks:
+  - {fileID: 8367525404460693426}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &4071600621456670224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/InGame/Common/IG_C_open_drawer
+  m_EditorClassIdentifier: 
+  Path: event:/InGame/Common/IG_C_open_drawer
+  Guid:
+    Data1: 944363215
+    Data2: 1199504344
+    Data3: -700594254
+    Data4: -202241904
   Banks:
   - {fileID: 8367525404460693426}
   IsStream: 0
@@ -1067,6 +1160,60 @@ MonoBehaviour:
   - {fileID: 8367525404460693426}
   IsStream: 0
   Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &4361358485320881109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Animations/PuzzleFinalModel/A_PFM_good_end
+  m_EditorClassIdentifier: 
+  Path: event:/Animations/PuzzleFinalModel/A_PFM_good_end
+  Guid:
+    Data1: -1302379481
+    Data2: 1239184201
+    Data3: 1397473702
+    Data4: -802335249
+  Banks:
+  - {fileID: 8367525404460693426}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &4395989368194519456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Animations/PuzzleClassroom/A_PC_sentence_Jeff
+  m_EditorClassIdentifier: 
+  Path: event:/Animations/PuzzleClassroom/A_PC_sentence_Jeff
+  Guid:
+    Data1: 1902616394
+    Data2: 1163585728
+    Data3: 1422171542
+    Data4: -285622992
+  Banks:
+  - {fileID: 8367525404460693426}
+  IsStream: 0
+  Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
@@ -1206,7 +1353,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 298
 --- !u!114 &5590867431723180924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1288,7 +1435,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &5967718930074971073
+--- !u!114 &5718402479310130074
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1298,14 +1445,41 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/InGame/PuzzleFinalModel/IG_PFN_accident
+  m_Name: event:/InGame/Common/IG_C_listen_voice_message
   m_EditorClassIdentifier: 
-  Path: event:/InGame/PuzzleFinalModel/IG_PFN_accident
+  Path: event:/InGame/Common/IG_C_listen_voice_message
   Guid:
-    Data1: 873234183
-    Data2: 1209739279
-    Data3: -557591386
-    Data4: 737537977
+    Data1: -792887822
+    Data2: 1263277618
+    Data3: 132451244
+    Data4: -1628053200
+  Banks:
+  - {fileID: 8367525404460693426}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &5920306943420444440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Animations/PuzzleFinalModel/A_PFM_crying_girl
+  m_EditorClassIdentifier: 
+  Path: event:/Animations/PuzzleFinalModel/A_PFM_crying_girl
+  Guid:
+    Data1: 1407450731
+    Data2: 1332972314
+    Data3: -1014806119
+    Data4: 275755293
   Banks:
   - {fileID: 8367525404460693426}
   IsStream: 0
@@ -1396,6 +1570,60 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &6455083493639100145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/InGame/PuzzleFinalModel/IG_PFM_crying_girl
+  m_EditorClassIdentifier: 
+  Path: event:/InGame/PuzzleFinalModel/IG_PFM_crying_girl
+  Guid:
+    Data1: 758548069
+    Data2: 1108387228
+    Data3: -223340383
+    Data4: -496238131
+  Banks:
+  - {fileID: 8367525404460693426}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &6677880129634253964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Animations/PuzzleStoneHeart/A_PSH_break_stone_heart
+  m_EditorClassIdentifier: 
+  Path: event:/Animations/PuzzleStoneHeart/A_PSH_break_stone_heart
+  Guid:
+    Data1: -1925942158
+    Data2: 1157898269
+    Data3: 2072724145
+    Data4: -234888355
+  Banks:
+  - {fileID: 8367525404460693426}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &6860625344097295748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1423,7 +1651,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &7038866530389807142
+--- !u!114 &7028049874379172786
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1433,18 +1661,45 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/InGame/PuzzleStoneHeart/IG_PSH_posed_hammer
+  m_Name: event:/Animations/PuzzleBoat/A_PB_sentence_Jeff
   m_EditorClassIdentifier: 
-  Path: event:/InGame/PuzzleStoneHeart/IG_PSH_posed_hammer
+  Path: event:/Animations/PuzzleBoat/A_PB_sentence_Jeff
   Guid:
-    Data1: 458354682
-    Data2: 1121914383
-    Data3: 1934268592
-    Data4: -66211226
+    Data1: 1992698712
+    Data2: 1200808231
+    Data3: 1201182116
+    Data4: -1070918510
   Banks:
   - {fileID: 8367525404460693426}
   IsStream: 0
-  Is3D: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &7056148158987162181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Animations/PuzzleStoneHeart/A_PSH_sentence_Abi
+  m_EditorClassIdentifier: 
+  Path: event:/Animations/PuzzleStoneHeart/A_PSH_sentence_Abi
+  Guid:
+    Data1: 229465319
+    Data2: 1238801287
+    Data3: 1310983871
+    Data4: 1693817491
+  Banks:
+  - {fileID: 8367525404460693426}
+  IsStream: 0
+  Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
@@ -1531,6 +1786,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &8190673214818797003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Animations/PuzzleFinalModel/A_PFM_bad_end
+  m_EditorClassIdentifier: 
+  Path: event:/Animations/PuzzleFinalModel/A_PFM_bad_end
+  Guid:
+    Data1: 1595769425
+    Data2: 1313009200
+    Data3: 1950489771
+    Data4: 1359651600
+  Banks:
+  - {fileID: 8367525404460693426}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &8367525404460693426
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1546,9 +1828,36 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638241471637573090
+  lastModified: 638253872760000000
   FileSizes: []
   Exists: 1
+--- !u!114 &8400760228112834058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Animations/PuzzlePictures/A_PP_sentence_Jeff
+  m_EditorClassIdentifier: 
+  Path: event:/Animations/PuzzlePictures/A_PP_sentence_Jeff
+  Guid:
+    Data1: -1336958090
+    Data2: 1299294246
+    Data3: -698770278
+    Data4: 616628942
+  Banks:
+  - {fileID: 8367525404460693426}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &8498821100157858629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1567,33 +1876,6 @@ MonoBehaviour:
     Data2: 1331641822
     Data3: -609025136
     Data4: -76360429
-  Banks:
-  - {fileID: 8367525404460693426}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &8718459739245021482
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/InGame/Common/IG_close_drawer
-  m_EditorClassIdentifier: 
-  Path: event:/InGame/Common/IG_close_drawer
-  Guid:
-    Data1: -1867514493
-    Data2: 1277792790
-    Data3: -500697214
-    Data4: 95963945
   Banks:
   - {fileID: 8367525404460693426}
   IsStream: 0
@@ -1630,6 +1912,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &9190862969863541627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/InGame/Common/IG_C_use_phone
+  m_EditorClassIdentifier: 
+  Path: event:/InGame/Common/IG_C_use_phone
+  Guid:
+    Data1: 636099803
+    Data2: 1173142405
+    Data3: -651820130
+    Data4: 135407605
+  Banks:
+  - {fileID: 8367525404460693426}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &9194454540199401967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1652,6 +1961,33 @@ MonoBehaviour:
   - {fileID: 8367525404460693426}
   IsStream: 0
   Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &9199557305855820412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Animations/LastInteractionWithDaughter/A_PLIWD_sentence_girl
+  m_EditorClassIdentifier: 
+  Path: event:/Animations/LastInteractionWithDaughter/A_PLIWD_sentence_girl
+  Guid:
+    Data1: -122192385
+    Data2: 1082229802
+    Data3: 1557326480
+    Data4: -1515526128
+  Banks:
+  - {fileID: 8367525404460693426}
+  IsStream: 0
+  Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
