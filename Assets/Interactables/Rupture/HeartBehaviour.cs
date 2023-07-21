@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Playables;
 
 public class HeartBehaviour : MonoBehaviour
 {
@@ -15,6 +16,9 @@ public class HeartBehaviour : MonoBehaviour
     public Collider heartCollider;
     public bool grabbed = false;
     public GameObject keyPrefab;
+    public GameObject rocherPrefab;
+    public GameObject fragmentPrefab;
+    public PlayableDirector director;
 
     int cptCoup = 0;
     float timer;
@@ -130,6 +134,9 @@ public class HeartBehaviour : MonoBehaviour
     void breakHeart()
     {
         Instantiate(keyPrefab, transform.position, transform.rotation);
+        Instantiate(rocherPrefab, transform.position, transform.rotation);
+        GameObject frag = Instantiate(fragmentPrefab, transform.position, transform.rotation);
+        frag.GetComponent<BrokentHeartBehaviour>().director = director;
         Destroy(gameObject);
     }
 }
