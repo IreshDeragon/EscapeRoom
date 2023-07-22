@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{8affa9ed-5d29-426b-a7d2-4fb6c1c2972a}">
+		<property name="assetPath">
+			<value>FX/PuzzlePictures/cadre_pose.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.34133786848072561</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{d5ae0bb6-a231-402a-ab49-cbb9acd8f217}</destination>
+		</relationship>
+	</object>
+</objects>

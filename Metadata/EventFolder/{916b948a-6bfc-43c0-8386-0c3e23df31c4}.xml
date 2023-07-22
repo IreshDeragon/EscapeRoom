@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="EventFolder" id="{916b948a-6bfc-43c0-8386-0c3e23df31c4}">
+		<property name="name">
+			<value>IG_C_ring_phone</value>
+		</property>
+		<relationship name="folder">
+			<destination>{d2bb660c-23ce-45ea-b9dd-438ae9d4e522}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{5ff622db-8467-4b71-82ce-87123d70a6ac}">
 		<property name="color">
-			<value>Red</value>
+			<value>Red Light 2</value>
 		</property>
 		<property name="name">
 			<value>IG_PLIWD_ambience_sound</value>

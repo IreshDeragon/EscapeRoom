@@ -17,26 +17,26 @@
 	<object class="MixerBusEffectChain" id="{6800eb7b-4dd6-4184-b374-7e38c4103138}">
 		<relationship name="effects">
 			<destination>{416a003c-1418-4ead-8fce-a98b902236fb}</destination>
-			<destination>{e2d56c87-77c4-430a-82b3-3eefbdace012}</destination>
+			<destination>{e5045561-ec1b-4a24-a785-f7e848f4a698}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{57063388-eb9e-43ac-95a1-2b7b5ef0ac4b}" />
 	<object class="MixerBusFader" id="{416a003c-1418-4ead-8fce-a98b902236fb}" />
-	<object class="PluginEffect" id="{e2d56c87-77c4-430a-82b3-3eefbdace012}">
+	<object class="PluginEffect" id="{e5045561-ec1b-4a24-a785-f7e848f4a698}">
 		<relationship name="plugin">
-			<destination>{5f9e049f-1753-4e98-87c6-fd7a88c4a6c3}</destination>
+			<destination>{b3f3869f-e4db-4158-8d2b-43077bcba8bf}</destination>
 		</relationship>
 	</object>
-	<object class="Plugin" id="{5f9e049f-1753-4e98-87c6-fd7a88c4a6c3}">
+	<object class="Plugin" id="{b3f3869f-e4db-4158-8d2b-43077bcba8bf}">
 		<property name="identifier">
 			<value>Resonance Audio Listener</value>
 		</property>
 		<relationship name="pluginParameters">
-			<destination>{3ecdf44c-5472-4c55-af00-4ef78bf3ec83}</destination>
-			<destination>{e5c7f076-de5c-4b20-8876-242a23692cf0}</destination>
+			<destination>{66b96783-efae-4109-9708-1b928f69381d}</destination>
+			<destination>{3f13f466-5049-4925-86ee-ef267ecc0bcb}</destination>
 		</relationship>
 	</object>
-	<object class="FloatPluginParameter" id="{3ecdf44c-5472-4c55-af00-4ef78bf3ec83}">
+	<object class="FloatPluginParameter" id="{66b96783-efae-4109-9708-1b928f69381d}">
 		<property name="name">
 			<value>Gain</value>
 		</property>
@@ -47,7 +47,7 @@
 			<value>{(0.000000,-80.000000)(1.000000,0.000000)}</value>
 		</property>
 	</object>
-	<object class="DataPluginParameter" id="{e5c7f076-de5c-4b20-8876-242a23692cf0}">
+	<object class="DataPluginParameter" id="{3f13f466-5049-4925-86ee-ef267ecc0bcb}">
 		<property name="name">
 			<value>Room Properties</value>
 		</property>
