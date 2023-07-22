@@ -1146,9 +1146,9 @@ MonoBehaviour:
   _whenSelect:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1085405764}
-        m_TargetAssemblyTypeName: FMODUnity.StudioEventEmitter, FMODUnity
-        m_MethodName: Play
+      - m_Target: {fileID: 887773235}
+        m_TargetAssemblyTypeName: HammerBehaviour, Assembly-CSharp
+        m_MethodName: pickSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4374,7 +4374,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1085405763}
+      objectReference: {fileID: 0}
     - target: {fileID: 8196890649205836185, guid: 43ac6c89b569f5b4796284b819517a6f,
         type: 3}
       propertyPath: _whenUnselect.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -4394,7 +4394,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _whenUnselect.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 887773237}
+      objectReference: {fileID: 0}
     - target: {fileID: 8196890649205836185, guid: 43ac6c89b569f5b4796284b819517a6f,
         type: 3}
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -4464,24 +4464,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cf3dbab792cc5f4c82b300aa76c52de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &887773236 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4780785178356620012, guid: 43ac6c89b569f5b4796284b819517a6f,
-    type: 3}
-  m_PrefabInstance: {fileID: 887773234}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &887773237 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5905647865556362280, guid: 43ac6c89b569f5b4796284b819517a6f,
-    type: 3}
-  m_PrefabInstance: {fileID: 887773234}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 925ef87c5bafc37469a2f7ec825dee4b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &887773238 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1272538755, guid: 43ac6c89b569f5b4796284b819517a6f,
@@ -4522,9 +4504,9 @@ MonoBehaviour:
   _whenSelect:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1085405764}
-        m_TargetAssemblyTypeName: FMODUnity.StudioEventEmitter, FMODUnity
-        m_MethodName: Play
+      - m_Target: {fileID: 887773235}
+        m_TargetAssemblyTypeName: HammerBehaviour, Assembly-CSharp
+        m_MethodName: pickSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6159,72 +6141,6 @@ Transform:
   m_Father: {fileID: 1040623209}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1085405763 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7228690383092029767, guid: 43ac6c89b569f5b4796284b819517a6f,
-    type: 3}
-  m_PrefabInstance: {fileID: 887773234}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 887773236}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 925ef87c5bafc37469a2f7ec825dee4b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1085405764
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 887773236}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: -9461424
-      Data2: 1320425749
-      Data3: 1089891980
-      Data4: -372818557
-    Path: event:/InGame/PuzzleStoneHeart/IG_PSH_take_hammer
-  Event: 
-  PlayEvent: 0
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  AllowNonRigidbodyDoppler: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
---- !u!114 &1085405765
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 887773236}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef5e1719799ca4f9b9f5db81449517ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bypassRoomEffects: 0
-  directivityAlpha: 0
-  directivitySharpness: 1
-  listenerDirectivityAlpha: 0
-  listenerDirectivitySharpness: 1
-  gainDb: 0
-  nearFieldEffectEnabled: 0
-  nearFieldEffectGain: 1
-  occlusionEnabled: 0
-  occlusionIntensity: 1
-  quality: 2
 --- !u!1001 &1092123629
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6242,7 +6158,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.801
+      value: -1.277
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -6250,7 +6166,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.871
+      value: 0.914
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
       propertyPath: m_LocalRotation.w
