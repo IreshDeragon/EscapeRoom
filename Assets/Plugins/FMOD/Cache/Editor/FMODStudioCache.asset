@@ -42,10 +42,10 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638256234200524536
+  lastModified: 638257057534364045
   FileSizes:
   - Name: 
-    Value: 4856
+    Value: 4758
   Exists: 1
 --- !u!114 &-9012875682056171202
 MonoBehaviour:
@@ -149,12 +149,12 @@ MonoBehaviour:
   Banks:
   - {fileID: -1828975287807129503}
   IsStream: 0
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 2591
 --- !u!114 &-7733162207032982088
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -181,34 +181,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
---- !u!114 &-7498830330962844865
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/InGame/PuzzlePictures/IG_PP_good_code
-  m_EditorClassIdentifier: 
-  Path: event:/InGame/PuzzlePictures/IG_PP_good_code
-  Guid:
-    Data1: 1339060641
-    Data2: 1315820318
-    Data3: 1140464813
-    Data4: 1581855480
-  Banks:
-  - {fileID: -1828975287807129503}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
+  Length: 154
 --- !u!114 &-7143203645536325836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -254,6 +227,33 @@ MonoBehaviour:
     Data2: 1242221691
     Data3: 1884479642
     Data4: -155366457
+  Banks:
+  - {fileID: -1828975287807129503}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-6819493967930094973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/InGame/PuzzlePictures/IG_PP_bad_code_entered
+  m_EditorClassIdentifier: 
+  Path: event:/InGame/PuzzlePictures/IG_PP_bad_code_entered
+  Guid:
+    Data1: 1630191206
+    Data2: 1297126751
+    Data3: -1431962185
+    Data4: 633319757
   Banks:
   - {fileID: -1828975287807129503}
   IsStream: 0
@@ -335,33 +335,6 @@ MonoBehaviour:
     Data2: 1219449389
     Data3: 2024126620
     Data4: 1556177261
-  Banks:
-  - {fileID: -1828975287807129503}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-5729590278154026708
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/InGame/PuzzlePictures/IG_PP_posed_picture
-  m_EditorClassIdentifier: 
-  Path: event:/InGame/PuzzlePictures/IG_PP_posed_picture
-  Guid:
-    Data1: -638197752
-    Data2: 1142431818
-    Data3: -839286400
-    Data4: 1000755981
   Banks:
   - {fileID: -1828975287807129503}
   IsStream: 0
@@ -532,7 +505,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 442
 --- !u!114 &-4636239057854642890
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -641,33 +614,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &-3703152479205599260
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/InGame/PuzzleClassroom/IG_PC_posed_figurine
-  m_EditorClassIdentifier: 
-  Path: event:/InGame/PuzzleClassroom/IG_PC_posed_figurine
-  Guid:
-    Data1: -417947433
-    Data2: 1268911821
-    Data3: 38488211
-    Data4: 1099837583
-  Banks:
-  - {fileID: -1828975287807129503}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
 --- !u!114 &-3418290052192793671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -688,13 +634,13 @@ MonoBehaviour:
     Data4: -496238131
   Banks:
   - {fileID: -1828975287807129503}
-  IsStream: 0
+  IsStream: 1
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 38718
 --- !u!114 &-3367247700626719526
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -749,6 +695,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-3060050446466130301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/InGame/PuzzlePictures/IG_PP_correct_code_entered
+  m_EditorClassIdentifier: 
+  Path: event:/InGame/PuzzlePictures/IG_PP_correct_code_entered
+  Guid:
+    Data1: 1339060641
+    Data2: 1315820318
+    Data3: 1140464813
+    Data4: 1581855480
+  Banks:
+  - {fileID: -1828975287807129503}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 581
 --- !u!114 &-2089287548402977159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -791,36 +764,9 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638256234200496881
+  lastModified: 638257057534339281
   FileSizes: []
   Exists: 1
---- !u!114 &-1762467787027537425
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/InGame/PuzzleBoat/IG_PB_assembly_boat
-  m_EditorClassIdentifier: 
-  Path: event:/InGame/PuzzleBoat/IG_PB_assembly_boat
-  Guid:
-    Data1: -292486327
-    Data2: 1276387424
-    Data3: 1497787815
-    Data4: 867797582
-  Banks:
-  - {fileID: -1828975287807129503}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
 --- !u!114 &-1729608518717826723
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1054,12 +1000,9 @@ MonoBehaviour:
   - {fileID: -1828975287807129503}
   EditorEvents:
   - {fileID: -8534626689287014905}
-  - {fileID: 8683390875922016755}
   - {fileID: -1729608518717826723}
   - {fileID: 4602652467209634632}
   - {fileID: 2919077410254223406}
-  - {fileID: -5729590278154026708}
-  - {fileID: 8947822232054002797}
   - {fileID: -9092805736864614259}
   - {fileID: -4636239057854642890}
   - {fileID: -6134033527948628835}
@@ -1067,8 +1010,6 @@ MonoBehaviour:
   - {fileID: -4898231786167916439}
   - {fileID: 3049440787682667956}
   - {fileID: 6191031353695719121}
-  - {fileID: 7324524097857659961}
-  - {fileID: -1762467787027537425}
   - {fileID: 6074330958550409156}
   - {fileID: -1492380076258851954}
   - {fileID: 686052275618039080}
@@ -1077,7 +1018,6 @@ MonoBehaviour:
   - {fileID: 6621223678939496323}
   - {fileID: 4237747930469091952}
   - {fileID: -3418290052192793671}
-  - {fileID: 6112812197870989093}
   - {fileID: 6429196641053267468}
   - {fileID: 619062955021320280}
   - {fileID: 7369104866493151512}
@@ -1093,7 +1033,6 @@ MonoBehaviour:
   - {fileID: 4320852707748150171}
   - {fileID: -1071004787882511572}
   - {fileID: -1728002567021612494}
-  - {fileID: -7498830330962844865}
   - {fileID: 1629878390998802026}
   - {fileID: -130951508015495769}
   - {fileID: -5463280629883130794}
@@ -1105,8 +1044,6 @@ MonoBehaviour:
   - {fileID: -4771585572623288105}
   - {fileID: -4998263039623071307}
   - {fileID: 3894971709056686442}
-  - {fileID: 4157492039245709356}
-  - {fileID: -3703152479205599260}
   - {fileID: -7733162207032982088}
   - {fileID: -814651320392773200}
   - {fileID: -9012875682056171202}
@@ -1122,12 +1059,19 @@ MonoBehaviour:
   - {fileID: 4763288987474611641}
   - {fileID: -2089287548402977159}
   - {fileID: 8019760524958686123}
+  - {fileID: 1780684273890118918}
+  - {fileID: 6770336707965937067}
+  - {fileID: 4200602499361795469}
+  - {fileID: -6819493967930094973}
+  - {fileID: 3843067385445680053}
+  - {fileID: -3060050446466130301}
+  - {fileID: 5588409545072913794}
   EditorParameters: []
   MasterBanks:
   - {fileID: -1828975287807129503}
   StringsBanks:
   - {fileID: -9059320346546106966}
-  cacheTime: 638256234200524536
+  cacheTime: 638257057534364045
   cacheVersion: 131605
 --- !u!114 &619062955021320280
 MonoBehaviour:
@@ -1210,6 +1154,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 847
+--- !u!114 &1780684273890118918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/InGame/PuzzleClassroom/IG_PC_pose_figurine_on_model_correctly
+  m_EditorClassIdentifier: 
+  Path: event:/InGame/PuzzleClassroom/IG_PC_pose_figurine_on_model_correctly
+  Guid:
+    Data1: 1498443524
+    Data2: 1313449158
+    Data3: 768769455
+    Data4: -799453844
+  Banks:
+  - {fileID: -1828975287807129503}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 264
 --- !u!114 &2349911478964963611
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1236,7 +1207,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 341
 --- !u!114 &2919077410254223406
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1318,6 +1289,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &3843067385445680053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/InGame/Common/IG_C_assembly
+  m_EditorClassIdentifier: 
+  Path: event:/InGame/Common/IG_C_assembly
+  Guid:
+    Data1: -1548176232
+    Data2: 1234432626
+    Data3: -242218578
+    Data4: -175255165
+  Banks:
+  - {fileID: -1828975287807129503}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 264
 --- !u!114 &3894971709056686442
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1344,8 +1342,8 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
---- !u!114 &4157492039245709356
+  Length: 1009
+--- !u!114 &4200602499361795469
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1355,14 +1353,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/InGame/PuzzleClassroom/IG_PC_posed_figurine_on_model
+  m_Name: event:/InGame/PuzzlePictures/IG_PP_take_picture
   m_EditorClassIdentifier: 
-  Path: event:/InGame/PuzzleClassroom/IG_PC_posed_figurine_on_model
+  Path: event:/InGame/PuzzlePictures/IG_PP_take_picture
   Guid:
-    Data1: -364055596
-    Data2: 1123219443
-    Data3: 837065614
-    Data4: 114372232
+    Data1: 210748170
+    Data2: 1183861545
+    Data3: -583206217
+    Data4: 529620221
   Banks:
   - {fileID: -1828975287807129503}
   IsStream: 0
@@ -1371,7 +1369,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 365
 --- !u!114 &4237747930469091952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1448,11 +1446,11 @@ MonoBehaviour:
   - {fileID: -1828975287807129503}
   IsStream: 0
   Is3D: 1
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 7200
 --- !u!114 &4763288987474611641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1507,6 +1505,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &5588409545072913794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/InGame/PuzzleClassroom/IG_PC_pose_figurine
+  m_EditorClassIdentifier: 
+  Path: event:/InGame/PuzzleClassroom/IG_PC_pose_figurine
+  Guid:
+    Data1: -417947433
+    Data2: 1268911821
+    Data3: 38488211
+    Data4: 1099837583
+  Banks:
+  - {fileID: -1828975287807129503}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &6074330958550409156
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1529,33 +1554,6 @@ MonoBehaviour:
   - {fileID: -1828975287807129503}
   IsStream: 0
   Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &6112812197870989093
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/InGame/PuzzlePictures/IG_PP_bad_code
-  m_EditorClassIdentifier: 
-  Path: event:/InGame/PuzzlePictures/IG_PP_bad_code
-  Guid:
-    Data1: 1630191206
-    Data2: 1297126751
-    Data3: -1431962185
-    Data4: 633319757
-  Banks:
-  - {fileID: -1828975287807129503}
-  IsStream: 0
-  Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
@@ -1669,6 +1667,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &6770336707965937067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/InGame/PuzzlePictures/IG_PP_pose_picture
+  m_EditorClassIdentifier: 
+  Path: event:/InGame/PuzzlePictures/IG_PP_pose_picture
+  Guid:
+    Data1: -638197752
+    Data2: 1142431818
+    Data3: -839286400
+    Data4: 1000755981
+  Banks:
+  - {fileID: -1828975287807129503}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 278
 --- !u!114 &6876699050349739609
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1691,33 +1716,6 @@ MonoBehaviour:
   - {fileID: -1828975287807129503}
   IsStream: 0
   Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &7324524097857659961
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/InGame/PuzzleBridgeReconstruction/IG_PBR_good_bridge_piece_assembly
-  m_EditorClassIdentifier: 
-  Path: event:/InGame/PuzzleBridgeReconstruction/IG_PBR_good_bridge_piece_assembly
-  Guid:
-    Data1: 189590596
-    Data2: 1281533704
-    Data3: 330118277
-    Data4: 2041703381
-  Banks:
-  - {fileID: -1828975287807129503}
-  IsStream: 0
-  Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
@@ -1803,7 +1801,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 1004
 --- !u!114 &7790753432785087810
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1878,13 +1876,13 @@ MonoBehaviour:
     Data4: -1628053200
   Banks:
   - {fileID: -1828975287807129503}
-  IsStream: 0
+  IsStream: 1
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 16677
 --- !u!114 &8019760524958686123
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1911,7 +1909,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 3413
 --- !u!114 &8278347079614850059
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1938,58 +1936,4 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
---- !u!114 &8683390875922016755
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/InGame/PuzzleClassroom/IG_PC_good_posed_figurine_on_model
-  m_EditorClassIdentifier: 
-  Path: event:/InGame/PuzzleClassroom/IG_PC_good_posed_figurine_on_model
-  Guid:
-    Data1: 1498443524
-    Data2: 1313449158
-    Data3: 768769455
-    Data4: -799453844
-  Banks:
-  - {fileID: -1828975287807129503}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &8947822232054002797
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/InGame/PuzzlePictures/IG_PP_taken_picture
-  m_EditorClassIdentifier: 
-  Path: event:/InGame/PuzzlePictures/IG_PP_taken_picture
-  Guid:
-    Data1: 210748170
-    Data2: 1183861545
-    Data3: -583206217
-    Data4: 529620221
-  Banks:
-  - {fileID: -1828975287807129503}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
+  Length: 197
