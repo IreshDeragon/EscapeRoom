@@ -8,9 +8,8 @@ public class SocketPontBehaviour : MonoBehaviour
     
     public void MakeChild()
     {
-        Destroy(Pont.GetComponent<Rigidbody>());
-        Pont.GetComponent<MeshCollider>().enabled = false;
-        Pont.GetComponent<Oculus.Interaction.Grabbable>().enabled = false;
-        Pont.transform.parent = transform;
+        //Pont.transform.parent = transform.parent;
+        MeshCollider[] newMeshes = Pont.GetComponent<PontParentBehaviour>().setParent(transform.parent.gameObject);
+        transform.parent.GetComponent<PontParentBehaviour>().activateMeshes(newMeshes);
     }
 }
