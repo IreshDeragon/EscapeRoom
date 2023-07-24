@@ -11,7 +11,7 @@
 			<destination>{dc1b2df2-fa0f-4b07-9f2b-4844fa7685df}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{0834be4a-8e12-42e0-97f2-216e9f04b222}</destination>
+			<destination>{1ca2a69c-5443-437f-b15c-cfac0e179d3a}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusEffectChain" id="{b4367983-3419-40c4-ab7d-96c62f5a80a2}">
@@ -51,7 +51,6 @@
 		<property name="name">
 			<value>Room Properties</value>
 		</property>
-		<property name="value" />
 		<property name="dataType">
 			<value>0</value>
 		</property>

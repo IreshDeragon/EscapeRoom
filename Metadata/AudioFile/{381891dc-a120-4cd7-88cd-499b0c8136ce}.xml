@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{381891dc-a120-4cd7-88cd-499b0c8136ce}">
 		<property name="assetPath">
-			<value>FX/cadenas_clic_8.wav</value>
+			<value>FX/PuzzlePictures/cadenas_clic_8.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>

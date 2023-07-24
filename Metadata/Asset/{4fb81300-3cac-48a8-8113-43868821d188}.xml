@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="EncodableAsset" id="{4fb81300-3cac-48a8-8113-43868821d188}">
 		<property name="assetPath">
-			<value>Voices/PuzzleBridgeReconstruction/</value>
+			<value>FX/Animation/PuzzleBridgeReconstruction/</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{d5ae0bb6-a231-402a-ab49-cbb9acd8f217}</destination>

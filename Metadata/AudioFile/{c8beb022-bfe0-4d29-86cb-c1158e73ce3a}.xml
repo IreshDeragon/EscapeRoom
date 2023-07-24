@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{c8beb022-bfe0-4d29-86cb-c1158e73ce3a}">
 		<property name="assetPath">
-			<value>FX/Tiroir_Out_1.wav</value>
+			<value>FX/Common/Tiroir_Out_1.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>

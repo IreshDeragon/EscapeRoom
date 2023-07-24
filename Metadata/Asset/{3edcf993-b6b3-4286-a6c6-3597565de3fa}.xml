@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="EncodableAsset" id="{3edcf993-b6b3-4286-a6c6-3597565de3fa}">
 		<property name="assetPath">
-			<value>Voices/PuzzleStoneHeart/</value>
+			<value>FX/Animation/PuzzleStoneHeart/</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{d5ae0bb6-a231-402a-ab49-cbb9acd8f217}</destination>

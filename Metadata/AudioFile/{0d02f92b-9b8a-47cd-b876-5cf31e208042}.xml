@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{0d02f92b-9b8a-47cd-b876-5cf31e208042}">
 		<property name="assetPath">
-			<value>FX/phone_beep.wav</value>
+			<value>FX/Common/phone_beep.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>
