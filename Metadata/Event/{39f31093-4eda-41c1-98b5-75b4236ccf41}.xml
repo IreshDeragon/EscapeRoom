@@ -2,13 +2,13 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{39f31093-4eda-41c1-98b5-75b4236ccf41}">
 		<property name="color">
-			<value>Green Light 2</value>
+			<value>Green</value>
 		</property>
 		<property name="name">
 			<value>UI_M_button</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{b2bc2d10-5a1c-4ae6-a8a0-ae203bf6f4d2}</destination>
@@ -56,17 +56,24 @@
 			<destination>{adeee78c-368b-4a7a-9b1a-c2936660300b}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{1b9eaea9-0300-4afc-9359-4311c47c2b19}</destination>
+			<destination>{d19023a2-d7f2-4798-b030-ca44ca1dab96}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{066d7d20-7bbc-43c5-9268-221492edb361}" />
 	<object class="MarkerTrack" id="{9a91f71d-114a-4afe-bd4c-93153bd8f508}" />
 	<object class="GroupTrack" id="{a1846c1c-0830-4907-886b-c623640507e2}">
+		<relationship name="modules">
+			<destination>{f0f74c0b-039b-4c32-aeaf-7d3687560e2b}</destination>
+		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{e55f335c-51a9-40b4-a0f4-115d9a6851fb}</destination>
 		</relationship>
 	</object>
-	<object class="Timeline" id="{e2dddec6-ba02-42e8-87fd-a7ef7a26a540}" />
+	<object class="Timeline" id="{e2dddec6-ba02-42e8-87fd-a7ef7a26a540}">
+		<relationship name="modules">
+			<destination>{f0f74c0b-039b-4c32-aeaf-7d3687560e2b}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerMaster" id="{db92c33f-d2c6-4907-ab1e-e23aab4ac881}">
 		<relationship name="effectChain">
 			<destination>{7d41c9b8-ac41-44d2-baae-f41fb9db65f0}</destination>
@@ -84,6 +91,14 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{adeee78c-368b-4a7a-9b1a-c2936660300b}" />
+	<object class="SingleSound" id="{f0f74c0b-039b-4c32-aeaf-7d3687560e2b}">
+		<property name="length">
+			<value>0.33653061224489794</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{2f9761fb-497b-4503-9634-4273e099ee52}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerGroup" id="{e55f335c-51a9-40b4-a0f4-115d9a6851fb}">
 		<property name="name">
 			<value>Audio 1</value>

@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{fe8a1627-9f7c-4a73-99fe-fb7f6f91e434}">
 		<property name="assetPath">
-			<value>FX/PuzzleBoat/MarteauPrend_3.wav</value>
+			<value>FX/PuzzleStoneHeart/MarteauPrend_3.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>

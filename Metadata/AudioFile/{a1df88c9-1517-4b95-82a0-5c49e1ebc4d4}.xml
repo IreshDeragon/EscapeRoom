@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{a1df88c9-1517-4b95-82a0-5c49e1ebc4d4}">
 		<property name="assetPath">
-			<value>FX/A_PFM_crying_girl_3.wav</value>
+			<value>FX/Animation/PuzzleFinalModel/A_PFM_crying_Maggie_3.wav</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{700e6502-0a96-4db9-be85-17e273afe007}">
+		<property name="assetPath">
+			<value>FX/Animation/PuzzleClassroom/animation_class.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>40.5</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{d5ae0bb6-a231-402a-ab49-cbb9acd8f217}</destination>
+		</relationship>
+	</object>
+</objects>
