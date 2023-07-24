@@ -9,6 +9,7 @@ public class SchoolManager : MonoBehaviour
     public GameObject[] sockets;
     public bool completed = false;
     public GameObject locket;
+    public GameObject tiroirHandGrab;
 
     public PlayableDirector director;
 
@@ -54,6 +55,7 @@ public class SchoolManager : MonoBehaviour
 
         //Ouvrir le tiroir
         director.Play();
+        tiroirHandGrab.SetActive(true);
     }
 
 }
