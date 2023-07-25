@@ -14,10 +14,13 @@ public class CadenaBehaviour : MonoBehaviour
     public GameObject[] objetsDeverouille;
     bool completed = false;
 
+    //sons
+    private FMOD.Studio.EventInstance grabDoorEvent;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        grabDoorEvent = FMODUnity.RuntimeManager.CreateInstance("event:/InGame/PuzzlePictures/IG_PP_open_padlock");
     }
 
     // Update is called once per frame
@@ -58,4 +61,13 @@ public class CadenaBehaviour : MonoBehaviour
                 break;
         }
     }
+
+
+    //Sons
+    public void grabDoorSound()
+    {
+        grabDoorEvent.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(transform.GetChild(0).gameObject));
+        grabDoorEvent.start();
+    }
+
 }

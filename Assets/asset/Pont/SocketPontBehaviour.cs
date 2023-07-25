@@ -11,5 +11,6 @@ public class SocketPontBehaviour : MonoBehaviour
         //Pont.transform.parent = transform.parent;
         MeshCollider[] newMeshes = Pont.GetComponent<PontParentBehaviour>().setParent(transform.parent.gameObject);
         transform.parent.GetComponent<PontParentBehaviour>().activateMeshes(newMeshes);
+        transform.parent.GetComponent<PontSound>().assembleSound();
     }
 }

@@ -66,6 +66,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4393072018804482552, guid: 93abbce9b8b609046a3caec01ae3c57a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5315795357945211043, guid: 93abbce9b8b609046a3caec01ae3c57a,
         type: 3}
       propertyPath: m_Name
@@ -74,3 +79,82 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 867617831, guid: 93abbce9b8b609046a3caec01ae3c57a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 93abbce9b8b609046a3caec01ae3c57a, type: 3}
+--- !u!1 &164858900547832339 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5951562208295007128, guid: 93abbce9b8b609046a3caec01ae3c57a,
+    type: 3}
+  m_PrefabInstance: {fileID: 5823576532150860171}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1175323375361457198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 164858900547832339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactableView: {fileID: 7825638447851606493}
+  _whenHover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenUnhover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelect:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5823576531407401024}
+        m_TargetAssemblyTypeName: HeartBehaviour, Assembly-CSharp
+        m_MethodName: pickSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenUnselect:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &5823576531407401024 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1978780107, guid: 93abbce9b8b609046a3caec01ae3c57a,
+    type: 3}
+  m_PrefabInstance: {fileID: 5823576532150860171}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91d0b7fbce92f6d4ea79332379c28711, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7825638447851606493 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4344778147170003030, guid: 93abbce9b8b609046a3caec01ae3c57a,
+    type: 3}
+  m_PrefabInstance: {fileID: 5823576532150860171}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 164858900547832339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9a7676b01585ce43908639a27765dfc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -7,6 +7,8 @@ public class DioramaBehaviour : MonoBehaviour
     public GameObject songes;
     public Material m_allume;
     public bool completed;
+    public float timer;
+    bool completionDone = false;
 
     bool[] validation = new bool[6];
     // Start is called before the first frame update
@@ -21,9 +23,9 @@ public class DioramaBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (completed)
+        if (!completed)
         {
-            //validation du diorama
+            timer -= Time.deltaTime;
         }
     }
 
@@ -43,6 +45,20 @@ public class DioramaBehaviour : MonoBehaviour
         if (res)
         {
             completed = true;
+            completionDiorama();
+        }
+    }
+
+    void completionDiorama()
+    {
+        //validation du diorama
+        if(timer <= 0)
+        {
+
+        }
+        else
+        {
+
         }
     }
 }

@@ -24,10 +24,16 @@ public class HeartBehaviour : MonoBehaviour
     float timer;
     bool hasbeen = false;
 
+    //sons
+    private FMOD.Studio.EventInstance pickEvent;
+
     // Start is called before the first frame update
     void Start()
     {
         timer = timerCoups;
+
+        //init sons
+        pickEvent = FMODUnity.RuntimeManager.CreateInstance("event:/InGame/PuzzleStoneHeart/IG_PSH_take_stone_heart");
     }
 
     // Update is called once per frame
@@ -138,5 +144,15 @@ public class HeartBehaviour : MonoBehaviour
         GameObject frag = Instantiate(fragmentPrefab, transform.position, transform.rotation);
         frag.GetComponent<BrokentHeartBehaviour>().director = director;
         Destroy(gameObject);
+    }
+
+
+    /*
+     * Sons
+     */
+    public void pickSound()
+    {
+        pickEvent.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
+        pickEvent.start();
     }
 }

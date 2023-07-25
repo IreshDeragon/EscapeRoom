@@ -320,6 +320,7 @@ GameObject:
   - component: {fileID: 5155949430592613752}
   - component: {fileID: 3707230240114424269}
   - component: {fileID: 698967856052167805}
+  - component: {fileID: 6462127099952852894}
   m_Layer: 0
   m_Name: Tableau_Photo
   m_TagString: Untagged
@@ -421,6 +422,18 @@ MonoBehaviour:
   _grabbable: {fileID: 5155949430592613752}
   _rigidbody: {fileID: 4160909568681368921}
   _scaleMassWithSize: 1
+--- !u!114 &6462127099952852894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4160909568681368920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c317eda23a45b94897e50df101d86f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4520792485262253254
 GameObject:
   m_ObjectHideFlags: 0
@@ -516,10 +529,10 @@ MonoBehaviour:
   _whenSelect:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4160909568681368921}
-        m_TargetAssemblyTypeName: UnityEngine.Rigidbody, UnityEngine
-        m_MethodName: set_isKinematic
-        m_Mode: 6
+      - m_Target: {fileID: 6462127099952852894}
+        m_TargetAssemblyTypeName: TableauLiege_sound, Assembly-CSharp
+        m_MethodName: pickSound
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -530,19 +543,7 @@ MonoBehaviour:
         m_CallState: 2
   _whenUnselect:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 4160909568681368921}
-        m_TargetAssemblyTypeName: UnityEngine.Rigidbody, UnityEngine
-        m_MethodName: set_isKinematic
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   _whenInteractorViewAdded:
     m_PersistentCalls:
       m_Calls: []

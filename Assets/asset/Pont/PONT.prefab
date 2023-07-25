@@ -107,6 +107,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 2775703686924480401}
+        m_TargetAssemblyTypeName: PontSound, Assembly-CSharp
+        m_MethodName: pickSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   _whenUnselect:
     m_PersistentCalls:
       m_Calls:
@@ -656,6 +668,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 2474670007407010878}
+        m_TargetAssemblyTypeName: PontSound, Assembly-CSharp
+        m_MethodName: pickSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   _whenUnselect:
     m_PersistentCalls:
       m_Calls:
@@ -882,6 +906,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 953688360654976040}
+        m_TargetAssemblyTypeName: PontSound, Assembly-CSharp
+        m_MethodName: pickSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   _whenUnselect:
     m_PersistentCalls:
       m_Calls:
@@ -925,6 +961,7 @@ GameObject:
   - component: {fileID: 1690961483100338319}
   - component: {fileID: 1979584035923610030}
   - component: {fileID: 6557535298713747116}
+  - component: {fileID: 7513228695882977893}
   m_Layer: 0
   m_Name: pont_cell.004
   m_TagString: Untagged
@@ -1095,6 +1132,18 @@ MonoBehaviour:
   - {fileID: 5582675438751377770}
   - {fileID: 8843292916263829782}
   - {fileID: 7414185509313930866}
+--- !u!114 &7513228695882977893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 968629533483644943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06ba1e4890527d44db3a40034c54bc73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1266981850609222601
 GameObject:
   m_ObjectHideFlags: 0
@@ -1945,6 +1994,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 5829254268353121078}
+        m_TargetAssemblyTypeName: PontSound, Assembly-CSharp
+        m_MethodName: pickSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   _whenUnselect:
     m_PersistentCalls:
       m_Calls:
@@ -1988,6 +2049,7 @@ GameObject:
   - component: {fileID: 5398329605024955900}
   - component: {fileID: 3820183729257320047}
   - component: {fileID: 5566871217288634766}
+  - component: {fileID: 2474670007407010878}
   m_Layer: 0
   m_Name: pont_cell.005
   m_TagString: Untagged
@@ -2156,6 +2218,18 @@ MonoBehaviour:
   _defaultInteractable: {fileID: 0}
   _timeOutInteractable: {fileID: 0}
   _timeOut: 0
+--- !u!114 &2474670007407010878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2449332539213034749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06ba1e4890527d44db3a40034c54bc73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2567193591333540089
 GameObject:
   m_ObjectHideFlags: 0
@@ -3025,6 +3099,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 4335974909587540543}
+        m_TargetAssemblyTypeName: PontSound, Assembly-CSharp
+        m_MethodName: pickSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   _whenUnselect:
     m_PersistentCalls:
       m_Calls:
@@ -3634,6 +3720,7 @@ GameObject:
   - component: {fileID: 4818962266178880707}
   - component: {fileID: 4696652825665635718}
   - component: {fileID: 8129132576973602273}
+  - component: {fileID: 4335974909587540543}
   m_Layer: 0
   m_Name: pont_cell
   m_TagString: Untagged
@@ -3882,6 +3969,18 @@ MonoBehaviour:
   - {fileID: 5334813214762179601}
   - {fileID: 7785356728690293639}
   - {fileID: 3789865967935585742}
+--- !u!114 &4335974909587540543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5279359755788141716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06ba1e4890527d44db3a40034c54bc73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5373586726353581843
 GameObject:
   m_ObjectHideFlags: 0
@@ -5086,6 +5185,7 @@ GameObject:
   - component: {fileID: 6625392610777353267}
   - component: {fileID: 2141237705568378297}
   - component: {fileID: 750980970363967439}
+  - component: {fileID: 5829254268353121078}
   m_Layer: 0
   m_Name: pont_cell.001
   m_TagString: Untagged
@@ -5255,6 +5355,18 @@ MonoBehaviour:
   _defaultInteractable: {fileID: 0}
   _timeOutInteractable: {fileID: 0}
   _timeOut: 0
+--- !u!114 &5829254268353121078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7082643520980631959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06ba1e4890527d44db3a40034c54bc73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7137957906824242692
 GameObject:
   m_ObjectHideFlags: 0
@@ -5354,6 +5466,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.Rigidbody, UnityEngine
         m_MethodName: set_isKinematic
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 7513228695882977893}
+        m_TargetAssemblyTypeName: PontSound, Assembly-CSharp
+        m_MethodName: pickSound
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -6004,6 +6128,7 @@ GameObject:
   - component: {fileID: 788079639483724838}
   - component: {fileID: 8635842887698519274}
   - component: {fileID: 7296293219888200863}
+  - component: {fileID: 953688360654976040}
   m_Layer: 0
   m_Name: pont_cell.002
   m_TagString: Untagged
@@ -6174,6 +6299,18 @@ MonoBehaviour:
   _defaultInteractable: {fileID: 0}
   _timeOutInteractable: {fileID: 0}
   _timeOut: 0
+--- !u!114 &953688360654976040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8151708866066176741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06ba1e4890527d44db3a40034c54bc73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8156910989240503661
 GameObject:
   m_ObjectHideFlags: 0
@@ -6235,6 +6372,7 @@ GameObject:
   - component: {fileID: 2344090455239716741}
   - component: {fileID: 106904892518420377}
   - component: {fileID: 258454251355680655}
+  - component: {fileID: 2775703686924480401}
   m_Layer: 0
   m_Name: pont_cell.003
   m_TagString: Untagged
@@ -6403,6 +6541,18 @@ MonoBehaviour:
   _defaultInteractable: {fileID: 0}
   _timeOutInteractable: {fileID: 0}
   _timeOut: 0
+--- !u!114 &2775703686924480401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8371563233871991723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06ba1e4890527d44db3a40034c54bc73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8436177051246707813
 GameObject:
   m_ObjectHideFlags: 0
