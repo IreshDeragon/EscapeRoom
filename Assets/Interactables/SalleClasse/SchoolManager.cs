@@ -10,6 +10,7 @@ public class SchoolManager : MonoBehaviour
     public bool completed = false;
     public GameObject locket;
     public GameObject tiroirHandGrab;
+    public GameObject[] unlockObjects;
 
     public PlayableDirector director;
 
@@ -55,7 +56,19 @@ public class SchoolManager : MonoBehaviour
 
         //Ouvrir le tiroir
         director.Play();
+        unlockGameObjects();
         tiroirHandGrab.SetActive(true);
+    }
+
+
+    void unlockGameObjects()
+    {
+        foreach (GameObject obj in unlockObjects)
+        {
+            obj.transform.GetChild(0).gameObject.SetActive(true);
+            obj.GetComponent<Rigidbody>().isKinematic = false;
+            obj.GetComponent<Rigidbody>().useGravity = true;
+        }
     }
 
 }
