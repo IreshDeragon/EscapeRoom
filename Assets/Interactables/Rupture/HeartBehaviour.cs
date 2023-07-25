@@ -24,10 +24,16 @@ public class HeartBehaviour : MonoBehaviour
     float timer;
     bool hasbeen = false;
 
+    //sons
+    private FMOD.Studio.EventInstance pickEvent;
+
     // Start is called before the first frame update
     void Start()
     {
         timer = timerCoups;
+
+        //init sons
+        pickEvent = FMODUnity.RuntimeManager.CreateInstance("event:/InGame/PuzzleStoneHeart/IG_PSH_take_stone_heart");
     }
 
     // Update is called once per frame
@@ -55,6 +61,7 @@ public class HeartBehaviour : MonoBehaviour
             }
             else
             {
+                Debug.Log("NON ");
                 hasbeen = false;
             }
         }
@@ -70,12 +77,18 @@ public class HeartBehaviour : MonoBehaviour
     }
     private bool CheckCollision(GameObject obj1, Collider obj2Collider)
     {
-        // Vérifie s'il y a une collision entre les deux objets 
-        //Collider obj1Collider = obj1.GetComponent<Collider>();
-        //Collider obj2Collider = obj2.GetComponent<Collider>();
+        Collider[] cols = Physics.OverlapSphere(Hammer.GetComponent<HammerBehaviour>().StrikePoint.transform.position, 0.01f);
+        bool collisionDetected = false;
+        //collisionDetected = heartCollider.bounds.Intersects(obj2Collider.bounds);
 
-        // Utilisez la méthode appropriée pour vérifier la collision entre les colliders
-        bool collisionDetected = heartCollider.bounds.Intersects(obj2Collider.bounds);
+        foreach(Collider col in cols)
+        {
+            if(col == heartCollider)
+            {
+                collisionDetected = true;
+                //o
+            }
+        }
 
         return collisionDetected;
     }
@@ -98,7 +111,7 @@ public class HeartBehaviour : MonoBehaviour
     }
 
 
-    void OnCollisionEnter(Collision col)
+    /*void OnCollisionEnter(Collision col)
     {
         if(col.gameObject.tag == "hammer")
         {
@@ -117,7 +130,8 @@ public class HeartBehaviour : MonoBehaviour
             Debug.Log("Proximité : " + proximite);
             strike();
         }
-    }
+    }*/
+
 
     void strike()
     {
@@ -138,5 +152,15 @@ public class HeartBehaviour : MonoBehaviour
         GameObject frag = Instantiate(fragmentPrefab, transform.position, transform.rotation);
         frag.GetComponent<BrokentHeartBehaviour>().director = director;
         Destroy(gameObject);
+    }
+
+
+    /*
+     * Sons
+     */
+    public void pickSound()
+    {
+        pickEvent.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
+        pickEvent.start();
     }
 }

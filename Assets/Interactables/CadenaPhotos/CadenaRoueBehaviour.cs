@@ -8,11 +8,13 @@ public class CadenaRoueBehaviour : MonoBehaviour
     public float rotationSpeed;
     Vector3 direction = new Vector3(0f, 0f, 1f);
     Transform child;
+    private FMOD.Studio.EventInstance clicEvent;
 
     // Start is called before the first frame update
     void Start()
     {
         child = transform.GetChild(0);
+        clicEvent = FMODUnity.RuntimeManager.CreateInstance("event:/InGame/PuzzlePictures/IG_PP_enter_padlock_code");
     }
 
     // Update is called once per frame
@@ -27,5 +29,7 @@ public class CadenaRoueBehaviour : MonoBehaviour
     public void incrementValue()
     {
         value = (value + 1)%9;
+        clicEvent.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
+        clicEvent.start();
     }
 }

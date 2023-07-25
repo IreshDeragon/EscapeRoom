@@ -9,13 +9,18 @@ public class SchoolManager : MonoBehaviour
     public GameObject[] sockets;
     public bool completed = false;
     public GameObject locket;
+    public GameObject tiroirHandGrab;
+    public GameObject[] unlockObjects;
 
     public PlayableDirector director;
+
+    //son
+    private FMOD.Studio.EventInstance correctEvent;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        correctEvent = FMODUnity.RuntimeManager.CreateInstance("event:/InGame/PuzzleClassroom/IG_PC_resolved");
     }
 
     // Update is called once per frame
@@ -53,7 +58,22 @@ public class SchoolManager : MonoBehaviour
         }
 
         //Ouvrir le tiroir
+        correctEvent.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
+        correctEvent.start();
         director.Play();
+        unlockGameObjects();
+        tiroirHandGrab.SetActive(true);
+    }
+
+
+    void unlockGameObjects()
+    {
+        foreach (GameObject obj in unlockObjects)
+        {
+            obj.transform.GetChild(0).gameObject.SetActive(true);
+            obj.GetComponent<Rigidbody>().isKinematic = false;
+            obj.GetComponent<Rigidbody>().useGravity = true;
+        }
     }
 
 }

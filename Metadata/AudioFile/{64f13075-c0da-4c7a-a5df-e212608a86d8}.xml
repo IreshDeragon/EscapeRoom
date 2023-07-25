@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{64f13075-c0da-4c7a-a5df-e212608a86d8}">
+		<property name="assetPath">
+			<value>FX/Animation/PuzzleBoat/A_PB_sentence_Jeff.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>2.8269160997732428</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{d5ae0bb6-a231-402a-ab49-cbb9acd8f217}</destination>
+		</relationship>
+	</object>
+</objects>

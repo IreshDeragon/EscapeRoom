@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{dd6bd172-8cad-466f-bf51-d4c04e64f17d}">
+		<property name="assetPath">
+			<value>FX/PuzzleBoat/bateau_tombe_1.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.27403628117913831</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{d5ae0bb6-a231-402a-ab49-cbb9acd8f217}</destination>
+		</relationship>
+	</object>
+</objects>

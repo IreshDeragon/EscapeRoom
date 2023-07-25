@@ -2,13 +2,13 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{b04fa376-a826-4d71-9a9c-59d6ce02c124}">
 		<property name="color">
-			<value>Red Light 2</value>
+			<value>Red</value>
 		</property>
 		<property name="name">
 			<value>A_PP_sentence_Jeff</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{09ce30f4-22a2-40e0-968b-4340595176b5}</destination>
@@ -62,12 +62,22 @@
 	<object class="EventAutomatableProperties" id="{347d4d96-5f9e-445e-b3ae-c76ea01fba3e}" />
 	<object class="MarkerTrack" id="{29d9f308-c48f-43d7-a3cb-79e067cb9415}" />
 	<object class="GroupTrack" id="{8e1c1db3-9434-4301-a662-fad10135acf2}">
+		<relationship name="modules">
+			<destination>{1c64d9c6-a44a-4575-b943-bed3543b1ade}</destination>
+		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{948c59eb-5ccd-4b0a-9a42-82b9344ed6c1}</destination>
 		</relationship>
 	</object>
-	<object class="Timeline" id="{60672d61-1df3-42ad-be0b-33713b7f5752}" />
+	<object class="Timeline" id="{60672d61-1df3-42ad-be0b-33713b7f5752}">
+		<relationship name="modules">
+			<destination>{1c64d9c6-a44a-4575-b943-bed3543b1ade}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerMaster" id="{f6742c8d-031c-4cf8-a0b2-b6f2a79a657c}">
+		<property name="volume">
+			<value>-13.5</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{5a87e654-77da-4fae-a783-30ba33432b15}</destination>
 		</relationship>
@@ -84,6 +94,14 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{600c78d5-5f81-4089-b083-0ef0e13b6c39}" />
+	<object class="SingleSound" id="{1c64d9c6-a44a-4575-b943-bed3543b1ade}">
+		<property name="length">
+			<value>3.6682766439909296</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{b92fb8dd-987c-4439-906c-63998ebe4458}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerGroup" id="{948c59eb-5ccd-4b0a-9a42-82b9344ed6c1}">
 		<property name="name">
 			<value>Audio 1</value>

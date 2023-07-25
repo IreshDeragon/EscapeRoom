@@ -56,14 +56,14 @@
 			<destination>{a6368da1-e9df-4cbf-9e3b-8ae6c4125ec1}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{be8d589b-b90e-460d-b03b-2254a6d4ab35}</destination>
+			<destination>{d19023a2-d7f2-4798-b030-ca44ca1dab96}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{1265b6a4-5bae-4537-8ec6-b10fdf4d31ac}" />
 	<object class="MarkerTrack" id="{5bb17cfb-7747-4bd3-9524-b8b000a9f8bb}" />
 	<object class="GroupTrack" id="{988d0e24-4295-4598-9c3e-5878bbcbf533}">
 		<relationship name="modules">
-			<destination>{075f632e-0813-4b00-919c-5e36969a9bb3}</destination>
+			<destination>{6e6464a3-3789-452d-9cc0-0111458db49c}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{f965fccf-afbe-43c3-a978-aa8043c325f0}</destination>
@@ -71,7 +71,7 @@
 	</object>
 	<object class="Timeline" id="{e242d6bc-7ea2-4a46-8938-c0d348652c03}">
 		<relationship name="modules">
-			<destination>{075f632e-0813-4b00-919c-5e36969a9bb3}</destination>
+			<destination>{6e6464a3-3789-452d-9cc0-0111458db49c}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{28d44ae9-c6a6-4bc4-91f9-b987ab5c3ea0}">
@@ -91,12 +91,12 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{a6368da1-e9df-4cbf-9e3b-8ae6c4125ec1}" />
-	<object class="SingleSound" id="{075f632e-0813-4b00-919c-5e36969a9bb3}">
+	<object class="SingleSound" id="{6e6464a3-3789-452d-9cc0-0111458db49c}">
 		<property name="length">
-			<value>0.58172335600907032</value>
+			<value>0.31730158730158731</value>
 		</property>
 		<relationship name="audioFile">
-			<destination>{85dd74ed-47a2-4cc7-b026-76b6e17558d2}</destination>
+			<destination>{044c95fa-7481-42d6-8fa5-b229739e0d1c}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{f965fccf-afbe-43c3-a978-aa8043c325f0}">
@@ -226,7 +226,6 @@
 		<property name="name">
 			<value>Attenuation Ran</value>
 		</property>
-		<property name="value" />
 		<property name="dataType">
 			<value>-6</value>
 		</property>
@@ -235,7 +234,6 @@
 		<property name="name">
 			<value>3D Attributes</value>
 		</property>
-		<property name="value" />
 		<property name="dataType">
 			<value>-2</value>
 		</property>
@@ -271,7 +269,6 @@
 		<property name="name">
 			<value>Overall Gain</value>
 		</property>
-		<property name="value" />
 		<property name="dataType">
 			<value>-1</value>
 		</property>

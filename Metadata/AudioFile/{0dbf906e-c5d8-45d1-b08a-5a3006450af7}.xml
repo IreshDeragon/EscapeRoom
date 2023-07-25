@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{0dbf906e-c5d8-45d1-b08a-5a3006450af7}">
 		<property name="assetPath">
-			<value>FX/PuzzleBoat/HeartCoupLeger_3.wav</value>
+			<value>FX/PuzzleStoneHeart/HeartCoupLeger_3.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>

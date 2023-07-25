@@ -2,13 +2,13 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{b25f4427-7349-49dc-a6c1-4b53ef552dd0}">
 		<property name="color">
-			<value>Red Light 2</value>
+			<value>Red</value>
 		</property>
 		<property name="name">
-			<value>A_PFM_good_end</value>
+			<value>A_PFM_sentence_Jeff_good_end</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{03876e23-db5e-4ede-9454-d5070723b67b}</destination>
@@ -62,12 +62,22 @@
 	<object class="EventAutomatableProperties" id="{92438547-965f-487a-82a8-68e064873d86}" />
 	<object class="MarkerTrack" id="{e9bde21d-30ac-4b0c-8666-13e1f2164d17}" />
 	<object class="GroupTrack" id="{816b6b6a-4a2a-4b22-b135-640cb7a8ce77}">
+		<relationship name="modules">
+			<destination>{ec8a22c8-2a99-4a08-b1d3-e2fe971ad74a}</destination>
+		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{69a5e331-02f8-46c6-aea8-d35413841c96}</destination>
 		</relationship>
 	</object>
-	<object class="Timeline" id="{b4448e02-51c2-4a90-aeed-800627f4b928}" />
+	<object class="Timeline" id="{b4448e02-51c2-4a90-aeed-800627f4b928}">
+		<relationship name="modules">
+			<destination>{ec8a22c8-2a99-4a08-b1d3-e2fe971ad74a}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerMaster" id="{349be9e7-b922-4ba4-91b4-6ed1b7fe8bc9}">
+		<property name="volume">
+			<value>-12</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{566ec4df-bcfb-4b8a-8627-e55e044e2430}</destination>
 		</relationship>
@@ -84,6 +94,14 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{ec53946e-62ab-4cbf-86b8-b481b7a8155e}" />
+	<object class="SingleSound" id="{ec8a22c8-2a99-4a08-b1d3-e2fe971ad74a}">
+		<property name="length">
+			<value>3.9471201814058956</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{1663d9a7-6512-4628-86d2-baebbc3bc34b}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerGroup" id="{69a5e331-02f8-46c6-aea8-d35413841c96}">
 		<property name="name">
 			<value>Audio 1</value>

@@ -2,13 +2,13 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{e5a95237-fe14-4f1f-a58a-f571f5f4406c}">
 		<property name="color">
-			<value>Red Light 2</value>
+			<value>Red</value>
 		</property>
 		<property name="name">
-			<value>A_PFM_Scream_girl</value>
+			<value>A_PFM_scream_Maggie</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{03876e23-db5e-4ede-9454-d5070723b67b}</destination>
@@ -62,11 +62,18 @@
 	<object class="EventAutomatableProperties" id="{9740caab-816f-4121-8d9b-a5cad21ab23a}" />
 	<object class="MarkerTrack" id="{509097f8-64da-4336-b137-ea7f7c53b4af}" />
 	<object class="GroupTrack" id="{9bb1d7c6-941b-49ad-b9ed-6e52db6caf9e}">
+		<relationship name="modules">
+			<destination>{1abb9c59-78ee-4bc7-82be-4d44839d4cfb}</destination>
+		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{31a297b0-c178-47ca-a86b-9d4bed861900}</destination>
 		</relationship>
 	</object>
-	<object class="Timeline" id="{c3181ea2-7c79-4ad3-8bf9-c3481cbe6c18}" />
+	<object class="Timeline" id="{c3181ea2-7c79-4ad3-8bf9-c3481cbe6c18}">
+		<relationship name="modules">
+			<destination>{1abb9c59-78ee-4bc7-82be-4d44839d4cfb}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerMaster" id="{588f944e-788f-43a7-ab38-f1bd3a92f10e}">
 		<relationship name="effectChain">
 			<destination>{1d7f0443-61d8-4d0e-a483-d1080e7f545b}</destination>
@@ -84,6 +91,14 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{9d050784-8f7e-4a35-87c3-e85bb9c82349}" />
+	<object class="SingleSound" id="{1abb9c59-78ee-4bc7-82be-4d44839d4cfb}">
+		<property name="length">
+			<value>1.4134693877551021</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{060e12b1-fe23-494e-aa9a-1613cf875844}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerGroup" id="{31a297b0-c178-47ca-a86b-9d4bed861900}">
 		<property name="name">
 			<value>Audio 1</value>

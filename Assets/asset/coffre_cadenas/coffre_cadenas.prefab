@@ -1544,6 +1544,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7319503455071180417}
   - component: {fileID: 6586228923431774036}
+  - component: {fileID: 2004395859}
   m_Layer: 0
   m_Name: HandGrabInteractable_mirror
   m_TagString: Untagged
@@ -1612,6 +1613,55 @@ MonoBehaviour:
   - {fileID: 5511370489114228879}
   - {fileID: 4153721064671254882}
   - {fileID: 9000448645034591829}
+--- !u!114 &2004395859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6486672326602233513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactableView: {fileID: 6586228923431774036}
+  _whenHover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenUnhover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelect:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 173382151}
+        m_TargetAssemblyTypeName: CadenaBehaviour, Assembly-CSharp
+        m_MethodName: grabDoorSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenUnselect:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &7069758032012360268
 GameObject:
   m_ObjectHideFlags: 0
@@ -1879,6 +1929,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4034433177262340138}
   - component: {fileID: 6551089195809362351}
+  - component: {fileID: 407879775}
   m_Layer: 0
   m_Name: HandGrabInteractable_mirror_mirror
   m_TagString: Untagged
@@ -1947,6 +1998,55 @@ MonoBehaviour:
   - {fileID: 3858614123362289264}
   - {fileID: 8933446102444405007}
   - {fileID: 8163023312549160137}
+--- !u!114 &407879775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8213281282909258691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactableView: {fileID: 6551089195809362351}
+  _whenHover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenUnhover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelect:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 173382151}
+        m_TargetAssemblyTypeName: CadenaBehaviour, Assembly-CSharp
+        m_MethodName: grabDoorSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenUnselect:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &8327634174712363745
 GameObject:
   m_ObjectHideFlags: 0

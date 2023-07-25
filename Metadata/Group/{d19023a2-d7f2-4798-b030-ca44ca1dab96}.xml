@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="MixerGroup" id="{d19023a2-d7f2-4798-b030-ca44ca1dab96}">
+		<property name="name">
+			<value>Binaural</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{4bcdbf4b-b250-458e-ac67-464d6e935486}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{1df28c1e-55d9-4f94-8c7f-a66073f02c1b}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{1ca2a69c-5443-437f-b15c-cfac0e179d3a}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{4bcdbf4b-b250-458e-ac67-464d6e935486}">
+		<relationship name="effects">
+			<destination>{b088c731-08b1-43ee-801e-d83251093167}</destination>
+			<destination>{f00dd31d-b7e5-4294-8a8d-06a2f01a96e4}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{1df28c1e-55d9-4f94-8c7f-a66073f02c1b}" />
+	<object class="MixerBusFader" id="{b088c731-08b1-43ee-801e-d83251093167}" />
+	<object class="PluginEffect" id="{f00dd31d-b7e5-4294-8a8d-06a2f01a96e4}">
+		<relationship name="plugin">
+			<destination>{5e66a1ea-3cd0-4ab7-b30e-07d00fc84623}</destination>
+		</relationship>
+	</object>
+	<object class="Plugin" id="{5e66a1ea-3cd0-4ab7-b30e-07d00fc84623}">
+		<property name="identifier">
+			<value>Resonance Audio Listener</value>
+		</property>
+		<relationship name="pluginParameters">
+			<destination>{703ed802-f0b7-4003-8fe5-a67081311d33}</destination>
+			<destination>{a84ea89b-145d-467d-a9c0-4d386edd9a04}</destination>
+		</relationship>
+	</object>
+	<object class="FloatPluginParameter" id="{703ed802-f0b7-4003-8fe5-a67081311d33}">
+		<property name="name">
+			<value>Gain</value>
+		</property>
+		<property name="value">
+			<value>-9.99999975e-06</value>
+		</property>
+		<property name="curve">
+			<value>{(0.000000,-80.000000)(1.000000,0.000000)}</value>
+		</property>
+	</object>
+	<object class="DataPluginParameter" id="{a84ea89b-145d-467d-a9c0-4d386edd9a04}">
+		<property name="name">
+			<value>Room Properties</value>
+		</property>
+		<property name="value" />
+		<property name="dataType">
+			<value>0</value>
+		</property>
+	</object>
+</objects>
