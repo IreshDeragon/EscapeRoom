@@ -16,11 +16,13 @@ public class CadenaBehaviour : MonoBehaviour
 
     //sons
     private FMOD.Studio.EventInstance grabDoorEvent;
+    private FMOD.Studio.EventInstance completedEvent;
 
     // Start is called before the first frame update
     void Start()
     {
         grabDoorEvent = FMODUnity.RuntimeManager.CreateInstance("event:/InGame/PuzzlePictures/IG_PP_open_padlock");
+        completedEvent = FMODUnity.RuntimeManager.CreateInstance("event:/InGame/PuzzlePictures/IG_PP_correct_code_entered");
     }
 
     // Update is called once per frame
@@ -34,7 +36,9 @@ public class CadenaBehaviour : MonoBehaviour
                 handGrab.GetComponent<Oculus.Interaction.HandGrab.HandGrabInteractable>().enabled = true;
                 handGrabMirror.GetComponent<Oculus.Interaction.HandGrab.HandGrabInteractable>().enabled = true;
                 completed = true;
-                foreach(GameObject obj in objetsDeverouille)
+                completedEvent.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(transform.GetChild(0).gameObject));
+                completedEvent.start();
+                foreach (GameObject obj in objetsDeverouille)
                 {
                     obj.GetComponent<Rigidbody>().isKinematic = false;
                     Oculus.Interaction.HandGrab.HandGrabInteractable[] components = obj.GetComponentsInChildren<Oculus.Interaction.HandGrab.HandGrabInteractable>();

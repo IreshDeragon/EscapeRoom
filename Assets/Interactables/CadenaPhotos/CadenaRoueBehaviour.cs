@@ -20,7 +20,7 @@ public class CadenaRoueBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (child.rotation.eulerAngles.z < (value)*40 -0.5 || (child.rotation.eulerAngles.z > (value) * 40 + 0.5 && value ==0))
+        if ( (child.rotation.eulerAngles.z > 2 && value == 0) || child.rotation.eulerAngles.z < (value) * 40 - 0.5 )
         {
             child.Rotate(direction * rotationSpeed * Time.deltaTime);
         }
