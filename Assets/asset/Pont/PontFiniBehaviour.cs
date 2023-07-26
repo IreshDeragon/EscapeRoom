@@ -7,11 +7,13 @@ public class PontFiniBehaviour : MonoBehaviour
 {
     public PlayableDirector director;
 
-    // Start is called before the first frame update
-    void Start()
+    
+    public void spawn(Transform trans)
     {
+        transform.position = trans.position;
         director.Play();
-
+        transform.GetComponent<Rigidbody>().isKinematic = false;
+        transform.GetComponent<Rigidbody>().useGravity = true;
     }
 
 }

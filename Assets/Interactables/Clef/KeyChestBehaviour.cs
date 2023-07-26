@@ -26,7 +26,7 @@ public class KeyChestBehaviour : MonoBehaviour
         foreach (GameObject obj in objetsActiver)
         {
             obj.GetComponent<Rigidbody>().isKinematic = false;
-            obj.transform.GetChild(1).gameObject.SetActive(true);
+            obj.transform.GetChild(0).gameObject.SetActive(true);
         }
     }
 }
