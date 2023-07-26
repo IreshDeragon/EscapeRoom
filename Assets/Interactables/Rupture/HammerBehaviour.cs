@@ -9,17 +9,22 @@ public class HammerBehaviour : MonoBehaviour
     public bool grabbed;
 
     private FMOD.Studio.EventInstance pickEvent;
+    private FMOD.Studio.EventInstance fallEvent;
 
     // Start is called before the first frame update
     void Start()
     {
         pickEvent = FMODUnity.RuntimeManager.CreateInstance("event:/InGame/PuzzleStoneHeart/IG_PSH_take_hammer");
+        fallEvent = FMODUnity.RuntimeManager.CreateInstance("event:/InGame/PuzzleStoneHeart/IG_PSH_pose_hammer");
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnCollisionEnter(Collision col)
     {
-        
+        if (col.gameObject.tag == "decors")
+        {
+            fallEvent.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
+            fallEvent.start();
+        }
     }
     public void setGrabbed(bool grab)
     {

@@ -6,12 +6,14 @@ public class PontSound : MonoBehaviour
 {
     private FMOD.Studio.EventInstance pickEvent;
     private FMOD.Studio.EventInstance correctEvent;
+    private FMOD.Studio.EventInstance fallEvent;
 
 
     void Start()
     {
         pickEvent = FMODUnity.RuntimeManager.CreateInstance("event:/InGame/PuzzleBridgeReconstruction/IG_PBR_take_bridge_piece");
         correctEvent = FMODUnity.RuntimeManager.CreateInstance("event:/InGame/PuzzleBridgeReconstruction/IG_PBR_correct_bridge_piece_assembly");
+        fallEvent = FMODUnity.RuntimeManager.CreateInstance("event:/InGame/PuzzleBridgeReconstruction/IG_PBR_pose_bridge_piece");
     }
 
     public void pickSound()
@@ -23,5 +25,14 @@ public class PontSound : MonoBehaviour
     {
         correctEvent.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
         correctEvent.start();
+    }
+
+    private void OnCollisionEnter(Collision col)
+    {
+        if (col.gameObject.tag == "decors")
+        {
+            fallEvent.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
+            fallEvent.start();
+        }
     }
 }

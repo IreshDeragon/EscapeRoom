@@ -13,6 +13,7 @@ public class CoqueBehaviour : MonoBehaviour
     private FMOD.Studio.EventInstance pickEvent;
     private FMOD.Studio.EventInstance placeEvent;
     private FMOD.Studio.EventInstance sailEvent;
+    private FMOD.Studio.EventInstance fallEvent;
 
 
     void Start()
@@ -20,6 +21,7 @@ public class CoqueBehaviour : MonoBehaviour
         pickEvent = FMODUnity.RuntimeManager.CreateInstance("event:/InGame/PuzzleBoat/IG_PB_take_boat_hull");
         placeEvent = FMODUnity.RuntimeManager.CreateInstance("event:/InGame/PuzzleBoat/IG_PB_place_boat_hull");
         sailEvent = FMODUnity.RuntimeManager.CreateInstance("event:/InGame/PuzzleBoat/IG_PB_good_boat_hull_on_shadow");
+        fallEvent = FMODUnity.RuntimeManager.CreateInstance("event:/InGame/PuzzleBoat/IG_PB_fallen_boat_hull");
     }
 
     public void showVoile()
@@ -46,5 +48,14 @@ public class CoqueBehaviour : MonoBehaviour
     {
         sailEvent.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
         sailEvent.start();
+    }
+
+    private void OnCollisionEnter(Collision col)
+    {
+        if (col.gameObject.tag == "decors")
+        {
+            fallEvent.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
+            fallEvent.start();
+        }
     }
 }

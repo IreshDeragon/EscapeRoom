@@ -8,7 +8,7 @@ public class KeyChestBehaviour : MonoBehaviour
     public GameObject key;
     public GameObject grab;
     public GameObject grabMiror;
-    public GameObject[] coques;
+    public GameObject[] objetsActiver;
 
     public PlayableDirector director;
     // Start is called before the first frame update
@@ -23,10 +23,10 @@ public class KeyChestBehaviour : MonoBehaviour
         transform.GetComponent<BoxCollider>().enabled = true;
         director.Play();
 
-        foreach (GameObject coque in coques)
+        foreach (GameObject obj in objetsActiver)
         {
-            coque.GetComponent<Rigidbody>().isKinematic = false;
-            coque.transform.GetChild(1).gameObject.SetActive(true);
+            obj.GetComponent<Rigidbody>().isKinematic = false;
+            obj.transform.GetChild(1).gameObject.SetActive(true);
         }
     }
 }
