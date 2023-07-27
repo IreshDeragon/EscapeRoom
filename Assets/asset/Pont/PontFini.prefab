@@ -100,6 +100,7 @@ GameObject:
   - component: {fileID: 3066526856015331093}
   - component: {fileID: 5263082087289767696}
   - component: {fileID: 734664643797311135}
+  - component: {fileID: 6884734619476901023}
   m_Layer: 0
   m_Name: PontFini
   m_TagString: Untagged
@@ -227,6 +228,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06ba1e4890527d44db3a40034c54bc73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  snaped: 0
 --- !u!95 &5263082087289767696
 Animator:
   serializedVersion: 5
@@ -261,6 +263,61 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   director: {fileID: 0}
+--- !u!114 &6884734619476901023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2915991383332343016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cf00a93483fd1b4ba357bf6f764d6e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactorView: {fileID: 4984190425482547116}
+  _whenEnabled:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenDisabled:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenHover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenUnhover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelect:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3066526856015331093}
+        m_TargetAssemblyTypeName: PontSound, Assembly-CSharp
+        m_MethodName: setSnaped
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  _whenUnselect:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3066526856015331093}
+        m_TargetAssemblyTypeName: PontSound, Assembly-CSharp
+        m_MethodName: setSnaped
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3151979985266649309
 GameObject:
   m_ObjectHideFlags: 0

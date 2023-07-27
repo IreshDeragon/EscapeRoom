@@ -8,6 +8,8 @@ public class PontSound : MonoBehaviour
     private FMOD.Studio.EventInstance correctEvent;
     private FMOD.Studio.EventInstance fallEvent;
 
+    public bool snaped;
+
 
     void Start()
     {
@@ -27,9 +29,14 @@ public class PontSound : MonoBehaviour
         correctEvent.start();
     }
 
+    public void setSnaped(bool snap)
+    {
+        snaped = snap;
+    }
+
     private void OnCollisionEnter(Collision col)
     {
-        if (col.gameObject.tag == "decors")
+        if (col.gameObject.tag == "decors" && !snaped)
         {
             fallEvent.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
             fallEvent.start();

@@ -19,10 +19,13 @@ public class HeartBehaviour : MonoBehaviour
     public GameObject rocherPrefab;
     public GameObject fragmentPrefab;
     public PlayableDirector director;
+    public PlayableDirector batementCoeur;
 
     int cptCoup = 0;
     float timer;
     bool hasbeen = false;
+    float timerBatement = 0;
+    bool completed = false;
 
     //sons
     private FMOD.Studio.EventInstance pickEvent;
@@ -41,35 +44,50 @@ public class HeartBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (cptCoup > 0)
+        if (!completed)
         {
-            timer += Time.deltaTime;
-            if(timer> timerCoups)
+            if (cptCoup > 0)
             {
-                nbcoup = 0;
-                timer = 0;
-            }
-        }
-
-        if(grabbed && Hammer.GetComponent<HammerBehaviour>().grabbed)
-        {
-            if(CheckCollision(Heart, Hammer.GetComponent<HammerBehaviour>().colider))
-            {
-                if (!hasbeen)
+                timer += Time.deltaTime;
+                if (timer > timerCoups)
                 {
-                    OnCollisionEnterInteraction(Hammer);
-                    hasbeen = true;
+                    nbcoup = 0;
+                    timer = 0;
+                }
+            }
+
+            if (grabbed && Hammer.GetComponent<HammerBehaviour>().grabbed)
+            {
+                if (CheckCollision(Heart, Hammer.GetComponent<HammerBehaviour>().colider))
+                {
+                    if (!hasbeen)
+                    {
+                        OnCollisionEnterInteraction(Hammer);
+                        hasbeen = true;
+                    }
+                }
+                else
+                {
+                    Debug.Log("NON ");
+                    hasbeen = false;
                 }
             }
             else
             {
-                Debug.Log("NON ");
                 hasbeen = false;
             }
         }
         else
         {
-            hasbeen = false;
+            timerBatement += Time.deltaTime;
+            if(timerBatement >= 3.6f)
+            {
+                Instantiate(keyPrefab, transform.position, transform.rotation);
+                Instantiate(rocherPrefab, transform.position, transform.rotation);
+                GameObject frag = Instantiate(fragmentPrefab, transform.position, transform.rotation);
+                frag.GetComponent<BrokentHeartBehaviour>().director = director;
+                Destroy(gameObject);
+            }
         }
     }
 
@@ -154,11 +172,8 @@ public class HeartBehaviour : MonoBehaviour
     }
     void breakHeart()
     {
-        Instantiate(keyPrefab, transform.position, transform.rotation);
-        Instantiate(rocherPrefab, transform.position, transform.rotation);
-        GameObject frag = Instantiate(fragmentPrefab, transform.position, transform.rotation);
-        frag.GetComponent<BrokentHeartBehaviour>().director = director;
-        Destroy(gameObject);
+        completed = true;
+        batementCoeur.Play();
     }
 
 

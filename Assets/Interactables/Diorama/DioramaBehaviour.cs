@@ -5,6 +5,7 @@ using UnityEngine;
 public class DioramaBehaviour : MonoBehaviour
 {
     public GameObject songes;
+    public GameObject Fille;
     public Material m_allume;
     public bool completed;
     public float timer;
