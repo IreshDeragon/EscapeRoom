@@ -1,5 +1,29 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9122348146912038786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/IG_PSH_striking_stone_heart/BreakPoint
+  m_EditorClassIdentifier: 
+  Name: BreakPoint
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2870782647
+    data2: 3947460251
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &-9092805736864614259
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42,10 +66,10 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638258754117813900
+  lastModified: 638260563220000000
   FileSizes:
   - Name: 
-    Value: 5026
+    Value: 5346
   Exists: 1
 --- !u!114 &-9012875682056171202
 MonoBehaviour:
@@ -154,7 +178,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 298
+  Length: 447
 --- !u!114 &-8522758561105784329
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -263,6 +287,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 4629
+--- !u!114 &-6642163323303742428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/InGame/PuzzlePictures/IG_PP_open_with_key
+  m_EditorClassIdentifier: 
+  Path: event:/InGame/PuzzlePictures/IG_PP_open_with_key
+  Guid:
+    Data1: 1482947100
+    Data2: 1158862033
+    Data3: -630611550
+    Data4: 1312381784
+  Banks:
+  - {fileID: -1828975287807129503}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 317
 --- !u!114 &-6578722227685356080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -586,7 +637,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 389
+  Length: 562
 --- !u!114 &-4467972778993710346
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -872,7 +923,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638259129201829792
+  lastModified: 638260563220000000
   FileSizes: []
   Exists: 1
 --- !u!114 &-1728002567021612494
@@ -929,6 +980,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 307
+--- !u!114 &-1255439399714842931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/InGame/PuzzleStoneHeart/IG_PSH_pose_stone
+  m_EditorClassIdentifier: 
+  Path: event:/InGame/PuzzleStoneHeart/IG_PSH_pose_stone
+  Guid:
+    Data1: -1738615361
+    Data2: 1240077264
+    Data3: 1732318112
+    Data4: 1936419994
+  Banks:
+  - {fileID: -1828975287807129503}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 389
 --- !u!114 &-1218623485919427207
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1181,12 +1259,18 @@ MonoBehaviour:
   - {fileID: -294566176843319318}
   - {fileID: -3236018281115370822}
   - {fileID: 677943960500227658}
+  - {fileID: 8604104391395382649}
+  - {fileID: -6642163323303742428}
+  - {fileID: 9127760631523213763}
+  - {fileID: 5070637421776268146}
+  - {fileID: -1255439399714842931}
+  - {fileID: 3784428186449871335}
   EditorParameters: []
   MasterBanks:
   - {fileID: -1828975287807129503}
   StringsBanks:
   - {fileID: -9059320346546106966}
-  cacheTime: 638259129201829792
+  cacheTime: 638260563220000000
   cacheVersion: 131605
 --- !u!114 &575223947226355536
 MonoBehaviour:
@@ -1318,11 +1402,12 @@ MonoBehaviour:
   - {fileID: -1828975287807129503}
   IsStream: 0
   Is3D: 1
-  IsOneShot: 1
-  Parameters: []
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -9122348146912038786}
   MinDistance: 1
   MaxDistance: 20
-  Length: 847
+  Length: 1020
 --- !u!114 &1780684273890118918
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1431,6 +1516,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 72
+--- !u!114 &3784428186449871335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/InGame/PuzzleStoneHeart/IG_PSH_take_stone
+  m_EditorClassIdentifier: 
+  Path: event:/InGame/PuzzleStoneHeart/IG_PSH_take_stone
+  Guid:
+    Data1: 925393094
+    Data2: 1196190174
+    Data3: -1759363180
+    Data4: -1781333341
+  Banks:
+  - {fileID: -1828975287807129503}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 298
 --- !u!114 &3843067385445680053
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1701,6 +1813,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 225
+--- !u!114 &5070637421776268146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/InGame/PuzzleStoneHeart/IG_PSH_stricking_stone_heart_stop
+  m_EditorClassIdentifier: 
+  Path: event:/InGame/PuzzleStoneHeart/IG_PSH_stricking_stone_heart_stop
+  Guid:
+    Data1: -400503910
+    Data2: 1204980509
+    Data3: -2113585777
+    Data4: -2001744262
+  Banks:
+  - {fileID: -1828975287807129503}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &5241965134190258657
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2024,7 +2163,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 52
+  Length: 764
 --- !u!114 &7854093147577592142
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2106,6 +2245,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 197
+--- !u!114 &8604104391395382649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/InGame/PuzzlePictures/IG_PP_pose_key
+  m_EditorClassIdentifier: 
+  Path: event:/InGame/PuzzlePictures/IG_PP_pose_key
+  Guid:
+    Data1: -766962152
+    Data2: 1251500208
+    Data3: 1668034986
+    Data4: -1498807748
+  Banks:
+  - {fileID: -1828975287807129503}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 317
 --- !u!114 &9063553531504864588
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2133,3 +2299,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 52
+--- !u!114 &9127760631523213763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/InGame/PuzzlePictures/IG_PP_take_key
+  m_EditorClassIdentifier: 
+  Path: event:/InGame/PuzzlePictures/IG_PP_take_key
+  Guid:
+    Data1: -2115091087
+    Data2: 1137762114
+    Data3: 1201105559
+    Data4: 1645657326
+  Banks:
+  - {fileID: -1828975287807129503}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 317
