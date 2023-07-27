@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{bf382d42-1834-4399-b164-47576afdf49c}">
 		<property name="assetPath">
-			<value>clefs_prend_2.wav</value>
+			<value>FX/Common/clefs_prend_2.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>

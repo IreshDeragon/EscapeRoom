@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{5b6f340a-0ce5-4f8a-8de9-1fa9ea2b40eb}">
 		<property name="assetPath">
-			<value>clefs_pose_4.wav</value>
+			<value>FX/Common/clefs_pose_4.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>

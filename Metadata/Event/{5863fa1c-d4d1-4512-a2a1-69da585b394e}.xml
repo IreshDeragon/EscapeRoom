@@ -5,13 +5,13 @@
 			<value>Green</value>
 		</property>
 		<property name="name">
-			<value>IG_PP_open_with_key</value>
+			<value>IG_C_open_with_key</value>
 		</property>
 		<property name="outputFormat">
 			<value>1</value>
 		</property>
 		<relationship name="folder">
-			<destination>{d989b2aa-7768-415f-a8d1-bc89f201c186}</destination>
+			<destination>{d2bb660c-23ce-45ea-b9dd-438ae9d4e522}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{942705df-4440-4471-a8f3-af07cd090c9c}</destination>
