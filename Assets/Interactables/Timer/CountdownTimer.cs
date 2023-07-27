@@ -6,6 +6,7 @@ using UnityEngine;
 public class CountdownTimer : MonoBehaviour
 {
     public float startingTime = 1800f; // 30 minutes in seconds
+    bool stoped = false;
     private float currentTime;
     private TMP_Text textMeshPro;
 
@@ -27,10 +28,18 @@ public class CountdownTimer : MonoBehaviour
 
             yield return new WaitForSeconds(1f);
 
-            currentTime--;
+            if (!stoped)
+            {
+                currentTime--;
+            }
         }
 
         // Timer reached 00:00
         textMeshPro.text = "00:00";
+    }
+
+    public void setStoped(bool stop)
+    {
+        stoped = stop;
     }
 }
