@@ -10,6 +10,11 @@ public class DioramaBehaviour : MonoBehaviour
     public Material m_allume;
     public GameObject countDownTimer;
 
+    public GameObject otherDiorama;
+    public GameObject[] objectToDestroy;
+    public PlayableDirector directorDiorama;
+    public Renderer M_otherDiorama;
+
 
     public GameObject maquettePereFilleCassee;
     public PlayableDirector directorCasser;
@@ -42,27 +47,38 @@ public class DioramaBehaviour : MonoBehaviour
                 timer -= Time.deltaTime;
                 break;
             case 1:
-                
-                //faire l'anim du diorama
+                otherDiorama.SetActive(true);
+                transform.GetChild(0).gameObject.SetActive(false);
+                transform.GetChild(1).gameObject.SetActive(false);
+                foreach(GameObject obj in objectToDestroy)
+                {
+                    Destroy(obj);
+                }
+                directorDiorama.Play();
                 phase = 2;
                 break;
             case 2:
                 timeAnimDiorama -= Time.deltaTime;
+
+                M_otherDiorama.material.SetFloat("_WichOne", getMaterialValue(timeAnimDiorama, 12f, 2f)); //change le material du diorama
                 if (timeAnimDiorama <= 0)
                 {
                     phase = 3;
                 }
                 break;
             case 3:
+                Fille.SetActive(true);
+                break;
+            case 4:
                 timeBeforeJeffAcceptationOrNot -= Time.deltaTime;
                 if (timeBeforeJeffAcceptationOrNot <= 0)
                 {
-                    phase = 4;
+                    phase = 5;
                 }
                 break;
-            case 4:
+            case 5:
                 completionDioramaAlternateEnd();
-                phase = 5;
+                phase = 6;
                 break;
         }
     }
@@ -83,10 +99,22 @@ public class DioramaBehaviour : MonoBehaviour
         if (res)
         {
             phase = 1;
-
-            Fille.SetActive(true);
             countDownTimer.GetComponent<CountdownTimer>().setStoped(true);
         }
+    }
+
+    float getMaterialValue(float timer, float maxTimer, float minTimer)
+    {
+        float res = 1-((timer - minTimer) / (maxTimer - minTimer));
+        if(res >= 1)
+        {
+            res = 1;
+        }
+        if (res <= 0)
+        {
+            res = 0;
+        }
+        return res;
     }
 
     void completionDioramaAlternateEnd()
@@ -103,5 +131,11 @@ public class DioramaBehaviour : MonoBehaviour
             
             Statuette.GetChild(0).gameObject.SetActive(true);
         }
+    }
+
+
+    public void setObjectToDestroy(int index, GameObject obj)
+    {
+        objectToDestroy[index] = obj;
     }
 }

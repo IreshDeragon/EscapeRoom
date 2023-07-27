@@ -9,11 +9,12 @@ public class PontBehaviour : MonoBehaviour
     public GameObject pontFini;
     public GameObject panneau;
     public PlayableDirector director;
+    public GameObject diorama;
 
     public void completed(Transform transPont, Transform transPanneau)
     {
         pontFini.GetComponent<PontFiniBehaviour>().spawn(transPont);
-        Instantiate(panneau, transPanneau.position, transPanneau.rotation);
+        diorama.GetComponent<DioramaBehaviour>().setObjectToDestroy(11 ,Instantiate(panneau, transPanneau.position, transPanneau.rotation));
         
         Destroy(gameObject);
     }

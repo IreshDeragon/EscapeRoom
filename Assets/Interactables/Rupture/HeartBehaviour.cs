@@ -11,6 +11,8 @@ public class HeartBehaviour : MonoBehaviour
     public GameObject point;
     float proximite;
 
+    public GameObject diorama;
+
     public GameObject Hammer;
     public GameObject Heart;
     public Collider heartCollider;
@@ -83,7 +85,7 @@ public class HeartBehaviour : MonoBehaviour
             if(timerBatement >= 3.6f)
             {
                 Instantiate(keyPrefab, transform.position, transform.rotation);
-                Instantiate(rocherPrefab, transform.position, transform.rotation);
+                diorama.GetComponent<DioramaBehaviour>().setObjectToDestroy(12 ,Instantiate(rocherPrefab, transform.position, transform.rotation));
                 GameObject frag = Instantiate(fragmentPrefab, transform.position, transform.rotation);
                 frag.GetComponent<BrokentHeartBehaviour>().director = director;
                 Destroy(gameObject);
