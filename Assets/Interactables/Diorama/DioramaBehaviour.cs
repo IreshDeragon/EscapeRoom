@@ -11,7 +11,7 @@ public class DioramaBehaviour : MonoBehaviour
     public float timer;
     bool completionDone = false;
 
-    bool[] validation = new bool[6];
+    public bool[] validation = new bool[6];
     // Start is called before the first frame update
     void Start()
     {
@@ -35,7 +35,7 @@ public class DioramaBehaviour : MonoBehaviour
         songes.transform.GetChild(nbSocket).GetComponent<MeshRenderer>().material = m_allume;
         validation[nbSocket] = true;
 
-        bool res = false;
+        bool res = true;
         for (int i = 0; i < 6; i++)
         {
             if (!validation[i])
@@ -52,6 +52,7 @@ public class DioramaBehaviour : MonoBehaviour
 
     void completionDiorama()
     {
+        Fille.SetActive(true);
         //validation du diorama
         if(timer <= 0)
         {

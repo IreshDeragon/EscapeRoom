@@ -10,6 +10,7 @@ public class SoundTelephone : MonoBehaviour
     float timer;
     bool ringStoped = false;
     bool messagePlayed = false;
+    bool ringBegan = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,16 +18,20 @@ public class SoundTelephone : MonoBehaviour
         concourEvent = FMODUnity.RuntimeManager.CreateInstance("event:/InGame/Common/IG_C_listen_voice_message");
         pingEvent = FMODUnity.RuntimeManager.CreateInstance("event:/InGame/Common/IG_C_use_phone");
 
-        concourEvent.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
+        
 
-
-        ringEvent.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
-        ringEvent.start();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (!ringBegan)
+        {
+            ringEvent.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
+            ringEvent.start();
+            
+            ringBegan = true;
+        }
         timer += Time.deltaTime;
         if(!ringStoped && timer >= 6.5)
         {
@@ -38,7 +43,9 @@ public class SoundTelephone : MonoBehaviour
         }
         if(!messagePlayed && timer >= 7f)
         {
+            concourEvent.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
             concourEvent.start();
+            messagePlayed = true;
         }
     }
 }
