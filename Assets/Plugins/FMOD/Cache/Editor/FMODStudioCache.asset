@@ -66,10 +66,10 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638260685344406666
+  lastModified: 638261049083871549
   FileSizes:
   - Name: 
-    Value: 5346
+    Value: 5450
   Exists: 1
 --- !u!114 &-9012875682056171202
 MonoBehaviour:
@@ -232,7 +232,34 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 4624
+  Length: 2600
+--- !u!114 &-8146140428146306095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Animations/PuzzleStoneHeart/A_PSH_heartbeat_out
+  m_EditorClassIdentifier: 
+  Path: event:/Animations/PuzzleStoneHeart/A_PSH_heartbeat_out
+  Guid:
+    Data1: 823120924
+    Data2: 1248737033
+    Data3: -1666996805
+    Data4: 750078594
+  Banks:
+  - {fileID: -1828975287807129503}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 140
 --- !u!114 &-7733162207032982088
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -287,7 +314,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 4629
---- !u!114 &-6642163323303742428
+--- !u!114 &-6651562161924271177
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -297,14 +324,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/InGame/PuzzlePictures/IG_PP_open_with_key
+  m_Name: event:/Animations/PuzzleStoneHeart/A_PSH_heartbeat_in
   m_EditorClassIdentifier: 
-  Path: event:/InGame/PuzzlePictures/IG_PP_open_with_key
+  Path: event:/Animations/PuzzleStoneHeart/A_PSH_heartbeat_in
   Guid:
-    Data1: 1482947100
-    Data2: 1158862033
-    Data3: -630611550
-    Data4: 1312381784
+    Data1: 2098180254
+    Data2: 1221772771
+    Data3: -1791790711
+    Data4: 1874358514
   Banks:
   - {fileID: -1828975287807129503}
   IsStream: 0
@@ -313,7 +340,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 317
+  Length: 200
 --- !u!114 &-6578722227685356080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -340,7 +367,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 4629
+  Length: 2629
 --- !u!114 &-6187399047056840550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -664,7 +691,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 1764
+  Length: 2385
 --- !u!114 &-4438741062253320512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -923,7 +950,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638260685344371933
+  lastModified: 638261049083865842
   FileSizes: []
   Exists: 1
 --- !u!114 &-1728002567021612494
@@ -1033,7 +1060,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 559
 --- !u!114 &-1085443347273337056
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1061,6 +1088,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3947
+--- !u!114 &-1073344704982989107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Animations/PuzzleBoat/A_PB_boat_animation
+  m_EditorClassIdentifier: 
+  Path: event:/Animations/PuzzleBoat/A_PB_boat_animation
+  Guid:
+    Data1: 1574570719
+    Data2: 1222819901
+    Data3: -1576914814
+    Data4: -758407097
+  Banks:
+  - {fileID: -1828975287807129503}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 41500
 --- !u!114 &-1071004787882511572
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1207,7 +1261,6 @@ MonoBehaviour:
   - {fileID: -5587743680082595093}
   - {fileID: -4438741062253320512}
   - {fileID: -6067210062994652123}
-  - {fileID: 4320852707748150171}
   - {fileID: -1071004787882511572}
   - {fileID: -1728002567021612494}
   - {fileID: 1629878390998802026}
@@ -1259,18 +1312,21 @@ MonoBehaviour:
   - {fileID: -294566176843319318}
   - {fileID: -3236018281115370822}
   - {fileID: 677943960500227658}
-  - {fileID: 8604104391395382649}
-  - {fileID: -6642163323303742428}
-  - {fileID: 9127760631523213763}
   - {fileID: 5070637421776268146}
   - {fileID: -1255439399714842931}
   - {fileID: 3784428186449871335}
+  - {fileID: 5158655311735732642}
+  - {fileID: -8146140428146306095}
+  - {fileID: 3424148425211861502}
+  - {fileID: 4443097742542782014}
+  - {fileID: -6651562161924271177}
+  - {fileID: -1073344704982989107}
   EditorParameters: []
   MasterBanks:
   - {fileID: -1828975287807129503}
   StringsBanks:
   - {fileID: -9059320346546106966}
-  cacheTime: 638260685344406666
+  cacheTime: 638261049083871549
   cacheVersion: 131605
 --- !u!114 &575223947226355536
 MonoBehaviour:
@@ -1516,6 +1572,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 72
+--- !u!114 &3424148425211861502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/InGame/Common/IG_C_open_with_key
+  m_EditorClassIdentifier: 
+  Path: event:/InGame/Common/IG_C_open_with_key
+  Guid:
+    Data1: 1482947100
+    Data2: 1158862033
+    Data3: -630611550
+    Data4: 1312381784
+  Banks:
+  - {fileID: -1828975287807129503}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 519
 --- !u!114 &3784428186449871335
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1651,7 +1734,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2826
---- !u!114 &4320852707748150171
+--- !u!114 &4443097742542782014
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1661,14 +1744,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Animations/PuzzleStoneHeart/A_PSH_heartbeat
+  m_Name: event:/InGame/Common/IG_C_take_key
   m_EditorClassIdentifier: 
-  Path: event:/Animations/PuzzleStoneHeart/A_PSH_heartbeat
+  Path: event:/InGame/Common/IG_C_take_key
   Guid:
-    Data1: 2098180254
-    Data2: 1221772771
-    Data3: -1791790711
-    Data4: 1874358514
+    Data1: -2115091087
+    Data2: 1137762114
+    Data3: 1201105559
+    Data4: 1645657326
   Banks:
   - {fileID: -1828975287807129503}
   IsStream: 0
@@ -1677,7 +1760,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 550
+  Length: 320
 --- !u!114 &4602652467209634632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1840,6 +1923,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &5158655311735732642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/InGame/Common/IG_C_pose_key
+  m_EditorClassIdentifier: 
+  Path: event:/InGame/Common/IG_C_pose_key
+  Guid:
+    Data1: -766962152
+    Data2: 1251500208
+    Data3: 1668034986
+    Data4: -1498807748
+  Banks:
+  - {fileID: -1828975287807129503}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 430
 --- !u!114 &5241965134190258657
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2217,7 +2327,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 16677
+  Length: 28077
 --- !u!114 &8278347079614850059
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2245,33 +2355,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 197
---- !u!114 &8604104391395382649
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/InGame/PuzzlePictures/IG_PP_pose_key
-  m_EditorClassIdentifier: 
-  Path: event:/InGame/PuzzlePictures/IG_PP_pose_key
-  Guid:
-    Data1: -766962152
-    Data2: 1251500208
-    Data3: 1668034986
-    Data4: -1498807748
-  Banks:
-  - {fileID: -1828975287807129503}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 317
 --- !u!114 &9063553531504864588
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2299,30 +2382,3 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 52
---- !u!114 &9127760631523213763
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/InGame/PuzzlePictures/IG_PP_take_key
-  m_EditorClassIdentifier: 
-  Path: event:/InGame/PuzzlePictures/IG_PP_take_key
-  Guid:
-    Data1: -2115091087
-    Data2: 1137762114
-    Data3: 1201105559
-    Data4: 1645657326
-  Banks:
-  - {fileID: -1828975287807129503}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 317
