@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
-	<object class="AudioFile" id="{fedb232a-d913-4532-8dbe-c9273ee2b532}">
+	<object class="AudioFile" id="{bf382d42-1834-4399-b164-47576afdf49c}">
 		<property name="assetPath">
-			<value>FX/PuzzleClassroom/Tiroir_In_model_class_1.wav</value>
+			<value>clefs_prend_2.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>
@@ -11,7 +11,7 @@
 			<value>2</value>
 		</property>
 		<property name="length">
-			<value>0.76442176870748302</value>
+			<value>0.31730158730158731</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{d5ae0bb6-a231-402a-ab49-cbb9acd8f217}</destination>

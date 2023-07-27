@@ -129,6 +129,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{e9dd06c5-49f0-4b6a-ad97-037c5c7125d4}">
+		<property name="volume">
+			<value>1.5</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{9b803572-4e49-46f7-81ce-730a61d38dfc}</destination>
 		</relationship>
@@ -580,7 +583,7 @@
 			<value>0</value>
 		</property>
 		<property name="value">
-			<value>-11</value>
+			<value>-3</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{70dab126-5fdf-42d7-a78f-21ce0ebe9f31}">
@@ -588,7 +591,7 @@
 			<value>0.29999999999999999</value>
 		</property>
 		<property name="value">
-			<value>3</value>
+			<value>7</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{1e3d93c8-c3cc-452b-b27b-d9d7c12e91f8}">
@@ -596,7 +599,7 @@
 			<value>0.90000000000000002</value>
 		</property>
 		<property name="value">
-			<value>8</value>
+			<value>10</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{bfea11c5-0834-4daf-8f7d-57e0898f4719}">
@@ -604,7 +607,7 @@
 			<value>0</value>
 		</property>
 		<property name="value">
-			<value>-9</value>
+			<value>-1</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{3efb969a-7da6-4186-a476-669d3a16b4fc}">
@@ -612,7 +615,7 @@
 			<value>0.29967159277504102</value>
 		</property>
 		<property name="value">
-			<value>-9</value>
+			<value>-1</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{7b264975-80cc-40d4-b86b-8ca3b188ef4b}">
@@ -620,7 +623,7 @@
 			<value>0</value>
 		</property>
 		<property name="value">
-			<value>-8</value>
+			<value>0</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{8efc3f25-c36d-4329-8ec0-5299d626faae}">
@@ -628,7 +631,7 @@
 			<value>1</value>
 		</property>
 		<property name="value">
-			<value>8</value>
+			<value>10</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{4554c7bc-bac0-4426-beeb-76981fdd210c}">
@@ -636,7 +639,7 @@
 			<value>0.90066225165562919</value>
 		</property>
 		<property name="value">
-			<value>-8</value>
+			<value>0</value>
 		</property>
 	</object>
 	<object class="FloatPluginParameter" id="{478691b1-bfe2-47f2-9a7c-dafd8beac3e9}">
