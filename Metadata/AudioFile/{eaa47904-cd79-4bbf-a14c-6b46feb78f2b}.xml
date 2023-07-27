@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
-	<object class="AudioFile" id="{c23dd1da-26c7-44d9-8df2-efe950a84e46}">
+	<object class="AudioFile" id="{eaa47904-cd79-4bbf-a14c-6b46feb78f2b}">
 		<property name="assetPath">
 			<value>FX/PuzzleStoneHeart/HeartPrend_2.wav</value>
 		</property>
@@ -11,7 +11,7 @@
 			<value>2</value>
 		</property>
 		<property name="length">
-			<value>0.29807256235827667</value>
+			<value>0.44712018140589571</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{d5ae0bb6-a231-402a-ab49-cbb9acd8f217}</destination>

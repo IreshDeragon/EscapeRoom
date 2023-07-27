@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
-	<object class="AudioFile" id="{51d426b0-87e5-4497-bb5b-930d6a844e90}">
+	<object class="AudioFile" id="{e81cdbc9-0254-4182-b770-a816c5835a77}">
 		<property name="assetPath">
-			<value>FX/PuzzleStoneHeart/HeartPose_2.wav</value>
+			<value>FX/PuzzleStoneHeart/HeartPrend_1.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>

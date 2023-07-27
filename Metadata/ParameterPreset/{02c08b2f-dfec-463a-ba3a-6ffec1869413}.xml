@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{02c08b2f-dfec-463a-ba3a-6ffec1869413}">
+		<property name="name">
+			<value>BreakPoint</value>
+		</property>
+		<relationship name="folder">
+			<destination>{8831d8d2-ce67-4ae5-b225-7488d830897c}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{d48074d6-b1d9-4a0b-b7ce-85f4ebf5b58a}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{d48074d6-b1d9-4a0b-b7ce-85f4ebf5b58a}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

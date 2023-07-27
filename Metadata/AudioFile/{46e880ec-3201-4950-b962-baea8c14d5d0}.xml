@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{46e880ec-3201-4950-b962-baea8c14d5d0}">
+		<property name="assetPath">
+			<value>FX/PuzzleStoneHeart/HeartPose_3.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.52884353741496604</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{d5ae0bb6-a231-402a-ab49-cbb9acd8f217}</destination>
+		</relationship>
+	</object>
+</objects>
