@@ -7,11 +7,13 @@ public class PontBehaviour : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject pontFini;
+    public GameObject panneau;
     public PlayableDirector director;
 
-    public void completed(Transform trans)
+    public void completed(Transform transPont, Transform transPanneau)
     {
-        pontFini.GetComponent<PontFiniBehaviour>().spawn(trans);
+        pontFini.GetComponent<PontFiniBehaviour>().spawn(transPont);
+        Instantiate(panneau, transPanneau.position, transPanneau.rotation);
         
         Destroy(gameObject);
     }

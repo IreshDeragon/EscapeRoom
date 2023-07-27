@@ -6,6 +6,7 @@ public class PontParentBehaviour : MonoBehaviour
 {
     public GameObject Parent;
     public MeshCollider[] activeMesh;
+    public Transform positionPanneau;
 
     private void Start()
     {
@@ -74,7 +75,7 @@ public class PontParentBehaviour : MonoBehaviour
 
             if (res)
             {
-                transform.parent.GetComponent<PontBehaviour>().completed(activeMesh[2].transform);
+                transform.parent.GetComponent<PontBehaviour>().completed(activeMesh[2].transform , positionPanneau);
             }
         }
     }
