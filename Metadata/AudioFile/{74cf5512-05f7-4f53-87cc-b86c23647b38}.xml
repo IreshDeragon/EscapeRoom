@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{74cf5512-05f7-4f53-87cc-b86c23647b38}">
 		<property name="assetPath">
-			<value>IG_C_listen_voice_message_mother.wav</value>
+			<value>FX/Common/IG_C_listen_voice_message_mother.wav</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>

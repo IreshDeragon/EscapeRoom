@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{b3caf6c3-394a-4c19-9224-8af1084add9e}">
 		<property name="assetPath">
-			<value>FX/Common/A_listen_contest_organizer.wav</value>
+			<value>FX/Common/IG_C_listen_contest_organizer.wav</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>
