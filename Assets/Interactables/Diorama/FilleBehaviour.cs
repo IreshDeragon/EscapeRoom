@@ -36,7 +36,10 @@ public class FilleBehaviour : MonoBehaviour
         if (playCry)
             director.Play();
         else
+        {
             cryEvent.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            gameObject.SetActive(false);
+        }
     }
     public void setPlayCry(bool bo)
     {

@@ -7,7 +7,7 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x4000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 0000022E9BEEBF38 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 00000254EC325A58 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -139,59 +139,420 @@
 [LOG] PluginEffectModel::init                  : Missing DSP plugin 'Resonance Audio Source'
 [LOG] PostLoad::initPluginEffects              : Creating stub DSP plugin model and continuing.
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
-[WRN] EffectInstanceFactory::create            : Creating stub DSP for plugin 'Resonance Audio Listener'
-[WRN] EffectInstanceFactory::create            : Creating stub DSP for plugin 'Resonance Audio Source'
 [LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
 [LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 4807200
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 123616
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 4678912
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 123712
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000089B582F218
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000F0A9EFF0B8
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFB5F5C3CA0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFB5F5C3C60
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFB5F5C3D80
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFB5F5C3E40
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000022E42ED3028
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFB4C523CA0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFB4C523C60
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFB4C523D80
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFB4C523E40
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000025353DAB4A8
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='figurine_bois_pose_1', format=5, channels=2, frequency=48000, lengthbytes=864, lengthpcm=2538, pcmblocksize=0, loopstart=0, loopend=1845, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.773651.
-[WRN] EffectInstanceFactory::create            : Creating stub DSP for plugin 'Resonance Audio Listener'
-[WRN] EffectInstanceFactory::create            : Creating stub DSP for plugin 'Resonance Audio Source'
-[WRN] EffectInstanceFactory::create            : Creating stub DSP for plugin 'Resonance Audio Listener'
-[WRN] EffectInstanceFactory::create            : Creating stub DSP for plugin 'Resonance Audio Source'
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='A_PB_sentence_Jeff', format=5, channels=2, frequency=48000, lengthbytes=33184, lengthpcm=135691, pcmblocksize=0, loopstart=0, loopend=134998, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.975403.
 [LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
 [LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 4807200
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 123616
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 4678912
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 123712
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000089B582F218
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000F0A9EFF0B8
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFB5F5C3CA0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFB5F5C3C60
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFB5F5C3D80
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFB5F5C3E40
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000022E36923ED8
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFB4C523CA0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFB4C523C60
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFB4C523D80
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFB4C523E40
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000025353DAB4A8
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='footstep_Maggie_1', format=5, channels=2, frequency=48000, lengthbytes=4608, lengthpcm=21231, pcmblocksize=0, loopstart=0, loopend=20307, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.017853.
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 4807200
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 123616
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000089B582F218
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFB5F5C3CA0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFB5F5C3C60
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFB5F5C3D80
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFB5F5C3E40
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000022E36923ED8
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='footstep_Maggie_2', format=5, channels=2, frequency=48000, lengthbytes=5984, lengthpcm=28845, pcmblocksize=0, loopstart=0, loopend=27921, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.040436.
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='A_PB_laught_friends_Jeff', format=5, channels=2, frequency=48000, lengthbytes=103008, lengthpcm=385153, pcmblocksize=0, loopstart=0, loopend=384691, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.659729.
 [WRN] EffectInstanceFactory::create            : Creating stub DSP for plugin 'Resonance Audio Source'
-[ERR] assert                                   : assertion: 'gSystemInitCount == 0' failed
+[LOG] SystemI::createSound                     : filename = Assets/FMOD/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] Thread::initThread                       : Init FMOD nonblocking thread (0). Affinity: 0x4000000000000003, Priority: 0xFFFF7FFC, Stack Size: 114688, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0000025358B20A88, queue head = 00000251C64F2188, queue count = 0
+[LOG] SystemI::createSound                     : filename = Assets/FMOD/Desktop/Master.bank : mode 02010082
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000025358B20A88
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/FMOD/Desktop/Master.bank', mode=0x02010082
+[LOG] AsyncThread::add                         :     add sound to async queue : soundi = 0000025358B20068, queue head = 00000251C64F2188, queue count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4678912
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 123712
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002549F1CCD50
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 1500
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='mouette_2', format=5, channels=2, frequency=48000, lengthbytes=227296, lengthpcm=970293, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.485472.
+[LOG] Thread::initThread                       :     Init FMOD file thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFC, Stack Size: 65536, Semaphore: No, Sleep Time: 10, Looping: Yes.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000025358B20A88
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000025358B20068
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/FMOD/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4678912
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 123712
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002549F1CC5D0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 500
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='ambiance_mer', format=5, channels=2, frequency=48000, lengthbytes=518848, lengthpcm=2016000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.499795.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000025358B20068
+[LOG] SystemI::createSound                     : filename = Assets/FMOD/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0000025358B20218, queue head = 00000251C64F2188, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000025358B20218
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/FMOD/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4678912
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 123712
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002549F1CCE90
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='music_pirate_1', format=5, channels=2, frequency=48000, lengthbytes=210208, lengthpcm=834162, pcmblocksize=0, loopstart=0, loopend=834025, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.275146.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000025358B20218
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000002526FAA8F18, queue head = 00000251C64F2188, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002526FAA8F18
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002526FAA8F18
+[WRN] EffectInstanceFactory::create            : Creating stub DSP for plugin 'Resonance Audio Source'
+[LOG] SoundI::release                          : mouette_2 (0000025358B20A88)
+[LOG] SoundI::release                          :     mouette_2 (000002535F608498)
+[LOG] SoundI::release                          :     mouette_2 (00000251BB0E4678)
+[LOG] SoundI::release                          : music_pirate_1 (0000025358B20218)
+[LOG] SoundI::release                          :     music_pirate_1 (00000251BE2319C8)
+[LOG] SoundI::release                          :     music_pirate_1 (000002526FAA8F18)
+[LOG] SoundI::release                          : ambiance_mer (0000025358B20068)
+[LOG] SoundI::release                          :     ambiance_mer (00000251BE231688)
+[LOG] SoundI::release                          :     ambiance_mer (000002526FAA8D68)
+[WRN] EffectInstanceFactory::create            : Creating stub DSP for plugin 'Resonance Audio Source'
+[LOG] SystemI::createSound                     : filename = Assets/FMOD/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000002526FAA9FF8, queue head = 00000251C64F2188, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002526FAA9FF8
+[LOG] SystemI::createSound                     : filename = Assets/FMOD/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/FMOD/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] AsyncThread::add                         :     add sound to async queue : soundi = 000002526FAA9AE8, queue head = 00000251C64F2188, queue count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4678912
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 123712
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000251BE7E8A20
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 1500
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='mouette_2', format=5, channels=2, frequency=48000, lengthbytes=227296, lengthpcm=970293, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.485472.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002526FAA9FF8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002526FAA9AE8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/FMOD/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4678912
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 123712
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000251BE7E8DE0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 500
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='ambiance_mer', format=5, channels=2, frequency=48000, lengthbytes=518848, lengthpcm=2016000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.499795.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002526FAA9AE8
+[LOG] SystemI::createSound                     : filename = Assets/FMOD/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000002549EEC0A08, queue head = 00000251C64F2188, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002549EEC0A08
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/FMOD/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4678912
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 123712
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000251BB0D5220
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='music_pirate_1', format=5, channels=2, frequency=48000, lengthbytes=210208, lengthpcm=834162, pcmblocksize=0, loopstart=0, loopend=834025, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.275146.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002549EEC0A08
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 00000251BB0E49D8, queue head = 00000251C64F2188, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000251BB0E49D8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000251BB0E49D8
+[WRN] EffectInstanceFactory::create            : Creating stub DSP for plugin 'Resonance Audio Source'
+[LOG] SoundI::release                          : music_pirate_1 (000002549EEC0A08)
+[LOG] SoundI::release                          :     music_pirate_1 (000002535F608CB8)
+[LOG] SoundI::release                          :     music_pirate_1 (00000251BB0E49D8)
+[LOG] SoundI::release                          : ambiance_mer (000002526FAA9AE8)
+[LOG] SoundI::release                          :     ambiance_mer (000002535F608978)
+[LOG] SoundI::release                          :     ambiance_mer (00000251BB0E4828)
+[LOG] SoundI::release                          : mouette_2 (000002526FAA9FF8)
+[LOG] SoundI::release                          :     mouette_2 (000002535F608498)
+[LOG] SoundI::release                          :     mouette_2 (00000251BB0E4678)
+[WRN] EffectInstanceFactory::create            : Creating stub DSP for plugin 'Resonance Audio Source'
+[LOG] SystemI::createSound                     : filename = Assets/FMOD/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000002549EEBFAD8, queue head = 00000251C64F2188, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002549EEBFAD8
+[LOG] SystemI::createSound                     : filename = Assets/FMOD/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/FMOD/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] AsyncThread::add                         :     add sound to async queue : soundi = 000002549EEBF0B8, queue head = 00000251C64F2188, queue count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4678912
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 123712
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000251BB0D4E60
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 1500
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='mouette_2', format=5, channels=2, frequency=48000, lengthbytes=227296, lengthpcm=970293, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.485472.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002549EEBFAD8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002549EEBF0B8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/FMOD/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4678912
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 123712
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000251BB0D46E0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 500
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='ambiance_mer', format=5, channels=2, frequency=48000, lengthbytes=518848, lengthpcm=2016000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.499795.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002549EEBF0B8
+[LOG] SystemI::createSound                     : filename = Assets/FMOD/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 00000251BB0E4D38, queue head = 00000251C64F2188, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000251BB0E4D38
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/FMOD/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4678912
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 123712
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000253047F1650
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='music_pirate_1', format=5, channels=2, frequency=48000, lengthbytes=210208, lengthpcm=834162, pcmblocksize=0, loopstart=0, loopend=834025, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.275146.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000251BB0E4D38
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0000025353D44398, queue head = 00000251C64F2188, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000025353D44398
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000025353D44398
+[WRN] EffectInstanceFactory::create            : Creating stub DSP for plugin 'Resonance Audio Source'
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEX): wFormatTag=0xFFFE, nChannels=2, nSamplesPerSec=48000, nAvgBytesPerSec=384000, nBlockAlign=8, wBitsPerSample=32, cbSize=22.
+[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEXTENSIBLE): wValidBitsPerSample=32, dwChannelMask=0x00000003, SubFormat=00000003-0000-0010-8000-00AA00389B71.
+[LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
+[LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x4000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
+[LOG] SoundI::release                          : music_pirate_1 (00000251BB0E4D38)
+[LOG] SoundI::release                          :     music_pirate_1 (000002553E58BEB8)
+[LOG] SoundI::release                          :     music_pirate_1 (0000025353D44398)
+[LOG] SoundI::release                          : ambiance_mer (000002549EEBF0B8)
+[LOG] SoundI::release                          :     ambiance_mer (00000254B94C8218)
+[LOG] SoundI::release                          :     ambiance_mer (0000025353D44A58)
+[LOG] SoundI::release                          : mouette_2 (000002549EEBFAD8)
+[LOG] SoundI::release                          :     mouette_2 (00000254B94C8D78)
+[LOG] SoundI::release                          :     mouette_2 (0000025353D43E88)
+[WRN] EffectInstanceFactory::create            : Creating stub DSP for plugin 'Resonance Audio Source'
+[LOG] SystemI::createSound                     : filename = Assets/FMOD/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000002526FAA8BB8, queue head = 00000251C64F2188, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002526FAA8BB8
+[LOG] SystemI::createSound                     : filename = Assets/FMOD/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/FMOD/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] AsyncThread::add                         :     add sound to async queue : soundi = 000002526FAA84F8, queue head = 00000251C64F2188, queue count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4678912
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 123712
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000251BE7E8160
+[LOG] SystemI::createSound                     :     filename = Assets/FMOD/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] AsyncThread::add                         :     add sound to async queue : soundi = 000002526FAA90C8, queue head = 00000251C64F2188, queue count = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 1500
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='mouette_2', format=5, channels=2, frequency=48000, lengthbytes=227296, lengthpcm=970293, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.485472.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002526FAA8BB8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002526FAA84F8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/FMOD/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4678912
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 123712
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000251BE7E8A20
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='music_pirate_1', format=5, channels=2, frequency=48000, lengthbytes=210208, lengthpcm=834162, pcmblocksize=0, loopstart=0, loopend=834025, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.275146.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002526FAA84F8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002526FAA90C8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/FMOD/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4678912
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 123712
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000251BE7E88E0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 500
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='ambiance_mer', format=5, channels=2, frequency=48000, lengthbytes=518848, lengthpcm=2016000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.499795.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002526FAA90C8
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000002549EEC0D68, queue head = 00000251C64F2188, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002549EEC0D68
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002549EEC0D68
+[LOG] SoundI::release                          : ambiance_mer (000002526FAA90C8)
+[LOG] SoundI::release                          :     ambiance_mer (00000254B9DF8008)
+[LOG] SoundI::release                          :     ambiance_mer (000002549EEBF268)
+[LOG] SoundI::release                          : music_pirate_1 (000002526FAA84F8)
+[LOG] SoundI::release                          :     music_pirate_1 (00000251B2AE89B8)
+[LOG] SoundI::release                          :     music_pirate_1 (000002549EEC0D68)
+[LOG] SoundI::release                          : mouette_2 (000002526FAA8BB8)
+[LOG] SoundI::release                          :     mouette_2 (00000251B2AE8678)
+[LOG] SoundI::release                          :     mouette_2 (000002549EEC06A8)
+[WRN] EffectInstanceFactory::create            : Creating stub DSP for plugin 'Resonance Audio Source'
+[LOG] SystemI::createSound                     : filename = Assets/FMOD/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000002526FAA9AE8, queue head = 00000251C64F2188, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002526FAA9AE8
+[LOG] SystemI::createSound                     : filename = Assets/FMOD/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/FMOD/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] AsyncThread::add                         :     add sound to async queue : soundi = 000002526FAA84F8, queue head = 00000251C64F2188, queue count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4678912
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 123712
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000251BE7E8160
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 1500
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='mouette_2', format=5, channels=2, frequency=48000, lengthbytes=227296, lengthpcm=970293, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.485472.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002526FAA9AE8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002526FAA84F8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/FMOD/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4678912
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 123712
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000251BE7E8A20
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 500
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='ambiance_mer', format=5, channels=2, frequency=48000, lengthbytes=518848, lengthpcm=2016000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.499795.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002526FAA84F8
+[LOG] SystemI::createSound                     : filename = Assets/FMOD/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000002526FAA86A8, queue head = 00000251C64F2188, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002526FAA86A8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/FMOD/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4678912
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 123712
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000251BE7E88E0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='music_pirate_1', format=5, channels=2, frequency=48000, lengthbytes=210208, lengthpcm=834162, pcmblocksize=0, loopstart=0, loopend=834025, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.275146.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002526FAA86A8
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0000025508EA2808, queue head = 00000251C64F2188, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000025508EA2808
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000025508EA2808
+[WRN] EffectInstanceFactory::create            : Creating stub DSP for plugin 'Resonance Audio Source'
+[LOG] SoundI::release                          : mouette_2 (000002526FAA9AE8)
+[LOG] SoundI::release                          :     mouette_2 (00000251C4990118)
+[LOG] SoundI::release                          :     mouette_2 (0000025508EA24A8)
+[LOG] SoundI::release                          : music_pirate_1 (000002526FAA86A8)
+[LOG] SoundI::release                          :     music_pirate_1 (00000251C4990798)
+[LOG] SoundI::release                          :     music_pirate_1 (0000025508EA2808)
+[LOG] SoundI::release                          : ambiance_mer (000002526FAA84F8)
+[LOG] SoundI::release                          :     ambiance_mer (00000251C49905F8)
+[LOG] SoundI::release                          :     ambiance_mer (0000025508EA2B68)
+[WRN] EffectInstanceFactory::create            : Creating stub DSP for plugin 'Resonance Audio Source'
+[LOG] SystemI::createSound                     : filename = Assets/FMOD/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 00000251BCC93D48, queue head = 00000251C64F2188, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000251BCC93D48
+[LOG] SystemI::createSound                     : filename = Assets/FMOD/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/FMOD/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] AsyncThread::add                         :     add sound to async queue : soundi = 00000251BCC92FC8, queue head = 00000251C64F2188, queue count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4678912
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 123712
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000251C6F8D7C0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 1500
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='mouette_2', format=5, channels=2, frequency=48000, lengthbytes=227296, lengthpcm=970293, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.485472.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000251BCC93D48
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000251BCC92FC8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/FMOD/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4678912
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 123712
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000251C6F8DE00
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 500
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='ambiance_mer', format=5, channels=2, frequency=48000, lengthbytes=518848, lengthpcm=2016000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.499795.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000251BCC92FC8
+[LOG] SystemI::createSound                     : filename = Assets/FMOD/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000002519E7582D8, queue head = 00000251C64F2188, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002519E7582D8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/FMOD/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4678912
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 123712
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000251C6F8C000
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='music_pirate_1', format=5, channels=2, frequency=48000, lengthbytes=210208, lengthpcm=834162, pcmblocksize=0, loopstart=0, loopend=834025, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.275146.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002519E7582D8
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000002549EEC06A8, queue head = 00000251C64F2188, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002549EEC06A8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002549EEC06A8
+[WRN] EffectInstanceFactory::create            : Creating stub DSP for plugin 'Resonance Audio Source'
+[LOG] SoundI::release                          : mouette_2 (00000251BCC93D48)
+[LOG] SoundI::release                          :     mouette_2 (00000251B2AE89B8)
+[LOG] SoundI::release                          :     mouette_2 (000002549EEBF418)
+[LOG] SoundI::release                          : music_pirate_1 (000002519E7582D8)
+[LOG] SoundI::release                          :     music_pirate_1 (00000251C782A218)
+[LOG] SoundI::release                          :     music_pirate_1 (000002549EEC06A8)
+[LOG] SoundI::release                          : ambiance_mer (00000251BCC92FC8)
+[LOG] SoundI::release                          :     ambiance_mer (00000251B2AE8818)
+[LOG] SoundI::release                          :     ambiance_mer (000002549EEC04F8)
+[LOG] SoundI::release                          :  (00000251C44AADA8)
+[LOG] SoundI::release                          :     A_PB_laught_friends_Jeff (000002535F609198)
+[LOG] SoundI::release                          :  (00000251C44AAC38)
+[LOG] SoundI::release                          :     A_PB_sentence_Jeff (000002535F6087D8)
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] SystemI::close                           : Closed.
+[LOG] Thread::callback                         : FMOD nonblocking thread (0) finished.
+[LOG] Thread::callback                         : FMOD file thread finished.

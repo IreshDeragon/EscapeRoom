@@ -14,6 +14,8 @@ public class DioramaBehaviour : MonoBehaviour
     public GameObject[] objectToDestroy;
     public PlayableDirector directorDiorama;
     public Renderer M_otherDiorama;
+    public Renderer M_Journal;
+    public Material MaterialFinalJournal;
 
 
     public GameObject maquettePereFilleCassee;
@@ -61,12 +63,14 @@ public class DioramaBehaviour : MonoBehaviour
                 timeAnimDiorama -= Time.deltaTime;
 
                 M_otherDiorama.material.SetFloat("_WichOne", getMaterialValue(timeAnimDiorama, 12f, 2f)); //change le material du diorama
+                M_Journal.material.SetFloat("_Opacite", getMaterialValue(timeAnimDiorama, 12f, 2f));
                 if (timeAnimDiorama <= 0)
                 {
                     phase = 3;
                 }
                 break;
             case 3:
+                M_Journal.material = MaterialFinalJournal;
                 Fille.SetActive(true);
                 phase = 4;
                 break;
