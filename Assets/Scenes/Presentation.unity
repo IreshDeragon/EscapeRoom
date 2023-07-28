@@ -11198,6 +11198,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1106894852}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1106894854 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4454600355572458598, guid: b76d36b2948ef5842b898c1c09d5efba,
+    type: 3}
+  m_PrefabInstance: {fileID: 1106894852}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1106894855 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3306686179114719028, guid: b76d36b2948ef5842b898c1c09d5efba,
@@ -11225,6 +11231,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1106894857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1106894854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 144434e57426e404890277cd4a98ff86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1107369977
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17562,6 +17580,73 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 78
   m_LocalEulerAnglesHint: {x: -19.136, y: 60.979, z: 10.307}
+--- !u!1 &1806713277 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6109674531197641119, guid: b76d36b2948ef5842b898c1c09d5efba,
+    type: 3}
+  m_PrefabInstance: {fileID: 1106894852}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1806713278 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3220583828780225602, guid: b76d36b2948ef5842b898c1c09d5efba,
+    type: 3}
+  m_PrefabInstance: {fileID: 1106894852}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1806713277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9a7676b01585ce43908639a27765dfc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1806713279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1806713277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactableView: {fileID: 1806713278}
+  _whenHover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenUnhover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelect:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1106894857}
+        m_TargetAssemblyTypeName: TirroirSound, Assembly-CSharp
+        m_MethodName: grabSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenUnselect:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &1843518421
 PrefabInstance:
   m_ObjectHideFlags: 0
