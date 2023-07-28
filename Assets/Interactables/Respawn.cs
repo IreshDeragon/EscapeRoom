@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class Respawn : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public Transform respawnPoint;
+    private void OnCollisionEnter(Collision collision)
     {
-        
+        if (collision.gameObject.tag == "respawn")
+        {
+            transform.position = respawnPoint.position;
+        }
     }
-
-    // Update is called once per frame
-    void Update()
+    public void setRespawn(Transform trans)
     {
-        
+        respawnPoint = trans;
+    }
+    public Transform getRespawn()
+    {
+        return respawnPoint;
     }
 }

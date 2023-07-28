@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Playables;
 
 public class CadenaBehaviour : MonoBehaviour
 {
@@ -13,6 +14,8 @@ public class CadenaBehaviour : MonoBehaviour
     public GameObject handGrabMirror;
     public GameObject[] objetsDeverouille;
     bool completed = false;
+    public PlayableDirector director;
+    public GameObject spriteAnimSky;
 
     //sons
     private FMOD.Studio.EventInstance grabDoorEvent;
@@ -47,6 +50,8 @@ public class CadenaBehaviour : MonoBehaviour
                         comp.enabled = true;
                     }
                 }
+                spriteAnimSky.SetActive(true);
+                director.Play();
             }
         }
     }
