@@ -168,7 +168,7 @@ MonoBehaviour:
   m_Name: RecorderClip
   m_EditorClassIdentifier: 
   enabled: 1
-  take: 12
+  take: 13
   captureEveryNthFrame: 1
   fileNameGenerator:
     m_Path:
@@ -176,7 +176,7 @@ MonoBehaviour:
       m_Leaf: Recordings
       m_ForceAssetFolder: 0
       m_AbsolutePath: 
-    m_FileName: capture_unity2
+    m_FileName: capture_unity3
   outputFormat: 1
   captureAlpha: 0
   m_ImageInputSelector:
