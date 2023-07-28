@@ -7,13 +7,14 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x4000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 00000202A6283A88 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 000001F2B4684CD8 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] PlaybackSystem::init                     : done
 [LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] Manager::init                            : done.
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
 [LOG] PluginEffectModel::init                  : Missing DSP plugin 'Resonance Audio Source'
@@ -139,179 +140,9 @@
 [LOG] PluginEffectModel::init                  : Missing DSP plugin 'Resonance Audio Source'
 [LOG] PostLoad::initPluginEffects              : Creating stub DSP plugin model and continuing.
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
-[WRN] EffectInstanceFactory::create            : Creating stub DSP for plugin 'Resonance Audio Listener'
-[WRN] EffectInstanceFactory::create            : Creating stub DSP for plugin 'Resonance Audio Source'
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 4678912
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 123712
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000E3479FF278
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFB63BB3CA0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFB63BB3C60
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFB63BB3D80
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFB63BB3E40
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000203557C77F8
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='figurine_bois_pose_1', format=5, channels=2, frequency=48000, lengthbytes=864, lengthpcm=2538, pcmblocksize=0, loopstart=0, loopend=1845, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.773651.
-[WRN] EffectInstanceFactory::create            : Creating stub DSP for plugin 'Resonance Audio Listener'
-[WRN] EffectInstanceFactory::create            : Creating stub DSP for plugin 'Resonance Audio Source'
-[WRN] EffectInstanceFactory::create            : Creating stub DSP for plugin 'Resonance Audio Listener'
-[WRN] EffectInstanceFactory::create            : Creating stub DSP for plugin 'Resonance Audio Source'
-[WRN] EffectInstanceFactory::create            : Creating stub DSP for plugin 'Resonance Audio Listener'
-[WRN] EffectInstanceFactory::create            : Creating stub DSP for plugin 'Resonance Audio Source'
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 4678912
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 123712
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000E3479FF278
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFB63BB3CA0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFB63BB3C60
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFB63BB3D80
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFB63BB3E40
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002010A32A328
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='A_PLIWD_sentence_Jeff', format=5, channels=2, frequency=48000, lengthbytes=30976, lengthpcm=122999, pcmblocksize=0, loopstart=0, loopend=122075, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.975281.
-[WRN] EffectInstanceFactory::create            : Creating stub DSP for plugin 'Resonance Audio Listener'
-[WRN] EffectInstanceFactory::create            : Creating stub DSP for plugin 'Resonance Audio Source'
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 4678912
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 123712
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000E3479FF278
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFB63BB3CA0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFB63BB3C60
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFB63BB3D80
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFB63BB3E40
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002010A32A328
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='footstep_Maggie_1', format=5, channels=2, frequency=48000, lengthbytes=4608, lengthpcm=21231, pcmblocksize=0, loopstart=0, loopend=20307, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.017853.
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 4678912
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 123712
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000E3479FF278
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFB63BB3CA0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFB63BB3C60
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFB63BB3D80
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFB63BB3E40
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002010A32A328
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='footstep_Maggie_2', format=5, channels=2, frequency=48000, lengthbytes=5984, lengthpcm=28845, pcmblocksize=0, loopstart=0, loopend=27921, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.040436.
-[WRN] EffectInstanceFactory::create            : Creating stub DSP for plugin 'Resonance Audio Source'
-[WRN] EffectInstanceFactory::create            : Creating stub DSP for plugin 'Resonance Audio Source'
-[WRN] EffectInstanceFactory::create            : Creating stub DSP for plugin 'Resonance Audio Listener'
-[WRN] EffectInstanceFactory::create            : Creating stub DSP for plugin 'Resonance Audio Source'
-[WRN] EffectInstanceFactory::create            : Creating stub DSP for plugin 'Resonance Audio Source'
-[WRN] EffectInstanceFactory::create            : Creating stub DSP for plugin 'Resonance Audio Listener'
-[WRN] EffectInstanceFactory::create            : Creating stub DSP for plugin 'Resonance Audio Source'
-[WRN] EffectInstanceFactory::create            : Creating stub DSP for plugin 'Resonance Audio Source'
-[WRN] EffectInstanceFactory::create            : Creating stub DSP for plugin 'Resonance Audio Listener'
-[WRN] EffectInstanceFactory::create            : Creating stub DSP for plugin 'Resonance Audio Source'
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 4678912
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 123712
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000E3479FF278
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFB63BB3CA0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFB63BB3C60
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFB63BB3D80
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFB63BB3E40
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000203557C7E28
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='A_PLIWD_sentence_Maggie', format=5, channels=2, frequency=48000, lengthbytes=42432, lengthpcm=163846, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.108051.
-[WRN] EffectInstanceFactory::create            : Creating stub DSP for plugin 'Resonance Audio Listener'
-[WRN] EffectInstanceFactory::create            : Creating stub DSP for plugin 'Resonance Audio Source'
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 4678912
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 123712
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000E3479FF278
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFB63BB3CA0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFB63BB3C60
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFB63BB3D80
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFB63BB3E40
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000203557C75E8
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='demolition_maquette', format=5, channels=2, frequency=48000, lengthbytes=134592, lengthpcm=336000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.861826.
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 4678912
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 123712
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000E3479FF278
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFB63BB3CA0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFB63BB3C60
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFB63BB3D80
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFB63BB3E40
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000020146C63ED8
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='klaxon', format=5, channels=2, frequency=48000, lengthbytes=27264, lengthpcm=240000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.373873.
-[LOG] SystemI::createSound                     : filename = Assets/FMOD/Desktop/Master.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] Thread::initThread                       : Init FMOD nonblocking thread (0). Affinity: 0x4000000000000003, Priority: 0xFFFF7FFC, Stack Size: 114688, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncThread::add                         : add sound to async queue : soundi = 00000201C7457758, queue head = 00000202A54B1EB8, queue count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000201C7457758
-[LOG] SystemI::createSoundInternal             :     Create name='Assets/FMOD/Desktop/Master.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4678912
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 123712
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002014D696D70
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='car_accident', format=5, channels=2, frequency=48000, lengthbytes=133280, lengthpcm=624000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.950000.
-[LOG] Thread::initThread                       :     Init FMOD file thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFC, Stack Size: 65536, Semaphore: No, Sleep Time: 10, Looping: Yes.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000201C7457758
-[LOG] SoundI::release                          : car_accident (00000201C7457758)
-[LOG] SoundI::release                          :     car_accident (00000202A60133B8)
-[LOG] SoundI::release                          :     car_accident (00000201C7455FB8)
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 4678912
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 123712
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000E3479FF278
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFB63BB3CA0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFB63BB3C60
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFB63BB3D80
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFB63BB3E40
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000202A63B1148
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='A_PFM_sentence_Jeff_bad_end', format=5, channels=2, frequency=48000, lengthbytes=43200, lengthpcm=195230, pcmblocksize=0, loopstart=0, loopend=194306, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.975433.
-[LOG] SoundI::release                          :  (0000020353515B98)
-[LOG] SoundI::release                          :     figurine_bois_pose_1 (00000202A600EDD8)
-[LOG] SoundI::release                          :  (00000201C7D014E8)
-[LOG] SoundI::release                          :     A_PLIWD_sentence_Jeff (00000202A600E278)
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEX): wFormatTag=0xFFFE, nChannels=2, nSamplesPerSec=48000, nAvgBytesPerSec=384000, nBlockAlign=8, wBitsPerSample=32, cbSize=22.
+[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEXTENSIBLE): wValidBitsPerSample=32, dwChannelMask=0x00000003, SubFormat=00000003-0000-0010-8000-00AA00389B71.
+[LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
+[LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x4000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
 [ERR] assert                                   : assertion: 'gSystemInitCount == 0' failed
