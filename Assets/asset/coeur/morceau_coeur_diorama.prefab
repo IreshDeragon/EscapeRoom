@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 3066462079938996445}
   - component: {fileID: 8973674897321637153}
   - component: {fileID: 4252859411316602135}
+  - component: {fileID: -5055259396102391832}
   m_Layer: 0
   m_Name: morceau_coeur_diorama
   m_TagString: Untagged
@@ -271,6 +272,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tags:
   - Rocher
+--- !u!114 &-5055259396102391832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1034790190993035935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fad0cadcddc791468e19d2adabf89b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  respawnPoint: {fileID: 0}
 --- !u!1 &5424425842939530425
 GameObject:
   m_ObjectHideFlags: 0

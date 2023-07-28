@@ -596,6 +596,7 @@ GameObject:
   - component: {fileID: 2127621401763312286}
   - component: {fileID: 5751095217352582384}
   - component: {fileID: 1812605595}
+  - component: {fileID: 5977446830789816243}
   m_Layer: 0
   m_Name: Key
   m_TagString: Untagged
@@ -730,6 +731,19 @@ MonoBehaviour:
   handGrab: {fileID: 364017227700693694}
   handGrabMirror: {fileID: 7264946655354644734}
   snaped: 0
+--- !u!114 &5977446830789816243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3383418444488100666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fad0cadcddc791468e19d2adabf89b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  respawnPoint: {fileID: 0}
 --- !u!1 &3411922172274081338
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - hammer
   - decors
+  - respawn
   layers:
   - Default
   - TransparentFX

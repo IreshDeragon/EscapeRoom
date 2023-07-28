@@ -82,8 +82,11 @@ public class HeartBehaviour : MonoBehaviour
             timerBatement += Time.deltaTime;
             if(timerBatement >= 6f)
             {
-                Instantiate(keyPrefab, transform.position, transform.rotation);
-                diorama.GetComponent<DioramaBehaviour>().setObjectToDestroy(12 ,Instantiate(rocherPrefab, transform.position, transform.rotation));
+                GameObject key = Instantiate(keyPrefab, transform.position, transform.rotation);
+                key.GetComponent<Respawn>().setRespawn(transform.GetComponent<Respawn>().getRespawn());
+                GameObject rocher = Instantiate(rocherPrefab, transform.position, transform.rotation);
+                diorama.GetComponent<DioramaBehaviour>().setObjectToDestroy(12 ,rocher);
+                rocher.GetComponent<Respawn>().setRespawn(transform.GetComponent<Respawn>().getRespawn());
                 GameObject frag = Instantiate(fragmentPrefab, transform.position, transform.rotation);
                 frag.GetComponent<BrokentHeartBehaviour>().director = director;
                 Destroy(gameObject);
