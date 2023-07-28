@@ -66,10 +66,10 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638261049083871549
+  lastModified: 638261323439131155
   FileSizes:
   - Name: 
-    Value: 5450
+    Value: 5546
   Exists: 1
 --- !u!114 &-9012875682056171202
 MonoBehaviour:
@@ -610,7 +610,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 2826
+  Length: 2043
 --- !u!114 &-4771585572623288105
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -691,7 +691,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 2385
+  Length: 2410
 --- !u!114 &-4438741062253320512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -950,7 +950,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638261049083865842
+  lastModified: 638261323439131155
   FileSizes: []
   Exists: 1
 --- !u!114 &-1728002567021612494
@@ -1007,6 +1007,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 307
+--- !u!114 &-1277758066869572077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Animations/PuzzleBoat/A_PB_seagull
+  m_EditorClassIdentifier: 
+  Path: event:/Animations/PuzzleBoat/A_PB_seagull
+  Guid:
+    Data1: 1290323446
+    Data2: 1134642286
+    Data3: 1729988286
+    Data4: -103552924
+  Banks:
+  - {fileID: -1828975287807129503}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 18000
 --- !u!114 &-1255439399714842931
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1114,7 +1141,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 41500
+  Length: 18500
 --- !u!114 &-1071004787882511572
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1142,6 +1169,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-959664653930290906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/InGame/Common/IG_C_ambiant
+  m_EditorClassIdentifier: 
+  Path: event:/InGame/Common/IG_C_ambiant
+  Guid:
+    Data1: 1834173235
+    Data2: 1151975397
+    Data3: 1177150895
+    Data4: 672427305
+  Banks:
+  - {fileID: -1828975287807129503}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 81823
 --- !u!114 &-912550521912879647
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1321,12 +1375,14 @@ MonoBehaviour:
   - {fileID: 4443097742542782014}
   - {fileID: -6651562161924271177}
   - {fileID: -1073344704982989107}
+  - {fileID: -959664653930290906}
+  - {fileID: -1277758066869572077}
   EditorParameters: []
   MasterBanks:
   - {fileID: -1828975287807129503}
   StringsBanks:
   - {fileID: -9059320346546106966}
-  cacheTime: 638261049083871549
+  cacheTime: 638261323439131155
   cacheVersion: 131605
 --- !u!114 &575223947226355536
 MonoBehaviour:

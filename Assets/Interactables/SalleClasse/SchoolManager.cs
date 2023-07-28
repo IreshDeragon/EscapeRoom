@@ -58,8 +58,6 @@ public class SchoolManager : MonoBehaviour
         }
 
         //Ouvrir le tiroir
-        correctEvent.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
-        correctEvent.start();
         director.Play();
         unlockGameObjects();
         tiroirHandGrab.SetActive(true);
@@ -74,6 +72,12 @@ public class SchoolManager : MonoBehaviour
             obj.GetComponent<Rigidbody>().isKinematic = false;
             obj.GetComponent<Rigidbody>().useGravity = true;
         }
+    }
+
+    public void sonTirroir()
+    {
+        correctEvent.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
+        correctEvent.start();
     }
 
 }

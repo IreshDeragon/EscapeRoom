@@ -5,7 +5,7 @@ using UnityEngine.Playables;
 
 public class HeartBehaviour : MonoBehaviour
 {
-    public float distanceTreshold = 0.94f;
+    public float distanceTreshold = 0.96f;
     public int nbcoup;
     public float timerCoups;
     public GameObject point;
@@ -25,13 +25,15 @@ public class HeartBehaviour : MonoBehaviour
 
     int cptCoup = 0;
     float timer;
-    bool hasbeen = false;
+    float hasbeen = 0;
     float timerBatement = 0;
     bool completed = false;
 
     //sons
     private FMOD.Studio.EventInstance pickEvent;
     private FMOD.Studio.EventInstance fallEvent;
+    private FMOD.Studio.EventInstance strikeEvent;
+
 
     // Start is called before the first frame update
     void Start()
@@ -41,6 +43,7 @@ public class HeartBehaviour : MonoBehaviour
         //init sons
         pickEvent = FMODUnity.RuntimeManager.CreateInstance("event:/InGame/PuzzleStoneHeart/IG_PSH_take_stone_heart");
         fallEvent = FMODUnity.RuntimeManager.CreateInstance("event:/InGame/PuzzleStoneHeart/IG_PSH_pose_stone_heart");
+        strikeEvent = FMODUnity.RuntimeManager.CreateInstance("event:/InGame/PuzzleStoneHeart/IG_PSH_striking_stone_heart");
     }
 
     // Update is called once per frame
@@ -48,6 +51,10 @@ public class HeartBehaviour : MonoBehaviour
     {
         if (!completed)
         {
+            if(hasbeen >= 0)
+            {
+                hasbeen -= Time.deltaTime;
+            }
             if (cptCoup > 0)
             {
                 timer += Time.deltaTime;
@@ -62,27 +69,18 @@ public class HeartBehaviour : MonoBehaviour
             {
                 if (CheckCollision(Heart, Hammer.GetComponent<HammerBehaviour>().colider))
                 {
-                    if (!hasbeen)
+                    if (hasbeen<=0)
                     {
                         OnCollisionEnterInteraction(Hammer);
-                        hasbeen = true;
+                        hasbeen = 0.1f;
                     }
                 }
-                else
-                {
-                    Debug.Log("NON ");
-                    hasbeen = false;
-                }
-            }
-            else
-            {
-                hasbeen = false;
             }
         }
         else
         {
             timerBatement += Time.deltaTime;
-            if(timerBatement >= 3.6f)
+            if(timerBatement >= 6f)
             {
                 Instantiate(keyPrefab, transform.position, transform.rotation);
                 diorama.GetComponent<DioramaBehaviour>().setObjectToDestroy(12 ,Instantiate(rocherPrefab, transform.position, transform.rotation));
@@ -99,7 +97,7 @@ public class HeartBehaviour : MonoBehaviour
     }
     private bool CheckCollision(GameObject obj1, Collider obj2Collider)
     {
-        Collider[] cols = Physics.OverlapSphere(Hammer.GetComponent<HammerBehaviour>().StrikePoint.transform.position, 0.01f);
+        Collider[] cols = Physics.OverlapSphere(Hammer.GetComponent<HammerBehaviour>().StrikePoint.transform.position, 0.0001f);
         bool collisionDetected = false;
         //collisionDetected = heartCollider.bounds.Intersects(obj2Collider.bounds);
 
@@ -129,7 +127,9 @@ public class HeartBehaviour : MonoBehaviour
             proximite = 1.0f;
         }
         Debug.Log("Proximité : " + proximite);
-        strike();
+
+        Debug.Log("les transform" + point.transform.position + " et "+ strikeZone.transform.position);
+        strike(proximite);
     }
 
 
@@ -137,7 +137,7 @@ public class HeartBehaviour : MonoBehaviour
     {
         if(col.gameObject.tag == "hammer")
         {
-            GameObject strikeZone = col.gameObject.GetComponent<HammerBehaviour>().StrikePoint;
+            /*GameObject strikeZone = col.gameObject.GetComponent<HammerBehaviour>().StrikePoint;
             proximite = 1 - Vector3.Distance(point.transform.position, strikeZone.transform.position); //calcul de la distance entre le bout du marteau et le point
 
             //Je clamp la valeur entre 0 et 1 pour ne pas avoir d'erreurs dans fmod
@@ -150,7 +150,7 @@ public class HeartBehaviour : MonoBehaviour
                 proximite = 1.0f;
             }
             Debug.Log("Proximité : " + proximite);
-            strike();
+            strike(proximite);*/
         }
         else if(col.gameObject.tag == "decors")
         {
@@ -160,9 +160,14 @@ public class HeartBehaviour : MonoBehaviour
     }
 
 
-    void strike()
+    void strike(float proximite)
     {
-        if(proximite>= distanceTreshold)
+        float param = (proximite - 0.7f) * 3.33f;
+        param = param > 1f ? 1f : param < 0f ? 0f : param;
+        strikeEvent.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
+        strikeEvent.setParameterByName("BreakPoint", param);
+        strikeEvent.start();
+        if (proximite>= distanceTreshold)
         {
             ++cptCoup;
             timer = 0;

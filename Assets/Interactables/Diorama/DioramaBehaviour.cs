@@ -68,6 +68,7 @@ public class DioramaBehaviour : MonoBehaviour
                 break;
             case 3:
                 Fille.SetActive(true);
+                phase = 4;
                 break;
             case 4:
                 timeBeforeJeffAcceptationOrNot -= Time.deltaTime;
@@ -128,8 +129,8 @@ public class DioramaBehaviour : MonoBehaviour
         }
         else
         {
-            
             Statuette.GetChild(0).gameObject.SetActive(true);
+            Statuette.gameObject.layer = 3;
         }
     }
 
