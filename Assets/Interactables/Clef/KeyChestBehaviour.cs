@@ -14,9 +14,9 @@ public class KeyChestBehaviour : MonoBehaviour
     // Start is called before the first frame update
     public void openChest()
     {
-        key.GetComponent<Rigidbody>().isKinematic = true;
-        key.GetComponent<Rigidbody>().useGravity = false;
-        key.GetComponent<KeyBehaviour>().disableGrab();
+        //key.GetComponent<Rigidbody>().isKinematic = true;
+        //key.GetComponent<Rigidbody>().useGravity = false;
+        //key.GetComponent<KeyBehaviour>().disableGrab();
         grab.SetActive(true);
         grabMiror.SetActive(true);
         transform.GetComponent<MeshCollider>().enabled = true;
