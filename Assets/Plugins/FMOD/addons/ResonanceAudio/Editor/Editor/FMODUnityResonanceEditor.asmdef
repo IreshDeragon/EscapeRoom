@@ -1,11 +1,9 @@
 {
     "name": "FMODUnityResonanceEditor",
-    "rootNamespace": "",
     "references": [
         "FMODUnityResonance"
     ],
     "includePlatforms": [
-        "Android",
         "Editor"
     ],
     "excludePlatforms": [],
