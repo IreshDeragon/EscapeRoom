@@ -66,10 +66,10 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638261831441958721
+  lastModified: 638262269448511030
   FileSizes:
   - Name: 
-    Value: 5546
+    Value: 5652
   Exists: 1
 --- !u!114 &-9012875682056171202
 MonoBehaviour:
@@ -950,7 +950,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638261831441923563
+  lastModified: 638262269448480843
   FileSizes: []
   Exists: 1
 --- !u!114 &-1728002567021612494
@@ -1007,6 +1007,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 307
+--- !u!114 &-1344027917117052885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/InGame/PuzzleBoat/IG_PB_pose_sailboat
+  m_EditorClassIdentifier: 
+  Path: event:/InGame/PuzzleBoat/IG_PB_pose_sailboat
+  Guid:
+    Data1: -527462038
+    Data2: 1304603623
+    Data3: -698156609
+    Data4: 696286976
+  Banks:
+  - {fileID: -1828975287807129503}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 144
 --- !u!114 &-1277758066869572077
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1195,7 +1222,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 81823
+  Length: 40000
 --- !u!114 &-912550521912879647
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1377,12 +1404,14 @@ MonoBehaviour:
   - {fileID: -1073344704982989107}
   - {fileID: -959664653930290906}
   - {fileID: -1277758066869572077}
+  - {fileID: 8172091141799377563}
+  - {fileID: -1344027917117052885}
   EditorParameters: []
   MasterBanks:
   - {fileID: -1828975287807129503}
   StringsBanks:
   - {fileID: -9059320346546106966}
-  cacheTime: 638261831441958721
+  cacheTime: 638262269448511030
   cacheVersion: 131605
 --- !u!114 &575223947226355536
 MonoBehaviour:
@@ -1437,7 +1466,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 240
+  Length: 201
 --- !u!114 &677943960500227658
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2384,6 +2413,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 28077
+--- !u!114 &8172091141799377563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/InGame/PuzzleBoat/IG_PB_take_sailboat
+  m_EditorClassIdentifier: 
+  Path: event:/InGame/PuzzleBoat/IG_PB_take_sailboat
+  Guid:
+    Data1: -604083875
+    Data2: 1115379802
+    Data3: -32513353
+    Data4: 874368509
+  Banks:
+  - {fileID: -1828975287807129503}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 399
 --- !u!114 &8278347079614850059
 MonoBehaviour:
   m_ObjectHideFlags: 0

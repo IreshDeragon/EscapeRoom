@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: Plan_de_vie
-  productName: EscapeRoomVR
+  productName: Plan De Vie
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -276,7 +276,7 @@ PlayerSettings:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: 6da0620f2926bf34e8f6cfb5e808bc22, type: 3}
+      m_Icon: {fileID: 2800000, guid: 0178bb85158fab343af7c9750d26f0e1, type: 3}
       m_Width: 128
       m_Height: 128
       m_Kind: 0
