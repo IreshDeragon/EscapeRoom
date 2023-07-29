@@ -743,7 +743,19 @@ MonoBehaviour:
   _interactableView: {fileID: 127064913}
   _whenHover:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 278164276}
+        m_TargetAssemblyTypeName: Exit, Assembly-CSharp
+        m_MethodName: exit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenUnhover:
     m_PersistentCalls:
       m_Calls: []
@@ -5221,7 +5233,12 @@ PrefabInstance:
     - target: {fileID: 2267703313430238191, guid: 2f8be17e2c8bbca40887828ff50d7105,
         type: 3}
       propertyPath: _tags.Array.size
-      value: 1
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2267703313430238191, guid: 2f8be17e2c8bbca40887828ff50d7105,
+        type: 3}
+      propertyPath: _tags.Array.data[1]
+      value: Bateau
       objectReference: {fileID: 0}
     - target: {fileID: 2945439204651102690, guid: 2f8be17e2c8bbca40887828ff50d7105,
         type: 3}
@@ -5255,6 +5272,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -8678823145569952518, guid: cb66a80b948baa7468a4e13491f85a27,
         type: 3}
+    - target: {fileID: 8330612984430111019, guid: 2f8be17e2c8bbca40887828ff50d7105,
+        type: 3}
+      propertyPath: _tags.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8330612984430111019, guid: 2f8be17e2c8bbca40887828ff50d7105,
+        type: 3}
+      propertyPath: _tags.Array.data[1]
+      value: Bateau
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f8be17e2c8bbca40887828ff50d7105, type: 3}
 --- !u!1 &637738447 stripped
@@ -20941,7 +20968,7 @@ PrefabInstance:
     - target: {fileID: 1187524728811757587, guid: 7a7b06ee02a8e2a4f8918d3adff85f62,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.214
+      value: -0.067
       objectReference: {fileID: 0}
     - target: {fileID: 1187524728811757587, guid: 7a7b06ee02a8e2a4f8918d3adff85f62,
         type: 3}
@@ -20951,7 +20978,7 @@ PrefabInstance:
     - target: {fileID: 1187524728811757587, guid: 7a7b06ee02a8e2a4f8918d3adff85f62,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.515
+      value: 1.169
       objectReference: {fileID: 0}
     - target: {fileID: 1187524728811757587, guid: 7a7b06ee02a8e2a4f8918d3adff85f62,
         type: 3}
