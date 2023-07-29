@@ -25,6 +25,12 @@ public class DioramaBehaviour : MonoBehaviour
     public float timeAnimDiorama;
     public float timeBeforeJeffAcceptationOrNot;
 
+    private FMOD.Studio.EventInstance goodEndSound;
+    private FMOD.Studio.EventInstance badEndSound;
+    public Renderer ArrierePorte;
+    public Material M_GoodEnd;
+    public Material M_BadEnd;
+
     public int phase = 0;
 
     public float timer;
@@ -33,11 +39,13 @@ public class DioramaBehaviour : MonoBehaviour
     
     void Start()
     {
-        for(int i =0; i<6; i++)
+        for (int i =0; i<6; i++)
         {
             validation[i] = false;
         }
         //timer = 0;//pour le test
+        goodEndSound = FMODUnity.RuntimeManager.CreateInstance("event:/Animations/PuzzleFinalModel/A_PFM_sentence_Jeff_good_end");
+        badEndSound = FMODUnity.RuntimeManager.CreateInstance("event:/Animations/PuzzleFinalModel/A_PFM_sentence_Jeff_bad_end");
     }
 
     // Update is called once per frame
@@ -70,6 +78,16 @@ public class DioramaBehaviour : MonoBehaviour
                 }
                 break;
             case 3:
+                if (timer <= 0)
+                {
+                    /*badEndSound.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
+                    badEndSound.start();*/
+                }
+                else
+                {
+                    goodEndSound.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
+                    goodEndSound.start();
+                }
                 M_Journal.material = MaterialFinalJournal;
                 Fille.SetActive(true);
                 phase = 4;
@@ -126,15 +144,16 @@ public class DioramaBehaviour : MonoBehaviour
     {
         if(timer <= 0)
         {
-            //son non non c'est impossible
             maquettePereFilleCassee.transform.position = new Vector3(0, 0, 0);
             Destroy(Statuette.gameObject);
             directorCasser.Play();
+            ArrierePorte.material = M_BadEnd;
         }
         else
         {
             Statuette.GetChild(0).gameObject.SetActive(true);
             Statuette.gameObject.layer = 3;
+            ArrierePorte.material = M_GoodEnd;
         }
     }
 

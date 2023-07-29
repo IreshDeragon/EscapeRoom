@@ -72,7 +72,7 @@ public class HeartBehaviour : MonoBehaviour
                     if (hasbeen<=0)
                     {
                         OnCollisionEnterInteraction(Hammer);
-                        hasbeen = 0.1f;
+                        hasbeen = 0.4f;
                     }
                 }
             }
@@ -165,7 +165,7 @@ public class HeartBehaviour : MonoBehaviour
 
     void strike(float proximite)
     {
-        float param = (proximite - 0.7f) * 3.33f;
+        float param = (proximite - 0.8f) * 5f;
         param = param > 1f ? 1f : param < 0f ? 0f : param;
         strikeEvent.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
         strikeEvent.setParameterByName("BreakPoint", param);
